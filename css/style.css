@@ -110,7 +110,8 @@ img {
   color: var(--boa-gold) !important;
 }
 
-.text-navy {
+.text-navy,
+.text-boa-navy {
   color: var(--boa-navy-primary) !important;
 }
 
@@ -127,6 +128,29 @@ img {
 .bg-boa-gold {
   background-color: var(--boa-gold) !important;
   color: var(--boa-navy-dark) !important;
+}
+
+.alert-boa-info {
+  background-color: rgba(7, 27, 53, 0.05);
+  border-left: 4px solid var(--boa-gold);
+  color: var(--boa-navy-dark);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+}
+
+.breadcrumb-boa {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-boa .breadcrumb-item a {
+  color: var(--boa-gold);
+  text-decoration: none;
+}
+
+.breadcrumb-boa .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .badge-boa-gold {
@@ -264,7 +288,8 @@ img {
   box-shadow: 0 6px 20px rgba(201, 162, 39, 0.3);
 }
 
-.btn-boa-outline-navy {
+.btn-boa-outline-navy,
+.btn-outline-boa-navy {
   background: transparent;
   color: var(--boa-navy-primary) !important;
   font-weight: 600;
@@ -280,8 +305,49 @@ img {
   letter-spacing: 0.5px;
 }
 
-.btn-boa-outline-navy:hover {
+.btn-boa-outline-navy:hover,
+.btn-outline-boa-navy:hover {
   background: var(--boa-navy-primary);
+  color: var(--boa-white) !important;
+  transform: translateY(-2px);
+}
+
+.btn-boa-red {
+  background: var(--boa-red);
+  color: var(--boa-white) !important;
+  font-weight: 700;
+  font-size: 0.925rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  transition: var(--transition-normal);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-boa-red:hover {
+  background: #A00C24;
+  color: var(--boa-white) !important;
+  transform: translateY(-2px);
+}
+
+.btn-boa-outline-red {
+  background: transparent;
+  color: var(--boa-red) !important;
+  font-weight: 600;
+  font-size: 0.925rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--boa-red);
+  transition: var(--transition-normal);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-boa-outline-red:hover {
+  background: var(--boa-red);
   color: var(--boa-white) !important;
   transform: translateY(-2px);
 }
