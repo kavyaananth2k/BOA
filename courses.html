@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore British Online Academy's Ofqual regulated online courses in Business Management, Health & Social Care, Computing, Strategic Management, and Law.">
+  <title>Courses Catalogue | British Online Academy (BOA)</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-4">
+        <span><i class="bi bi-geo-alt text-gold me-1"></i> Coventry & London, United Kingdom</span>
+        <span class="d-none d-md-inline"><i class="bi bi-patch-check-fill text-gold me-1"></i> Ofqual Regulated Qualifications</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="contact.html"><i class="bi bi-telephone text-gold me-1"></i> +44 (0) 20 7946 0980</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-boa" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <img src="assets/logos/logo.png" alt="British Online Academy Logo" class="brand-logo-img">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end offcanvas-boa" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom border-secondary">
+          <img src="assets/logos/logo.png" alt="British Online Academy Logo" style="height: 38px; background: white; padding: 2px 6px; border-radius: 4px;">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            
+            <!-- About Us Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="about.html#who-we-are"><i class="bi bi-info-circle me-2 text-gold"></i>Who We Are</a></li>
+                <li><a class="dropdown-item" href="about.html#credentials"><i class="bi bi-shield-check me-2 text-gold"></i>Our Credentials</a></li>
+                <li><a class="dropdown-item" href="university-progression.html"><i class="bi bi-mortarboard me-2 text-gold"></i>Top Up Degrees</a></li>
+                <li><a class="dropdown-item" href="hubs.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i>Our Hubs</a></li>
+                <li><a class="dropdown-item" href="blogs.html"><i class="bi bi-journal-text me-2 text-gold"></i>Blogs</a></li>
+                <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
+              </ul>
+            </li>
+
+            <!-- Courses Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="courses.html" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                <li><h6 class="dropdown-header">Popular Courses</h6></li>
+                <li><a class="dropdown-item" href="#level3-business"><i class="bi bi-briefcase me-2 text-gold"></i>Level 3 – Business Management</a></li>
+                <li><a class="dropdown-item" href="#level45-business"><i class="bi bi-diagram-3 me-2 text-gold"></i>Level 4/5 – Business Management</a></li>
+                <li><a class="dropdown-item" href="#level45-health"><i class="bi bi-heart-pulse me-2 text-gold"></i>Level 4/5 – Health & Social Care</a></li>
+                <li><a class="dropdown-item" href="#level45-it"><i class="bi bi-laptop me-2 text-gold"></i>Level 4/5 – IT and Computing</a></li>
+                <li><a class="dropdown-item" href="#level7-strategic"><i class="bi bi-award me-2 text-gold"></i>Level 7 – Strategic Management</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="courses.html"><i class="bi bi-collection me-2 text-gold"></i>View All Courses</a></li>
+              </ul>
+            </li>
+
+            <!-- Individuals Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="individuals.html" id="individualsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Individuals
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="individualsDropdown">
+                <li><a class="dropdown-item" href="how-it-works.html"><i class="bi bi-compass me-2 text-gold"></i>How Will You Learn</a></li>
+                <li><a class="dropdown-item" href="university-progression.html"><i class="bi bi-mortarboard me-2 text-gold"></i>Top Up Degrees</a></li>
+                <li><a class="dropdown-item" href="hubs.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i>Our Hubs</a></li>
+                <li><a class="dropdown-item" href="blogs.html"><i class="bi bi-journal-text me-2 text-gold"></i>Blogs</a></li>
+                <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="qualification-levels.html">Qualifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="university-progression.html">Progression</a></li>
+            <li class="nav-item"><a class="nav-link" href="student-experience.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html#apply" class="btn btn-boa-gold">ENROL NOW <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner text-center">
+    <div class="container">
+      <span class="eyebrow text-gold">OFFICIAL CATALOGUE</span>
+      <h1 class="page-title font-serif">OUR COURSES</h1>
+      <p class="lead text-white-80 max-width-600 mx-auto">Web-based online diploma programmes fast tracking learners to recognised UK university qualifications.</p>
+    </div>
+  </section>
+
+  <!-- MAIN POPULAR COURSES SECTION -->
+  <section class="py-5 bg-white">
+    <div class="container py-2">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge badge-boa-gold mb-2">FEATURED PATHWAYS</span>
+        <h2 class="font-serif text-boa-navy mb-3">Main Popular Courses</h2>
+        <p class="text-muted">Explore our most sought-after Ofqual-regulated higher education diploma programmes designed for rapid career advancement.</p>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <!-- 1. Level 3 Business Management -->
+        <div class="col-md-6 col-lg-4" id="level3-business">
+          <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-boa-navy text-gold font-sans px-3 py-2">LEVEL 3</span>
+              <span class="badge bg-light text-dark border font-sans fw-bold">120 CREDITS</span>
+            </div>
+            <div class="rounded bg-boa-navy-dark text-gold p-3 d-inline-block mb-3 align-self-start">
+              <i class="bi bi-briefcase-fill fs-3"></i>
+            </div>
+            <h3 class="h4 font-serif text-boa-navy mb-2">Level 3 – Business Management</h3>
+            <p class="text-muted small mb-4">Foundation pre-university diploma equivalent to 2 A-Levels, covering core business principles, management communication, and operational fundamentals.</p>
+            <div class="mt-auto">
+              <a href="contact.html#apply" class="btn btn-boa-navy btn-sm w-100 justify-content-center">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Level 4/5 Business Management -->
+        <div class="col-md-6 col-lg-4" id="level45-business">
+          <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-boa-navy text-gold font-sans px-3 py-2">LEVEL 4/5</span>
+              <span class="badge bg-light text-dark border font-sans fw-bold">240 CREDITS</span>
+            </div>
+            <div class="rounded bg-boa-navy-dark text-gold p-3 d-inline-block mb-3 align-self-start">
+              <i class="bi bi-diagram-3-fill fs-3"></i>
+            </div>
+            <h3 class="h4 font-serif text-boa-navy mb-2">Level 4/5 – Business Management</h3>
+            <p class="text-muted small mb-4">Undergraduate Year 1 & Year 2 equivalent diploma preparing learners for direct entry into the 3rd & final year of a BA (Hons) top-up degree.</p>
+            <div class="mt-auto">
+              <a href="contact.html#apply" class="btn btn-boa-navy btn-sm w-100 justify-content-center">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Level 4/5 Health and Social Care Management -->
+        <div class="col-md-6 col-lg-4" id="level45-health">
+          <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-boa-navy text-gold font-sans px-3 py-2">LEVEL 4/5</span>
+              <span class="badge bg-light text-dark border font-sans fw-bold">240 CREDITS</span>
+            </div>
+            <div class="rounded bg-boa-navy-dark text-gold p-3 d-inline-block mb-3 align-self-start">
+              <i class="bi bi-heart-pulse-fill fs-3"></i>
+            </div>
+            <h3 class="h4 font-serif text-boa-navy mb-2">Level 4/5 – Health and Social Care Management</h3>
+            <p class="text-muted small mb-4">Specialized management diploma for health and care professionals focusing on healthcare delivery, leadership, ethics, and public policy.</p>
+            <div class="mt-auto">
+              <a href="contact.html#apply" class="btn btn-boa-navy btn-sm w-100 justify-content-center">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Level 4/5 IT and Computing -->
+        <div class="col-md-6 col-lg-4" id="level45-it">
+          <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-boa-navy text-gold font-sans px-3 py-2">LEVEL 4/5</span>
+              <span class="badge bg-light text-dark border font-sans fw-bold">240 CREDITS</span>
+            </div>
+            <div class="rounded bg-boa-navy-dark text-gold p-3 d-inline-block mb-3 align-self-start">
+              <i class="bi bi-laptop-fill fs-3"></i>
+            </div>
+            <h3 class="h4 font-serif text-boa-navy mb-2">Level 4/5 – IT and Computing</h3>
+            <p class="text-muted small mb-4">Comprehensive computing pathway covering software concepts, network systems, systems analysis, and enterprise IT management.</p>
+            <div class="mt-auto">
+              <a href="contact.html#apply" class="btn btn-boa-navy btn-sm w-100 justify-content-center">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Level 7 Strategic Management and Leadership -->
+        <div class="col-md-6 col-lg-4" id="level7-strategic">
+          <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-boa-navy text-gold font-sans px-3 py-2">LEVEL 7</span>
+              <span class="badge bg-light text-dark border font-sans fw-bold">120 CREDITS</span>
+            </div>
+            <div class="rounded bg-boa-navy-dark text-gold p-3 d-inline-block mb-3 align-self-start">
+              <i class="bi bi-award-fill fs-3"></i>
+            </div>
+            <h3 class="h4 font-serif text-boa-navy mb-2">Level 7 – Strategic Management & Leadership</h3>
+            <p class="text-muted small mb-4">Postgraduate executive diploma providing strategic decision-making skills and direct entry onto the MBA top-up dissertation stage.</p>
+            <div class="mt-auto">
+              <a href="contact.html#apply" class="btn btn-boa-navy btn-sm w-100 justify-content-center">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Law Diploma -->
+        <div class="col-md-6 col-lg-4" id="law">
+          <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-boa-navy text-gold font-sans px-3 py-2">DIPLOMA LEVEL</span>
+              <span class="badge bg-light text-dark border font-sans fw-bold">OFQUAL REGULATED</span>
+            </div>
+            <div class="rounded bg-boa-navy-dark text-gold p-3 d-inline-block mb-3 align-self-start">
+              <i class="bi bi-bank2 fs-3"></i>
+            </div>
+            <h3 class="h4 font-serif text-boa-navy mb-2">Law Diploma</h3>
+            <p class="text-muted small mb-4">A Law Diploma is a great starting point for understanding legal frameworks, contract principles, and preparing for advanced legal studies.</p>
+            <div class="mt-auto">
+              <a href="contact.html#apply" class="btn btn-boa-navy btn-sm w-100 justify-content-center">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL COURSE CATALOGUE BY LEVEL & CATEGORY -->
+  <section class="py-5 bg-light border-top" id="all-courses">
+    <div class="container py-3">
+      <div class="text-center max-w-800 mx-auto mb-5">
+        <span class="badge badge-boa-gold mb-2">COMPLETE CATALOGUE</span>
+        <h2 class="font-serif text-boa-navy mb-3">British Online Academy Courses</h2>
+        <p class="text-muted">Explore our full suite of IGCSEs, Ofqual-regulated diplomas (Level 3 to 8), language training, and professional body accreditations.</p>
+      </div>
+
+      <!-- CATEGORY NAV TABS -->
+      <ul class="nav nav-pills justify-content-center mb-5 gap-2" id="courseCategoryTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active px-4 py-2 fw-semibold" id="tab-igcse-tab" data-bs-toggle="pill" data-bs-target="#tab-igcse" type="button" role="tab">IGCSE & Short</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-4 py-2 fw-semibold" id="tab-level3-tab" data-bs-toggle="pill" data-bs-target="#tab-level3" type="button" role="tab">Level 3 (A-Level)</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-4 py-2 fw-semibold" id="tab-level45-tab" data-bs-toggle="pill" data-bs-target="#tab-level45" type="button" role="tab">Level 4 & 5 (Degree Y1/Y2)</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-4 py-2 fw-semibold" id="tab-level67-tab" data-bs-toggle="pill" data-bs-target="#tab-level67" type="button" role="tab">Level 6 & 7 (Final Year / MBA)</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-4 py-2 fw-semibold" id="tab-level8-tab" data-bs-toggle="pill" data-bs-target="#tab-level8" type="button" role="tab">Level 8 (Doctoral)</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link px-4 py-2 fw-semibold" id="tab-affiliations-tab" data-bs-toggle="pill" data-bs-target="#tab-affiliations" type="button" role="tab">Professional Affiliations</button>
+        </li>
+      </ul>
+
+      <!-- TAB CONTENT PANES -->
+      <div class="tab-content" id="courseCategoryContent">
+
+        <!-- 1. IGCSE & Short Courses -->
+        <div class="tab-pane fade show active" id="tab-igcse" role="tabpanel">
+          <div class="p-4 bg-white rounded border shadow-sm mb-4">
+            <h3 class="h4 font-serif text-boa-navy mb-4"><i class="bi bi-journal-bookmark me-2 text-gold"></i>IGCSE and Short Courses</h3>
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-book me-2 text-gold fs-5"></i> <span>IGCSE Biology</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-briefcase me-2 text-gold fs-5"></i> <span>IGCSE Business Studies</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-eyedropper me-2 text-gold fs-5"></i> <span>IGCSE Chemistry</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-laptop me-2 text-gold fs-5"></i> <span>IGCSE Computer Science</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-chat-quote me-2 text-gold fs-5"></i> <span>IGCSE English First Language</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-tree me-2 text-gold fs-5"></i> <span>IGCSE Environmental Management</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-globe me-2 text-gold fs-5"></i> <span>IGCSE Geography</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-hourglass-split me-2 text-gold fs-5"></i> <span>IGCSE History</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-calculator me-2 text-gold fs-5"></i> <span>IGCSE Mathematics</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-lightning me-2 text-gold fs-5"></i> <span>IGCSE Physics</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-airplane me-2 text-gold fs-5"></i> <span>IGCSE Travel and Tourism</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-boa-navy text-white d-flex align-items-center"><i class="bi bi-translate me-2 text-gold fs-5"></i> <span class="fw-bold">IELTS - English Language Training</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Level 3 Courses -->
+        <div class="tab-pane fade" id="tab-level3" role="tabpanel">
+          <div class="p-4 bg-white rounded border shadow-sm mb-4">
+            <h3 class="h4 font-serif text-boa-navy mb-4"><i class="bi bi-award me-2 text-gold"></i>Level 3 (A Level Equivalent) – University Entry Courses</h3>
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">Accountancy</strong> <span class="badge bg-secondary ms-2">60 Credits</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">Business Management</strong> <span class="badge bg-gold text-dark ms-2">120 Credits</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">Business Studies</strong> <span class="badge bg-secondary ms-2">60 Credits</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">Employability & Workplace Skills</strong> <span class="badge bg-secondary ms-2">60 Credits</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">Engineering</strong> <span class="badge bg-secondary ms-2">60 Credits</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">Fashion and Textiles</strong> <span class="badge bg-gold text-dark ms-2">120 Credits</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">Health & Social Care</strong> <span class="badge bg-secondary ms-2">60 Credits</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">Information Technology</strong> <span class="badge bg-secondary ms-2">60 Credits</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">Law</strong> <span class="badge bg-secondary ms-2">60 Credits</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light"><strong class="text-boa-navy">People and Organisations</strong> <span class="badge bg-secondary ms-2">60 Credits</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Level 4 & 5 Courses -->
+        <div class="tab-pane fade" id="tab-level45" role="tabpanel">
+          <div class="p-4 bg-white rounded border shadow-sm mb-4">
+            <h3 class="h4 font-serif text-boa-navy mb-4"><i class="bi bi-diagram-3 me-2 text-gold"></i>Level 4 & 5 – University First & Second Year Courses</h3>
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-calculator-fill me-2 text-gold"></i> <span>Accounting and Business</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-briefcase-fill me-2 text-gold"></i> <span>Business Management</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-shield-lock-fill me-2 text-gold"></i> <span>Cyber Security</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-heart-pulse-fill me-2 text-gold"></i> <span>Health and Social Care Management</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-bank2 me-2 text-gold"></i> <span>Law</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-truck me-2 text-gold"></i> <span>Logistics and Supply Chain Management</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-laptop-fill me-2 text-gold"></i> <span>IT and Computing</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-person-gear me-2 text-gold"></i> <span>Psychology</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-kanban me-2 text-gold"></i> <span>Project Management</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-person-workspace me-2 text-gold"></i> <span>Teaching</span></div></div>
+              <div class="col-md-6 col-lg-4"><div class="p-3 border rounded bg-light d-flex align-items-center"><i class="bi bi-building me-2 text-gold"></i> <span>Tourism and Hospitality Management</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Level 6 & Level 7 Courses -->
+        <div class="tab-pane fade" id="tab-level67" role="tabpanel">
+          <div class="row g-4">
+            <!-- Level 6 -->
+            <div class="col-md-6">
+              <div class="p-4 bg-white rounded border shadow-sm h-100">
+                <span class="badge bg-boa-navy text-gold px-3 py-2 mb-2">LEVEL 6</span>
+                <h3 class="h4 font-serif text-boa-navy mb-3">Undergraduate Final Year Equivalent</h3>
+                <div class="d-grid gap-2">
+                  <div class="p-3 border rounded bg-light"><i class="bi bi-mortarboard-fill me-2 text-gold"></i> <strong>Business Management</strong></div>
+                  <div class="p-3 border rounded bg-light"><i class="bi bi-graph-up-arrow me-2 text-gold"></i> <strong>Professional Sales Management</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Level 7 -->
+            <div class="col-md-6">
+              <div class="p-4 bg-white rounded border shadow-sm h-100">
+                <span class="badge bg-boa-navy text-gold px-3 py-2 mb-2">LEVEL 7</span>
+                <h3 class="h4 font-serif text-boa-navy mb-3">Postgraduate / MBA Entry Equivalent</h3>
+                <div class="d-grid gap-2">
+                  <div class="p-3 border rounded bg-light"><i class="bi bi-cpu-fill me-2 text-gold"></i> <strong>Artificial Intelligence</strong></div>
+                  <div class="p-3 border rounded bg-light"><i class="bi bi-people-fill me-2 text-gold"></i> <strong>Human Resource Management</strong></div>
+                  <div class="p-3 border rounded bg-light"><i class="bi bi-brain me-2 text-gold"></i> <strong>Organisational Psychology and Business</strong></div>
+                  <div class="p-3 border rounded bg-light"><i class="bi bi-kanban me-2 text-gold"></i> <strong>Project Management</strong></div>
+                  <div class="p-3 border rounded bg-light"><i class="bi bi-award-fill me-2 text-gold"></i> <strong>Strategic Management and Leadership</strong></div>
+                  <div class="p-3 border rounded bg-light"><i class="bi bi-cash-stack me-2 text-gold"></i> <strong>Strategic Sales Management</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Level 8 Courses -->
+        <div class="tab-pane fade" id="tab-level8" role="tabpanel">
+          <div class="p-4 bg-white rounded border shadow-sm max-width-700 mx-auto text-center">
+            <span class="badge bg-boa-navy text-gold px-3 py-2 mb-3">LEVEL 8</span>
+            <h3 class="h4 font-serif text-boa-navy mb-3">Doctoral Level Equivalent</h3>
+            <p class="text-muted mb-4">Our highest executive qualification designed for senior directors, executive leaders, and management consultants.</p>
+            <div class="p-4 border rounded bg-boa-navy text-gold font-serif h4 mb-0">
+              <i class="bi bi-trophy-fill me-2"></i> Strategic Management and Leadership Practice
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Professional Body Memberships & Affiliations -->
+        <div class="tab-pane fade" id="tab-affiliations" role="tabpanel">
+          <div class="p-4 bg-white rounded border shadow-sm">
+            <div class="text-center max-w-700 mx-auto mb-4">
+              <span class="badge badge-boa-gold mb-2">MEMBERSHIPS & AFFILIATIONS</span>
+              <h3 class="h4 font-serif text-boa-navy">Professional Body Recognitions</h3>
+              <p class="text-muted">British Online Academy diploma courses align with and provide pathways to memberships in premier professional institutes.</p>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3 border rounded bg-light d-flex align-items-center">
+                  <i class="bi bi-patch-check-fill text-gold fs-3 me-3"></i>
+                  <div>
+                    <h5 class="h6 mb-1 text-boa-navy">Chartered Management Institute</h5>
+                    <span class="badge bg-secondary">CMI</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3 border rounded bg-light d-flex align-items-center">
+                  <i class="bi bi-patch-check-fill text-gold fs-3 me-3"></i>
+                  <div>
+                    <h5 class="h6 mb-1 text-boa-navy">Institute of Directors</h5>
+                    <span class="badge bg-secondary">IoD</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3 border rounded bg-light d-flex align-items-center">
+                  <i class="bi bi-patch-check-fill text-gold fs-3 me-3"></i>
+                  <div>
+                    <h5 class="h6 mb-1 text-boa-navy">Chartered Institute of Marketing</h5>
+                    <span class="badge bg-secondary">CIM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3 border rounded bg-light d-flex align-items-center">
+                  <i class="bi bi-patch-check-fill text-gold fs-3 me-3"></i>
+                  <div>
+                    <h5 class="h6 mb-1 text-boa-navy">The Institute of Leadership</h5>
+                    <span class="badge bg-secondary">Institute of Leadership</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3 border rounded bg-light d-flex align-items-center">
+                  <i class="bi bi-patch-check-fill text-gold fs-3 me-3"></i>
+                  <div>
+                    <h5 class="h6 mb-1 text-boa-navy">Institute of Hospitality</h5>
+                    <span class="badge bg-secondary">Hospitality</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3 border rounded bg-light d-flex align-items-center">
+                  <i class="bi bi-patch-check-fill text-gold fs-3 me-3"></i>
+                  <div>
+                    <h5 class="h6 mb-1 text-boa-navy">Chartered Institute of Procurement & Supply</h5>
+                    <span class="badge bg-secondary">CIPS</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="p-3 border rounded bg-light d-flex align-items-center justify-content-center">
+                  <i class="bi bi-patch-check-fill text-gold fs-3 me-3"></i>
+                  <div>
+                    <h5 class="h6 mb-0 text-boa-navy">Chartered Institute of Personnel and Development (CIPD)</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="footer-boa">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="brand-logo mb-3">
+            <img src="assets/logos/logo.png" alt="British Online Academy Logo" class="brand-logo-footer">
+          </div>
+          <p class="text-white-80 mb-3" style="font-size: 0.95rem; font-weight: 600;">“Learn Today for a Brighter Tomorrow.”</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="qualification-levels.html">Qualifications</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Individual Pathways</h4>
+          <ul class="footer-links">
+            <li><a href="university-progression.html">Top Up Degrees</a></li>
+            <li><a href="hubs.html">Our Hubs</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="finance.html">Finance</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="mb-0">&copy; 2026 British Online Academy Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

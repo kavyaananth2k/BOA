@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Progression | British Online Academy (BOA)</title>
+  <meta name="description" content="Discover online pathways to UK university top-up degrees and MBAs. Earn Ofqual regulated credits with British Online Academy and top up at accredited universities.">
+  <meta name="keywords" content="UK top up degree online, MBA top up, Ofqual university credit transfer, BOA university progression">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logos/logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-boa-navy-dark text-white py-2 small border-bottom border-secondary">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="bi bi-mortarboard-fill text-gold me-2"></i>
+        <span>Admissions Open for 2026/2027 Academic Year</span>
+        <span class="d-none d-md-inline ms-3"><i class="bi bi-patch-check-fill text-gold me-1"></i> Ofqual RQF Regulated Qualifications</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="contact.html"><i class="bi bi-telephone text-gold me-1"></i> +44 (0) 20 7946 0980</a>
+        <span class="text-white-50">|</span>
+        <a href="contact.html#apply" class="text-gold font-weight-bold">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-boa" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <img src="assets/logos/logo.png" alt="British Online Academy Logo" class="brand-logo-img">
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end offcanvas-boa" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom border-secondary">
+          <img src="assets/logos/logo.png" alt="British Online Academy Logo" style="height: 38px; background: white; padding: 2px 6px; border-radius: 4px;">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            
+            <!-- About Us Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="about.html#who-we-are"><i class="bi bi-info-circle me-2 text-gold"></i>Who We Are</a></li>
+                <li><a class="dropdown-item" href="about.html#credentials"><i class="bi bi-shield-check me-2 text-gold"></i>Our Credentials</a></li>
+                <li><a class="dropdown-item" href="university-progression.html"><i class="bi bi-mortarboard me-2 text-gold"></i>Top Up Degrees</a></li>
+                <li><a class="dropdown-item" href="hubs.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i>Our Hubs</a></li>
+                <li><a class="dropdown-item" href="blogs.html"><i class="bi bi-journal-text me-2 text-gold"></i>Blogs</a></li>
+                <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
+              </ul>
+            </li>
+
+            <!-- Courses Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                <li><h6 class="dropdown-header">Popular Courses</h6></li>
+                <li><a class="dropdown-item" href="courses.html#level3-business"><i class="bi bi-briefcase me-2 text-gold"></i>Level 3 – Business Management</a></li>
+                <li><a class="dropdown-item" href="courses.html#level45-business"><i class="bi bi-diagram-3 me-2 text-gold"></i>Level 4/5 – Business Management</a></li>
+                <li><a class="dropdown-item" href="courses.html#level45-health"><i class="bi bi-heart-pulse me-2 text-gold"></i>Level 4/5 – Health & Social Care</a></li>
+                <li><a class="dropdown-item" href="courses.html#level45-it"><i class="bi bi-laptop me-2 text-gold"></i>Level 4/5 – IT and Computing</a></li>
+                <li><a class="dropdown-item" href="courses.html#level7-strategic"><i class="bi bi-award me-2 text-gold"></i>Level 7 – Strategic Management</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="courses.html"><i class="bi bi-collection me-2 text-gold"></i>View All Courses</a></li>
+              </ul>
+            </li>
+
+            <!-- Individuals Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="individuals.html" id="individualsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Individuals
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="individualsDropdown">
+                <li><a class="dropdown-item" href="how-it-works.html"><i class="bi bi-compass me-2 text-gold"></i>How Will You Learn</a></li>
+                <li><a class="dropdown-item" href="university-progression.html"><i class="bi bi-mortarboard me-2 text-gold"></i>Top Up Degrees</a></li>
+                <li><a class="dropdown-item" href="hubs.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i>Our Hubs</a></li>
+                <li><a class="dropdown-item" href="blogs.html"><i class="bi bi-journal-text me-2 text-gold"></i>Blogs</a></li>
+                <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="qualification-levels.html">Qualifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+            <li class="nav-item"><a class="nav-link active" href="university-progression.html">Progression</a></li>
+            <li class="nav-item"><a class="nav-link" href="student-experience.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex align-items-center mt-3 mt-lg-0">
+            <a href="contact.html#apply" class="btn btn-boa-gold">ENROL NOW <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero bg-boa-navy text-white text-center py-5">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <span class="badge badge-boa-gold mb-3">ACADEMIC PATHWAYS</span>
+          <h1 class="display-4 font-serif text-white mb-3">YOUR ONLINE PATHWAY TO A UK DEGREE</h1>
+          <p class="lead text-light mb-0">Study flexible online diploma programmes and progress towards recognised UK university qualifications through available top-up degree pathways.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISUAL PATHWAY SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center max-w-800 mx-auto mb-5">
+        <span class="badge badge-boa-gold mb-2">4-STAGE PATHWAY</span>
+        <h2 class="font-serif text-boa-navy mb-3">How University Progression Works</h2>
+        <p class="text-muted">By completing Ofqual-regulated level 4, 5, 6, or 7 diplomas with British Online Academy, you earn official higher education credits recognised by accepting UK and international universities.</p>
+      </div>
+
+      <!-- VISUAL PATHWAY CARDS GRID -->
+      <div class="row g-4 text-center">
+        <div class="col-md-6 col-lg-3">
+          <div class="boa-card h-100 p-4 border-top-accent">
+            <div class="rounded-circle bg-boa-navy text-gold font-serif fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">1</div>
+            <h4 class="h5 font-serif text-boa-navy">BOA Course</h4>
+            <p class="text-muted small">Enrol on an online Level 4, 5, 6, or 7 diploma programme and study at your own pace through 24/7 access.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="boa-card h-100 p-4 border-top-accent">
+            <div class="rounded-circle bg-boa-navy text-gold font-serif fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">2</div>
+            <h4 class="h5 font-serif text-boa-navy">Qualification & Credits</h4>
+            <p class="text-muted small">Complete module assessments to earn up to 120-240 UK university credits regulated by Ofqual.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="boa-card h-100 p-4 border-top-accent">
+            <div class="rounded-circle bg-boa-navy text-gold font-serif fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">3</div>
+            <h4 class="h5 font-serif text-boa-navy">University Top-Up</h4>
+            <p class="text-muted small">Apply for direct entry into the final year BA / BSc or MBA dissertation stage at accepting universities (Top-Up from £6,000).</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="boa-card h-100 p-4 border-top-accent">
+            <div class="rounded-circle bg-boa-navy text-gold font-serif fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">4</div>
+            <h4 class="h5 font-serif text-boa-navy">UK Degree / MBA</h4>
+            <p class="text-muted small">Graduation is awarded directly by the university upon successful completion of your final top-up stage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP-UP HIGHLIGHT BANNER -->
+  <section class="py-5 bg-boa-navy text-white">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="badge badge-boa-gold mb-3">AFFORDABLE HIGHER EDUCATION</span>
+          <h2 class="display-6 font-serif text-white mb-3">University Top-Up Options From £6,000</h2>
+          <p class="text-light">Studying online diploma modules through British Online Academy allows learners to significantly reduce the cost of obtaining a British degree. Top-up fees are payable directly to the accepting university upon progression to your final year.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <div class="bg-boa-navy-dark p-3 rounded border border-secondary">
+              <div class="fs-4 text-gold font-serif fw-bold">83%</div>
+              <small class="text-light">BOA Students Graduated from a UK University</small>
+            </div>
+            <div class="bg-boa-navy-dark p-3 rounded border border-secondary">
+              <div class="fs-4 text-gold font-serif fw-bold">5 Years</div>
+              <small class="text-light">Full Course Access Included</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="bg-white text-dark p-4 rounded-3 shadow">
+            <h4 class="font-serif text-boa-navy mb-3">Explore Your Degree Options</h4>
+            <p class="text-muted small mb-4">Speak with an Academic Progression Specialist to discover which university top-up routes match your career goals.</p>
+            <a href="contact.html#apply" class="btn btn-boa-gold w-100 mb-2">Request Progression Guide</a>
+            <a href="courses.html" class="btn btn-outline-boa-navy w-100">View Diploma Courses</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED TOP-UP PATHWAYS TABLE/LIST -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <h2 class="font-serif text-boa-navy mb-3">Undergraduate & Postgraduate Pathways</h2>
+        <p class="text-muted">Explore how our Ofqual-regulated level qualifications map directly to final-year UK university degree completion.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- BA / BSc Top-Up Card -->
+        <div class="col-lg-6">
+          <div class="boa-card h-100 p-4 border-top-accent bg-white">
+            <span class="badge bg-boa-navy text-gold px-3 py-2 mb-3">UNDERGRADUATE PATHWAY</span>
+            <h3 class="h4 font-serif text-boa-navy mb-3">BA (Hons) Top-Up Degree Route</h3>
+            <p class="text-muted small mb-4">Complete Level 4 & Level 5 Diplomas (240 UK credits total) to enter the 3rd & Final Year of a Bachelor's Degree in Business, Management, IT, or Hospitality.</p>
+            
+            <h5 class="h6 font-sans text-uppercase text-gold letter-spacing-1 mb-2">Key Steps:</h5>
+            <ul class="list-unstyled space-y-2 text-muted small mb-4">
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle text-gold"></i> Step 1: Complete BOA Level 4 Diploma (120 Credits)</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle text-gold"></i> Step 2: Complete BOA Level 5 Diploma (120 Credits)</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle text-gold"></i> Step 3: Apply for University Top-Up (Year 3 Final Year)</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle text-gold"></i> Step 4: Graduate with BA (Hons) from partner UK university</li>
+            </ul>
+            <a href="contact.html#apply" class="btn btn-outline-boa-navy btn-sm">Enquire for BA Top-Up</a>
+          </div>
+        </div>
+
+        <!-- MBA Top-Up Card -->
+        <div class="col-lg-6">
+          <div class="boa-card h-100 p-4 border-top-accent bg-white">
+            <span class="badge bg-boa-navy text-gold px-3 py-2 mb-3">POSTGRADUATE PATHWAY</span>
+            <h3 class="h4 font-serif text-boa-navy mb-3">MBA Top-Up Degree Route</h3>
+            <p class="text-muted small mb-4">Complete the Level 7 Postgraduate Diploma in Strategic Management (120 credits) to qualify for direct entry onto the MBA Top-Up dissertation stage (60 credits).</p>
+            
+            <h5 class="h6 font-sans text-uppercase text-gold letter-spacing-1 mb-2">Key Steps:</h5>
+            <ul class="list-unstyled space-y-2 text-muted small mb-4">
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle text-gold"></i> Step 1: Complete BOA Level 7 Postgraduate Diploma (120 Credits)</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle text-gold"></i> Step 2: Progress to MBA Top-Up Consultancy / Project Stage</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle text-gold"></i> Step 3: Submit MBA Consultancy Project to UK Partner University</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle text-gold"></i> Step 4: Graduate with full Master of Business Administration (MBA)</li>
+            </ul>
+            <a href="contact.html#apply" class="btn btn-outline-boa-navy btn-sm">Enquire for MBA Top-Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICIAL DISCLAIMER BANNER (MANDATORY CLIENT REQUIREMENT) -->
+  <section class="py-4 bg-light border-top">
+    <div class="container">
+      <div class="alert alert-boa-info mb-0 p-4">
+        <h5 class="font-serif text-boa-navy mb-2"><i class="bi bi-shield-exclamation text-warning me-2"></i>Official Progression Disclaimer</h5>
+        <p class="text-muted small mb-0">British Online Academy does not guarantee direct or unconditional progression to any university, degree, Master's programme or other course of study. Progression depends on meeting the specific entry requirements, academic standards, English language proficiency, and admissions criteria set by each receiving university. Students are advised to verify progression routes directly with their target institution prior to enrolment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-boa-navy-dark text-white pt-5 pb-3 border-top border-secondary">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4">
+          <img src="assets/logos/logo.png" alt="British Online Academy" style="height: 48px; background: white; padding: 4px 8px; border-radius: 4px;" class="mb-3">
+          <p class="text-muted small">British Online Academy provides flexible, Ofqual-regulated higher education diploma pathways, enabling learners worldwide to progress towards recognized UK university degrees.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-gold font-sans text-uppercase mb-3">Explore</h6>
+          <ul class="list-unstyled small space-y-2">
+            <li><a href="index.html" class="text-muted hover-gold">Home</a></li>
+            <li><a href="about.html" class="text-muted hover-gold">About BOA</a></li>
+            <li><a href="courses.html" class="text-muted hover-gold">Courses</a></li>
+            <li><a href="qualification-levels.html" class="text-muted hover-gold">Qualifications</a></li>
+            <li><a href="how-it-works.html" class="text-muted hover-gold">How It Works</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="text-gold font-sans text-uppercase mb-3">Student Pathways</h6>
+          <ul class="list-unstyled small space-y-2">
+            <li><a href="university-progression.html" class="text-gold">University Progression</a></li>
+            <li><a href="assessment.html" class="text-muted hover-gold">Assessment Process</a></li>
+            <li><a href="entry-requirements.html" class="text-muted hover-gold">Entry Requirements</a></li>
+            <li><a href="student-experience.html" class="text-muted hover-gold">Student Experience</a></li>
+            <li><a href="hubs.html" class="text-muted hover-gold">BOA Hubs</a></li>
+            <li><a href="finance.html" class="text-muted hover-gold">Finance & Plans</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="text-gold font-sans text-uppercase mb-3">Legal & Governance</h6>
+          <ul class="list-unstyled small space-y-2">
+            <li><a href="terms.html" class="text-muted hover-gold">Terms & Conditions</a></li>
+            <li><a href="privacy.html" class="text-muted hover-gold">Privacy Policy</a></li>
+            <li><a href="contact.html" class="text-muted hover-gold">Contact Admissions</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-muted">
+        <p class="mb-0">&copy; 2026 British Online Academy (BOA). All rights reserved.</p>
+        <p class="mb-0 mt-2 mt-md-0">Ofqual Regulated Qualifications | FCA Firm Ref 687515</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about British Online Academy (BOA), our credentials, Quality Monitoring Board, top-up degree routes, student hubs, blogs, and finance options.">
+  <title>About Us | British Online Academy (BOA)</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-4">
+        <span><i class="bi bi-geo-alt text-gold me-1"></i> Coventry & London, United Kingdom</span>
+        <span class="d-none d-md-inline"><i class="bi bi-patch-check-fill text-gold me-1"></i> Approved Ofqual Centre</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="contact.html"><i class="bi bi-telephone text-gold me-1"></i> +44 (0) 20 7946 0980</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-boa" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <img src="assets/logos/logo.png" alt="British Online Academy Logo" class="brand-logo-img">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end offcanvas-boa" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom border-secondary">
+          <img src="assets/logos/logo.png" alt="British Online Academy Logo" style="height: 38px; background: white; padding: 2px 6px; border-radius: 4px;">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            
+            <!-- About Us Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="#who-we-are"><i class="bi bi-info-circle me-2 text-gold"></i>Who We Are</a></li>
+                <li><a class="dropdown-item" href="#credentials"><i class="bi bi-shield-check me-2 text-gold"></i>Our Credentials</a></li>
+                <li><a class="dropdown-item" href="university-progression.html"><i class="bi bi-mortarboard me-2 text-gold"></i>Top Up Degrees</a></li>
+                <li><a class="dropdown-item" href="hubs.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i>Our Hubs</a></li>
+                <li><a class="dropdown-item" href="blogs.html"><i class="bi bi-journal-text me-2 text-gold"></i>Blogs</a></li>
+                <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
+              </ul>
+            </li>
+
+            <!-- Courses Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                <li><h6 class="dropdown-header">Popular Courses</h6></li>
+                <li><a class="dropdown-item" href="courses.html#level3-business"><i class="bi bi-briefcase me-2 text-gold"></i>Level 3 – Business Management</a></li>
+                <li><a class="dropdown-item" href="courses.html#level45-business"><i class="bi bi-diagram-3 me-2 text-gold"></i>Level 4/5 – Business Management</a></li>
+                <li><a class="dropdown-item" href="courses.html#level45-health"><i class="bi bi-heart-pulse me-2 text-gold"></i>Level 4/5 – Health & Social Care</a></li>
+                <li><a class="dropdown-item" href="courses.html#level45-it"><i class="bi bi-laptop me-2 text-gold"></i>Level 4/5 – IT and Computing</a></li>
+                <li><a class="dropdown-item" href="courses.html#level7-strategic"><i class="bi bi-award me-2 text-gold"></i>Level 7 – Strategic Management</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="courses.html"><i class="bi bi-collection me-2 text-gold"></i>View All Courses</a></li>
+              </ul>
+            </li>
+
+            <!-- Individuals Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="individuals.html" id="individualsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Individuals
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="individualsDropdown">
+                <li><a class="dropdown-item" href="how-it-works.html"><i class="bi bi-compass me-2 text-gold"></i>How Will You Learn</a></li>
+                <li><a class="dropdown-item" href="university-progression.html"><i class="bi bi-mortarboard me-2 text-gold"></i>Top Up Degrees</a></li>
+                <li><a class="dropdown-item" href="hubs.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i>Our Hubs</a></li>
+                <li><a class="dropdown-item" href="blogs.html"><i class="bi bi-journal-text me-2 text-gold"></i>Blogs</a></li>
+                <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="qualification-levels.html">Qualifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="university-progression.html">Progression</a></li>
+            <li class="nav-item"><a class="nav-link" href="student-experience.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html#apply" class="btn btn-boa-gold">ENROL NOW <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner text-center">
+    <div class="container">
+      <span class="eyebrow text-gold">ABOUT US</span>
+      <h1 class="page-title font-serif">WHO WE ARE</h1>
+      <p class="lead text-white-80 max-width-600 mx-auto">Affordable study programmes with exclusive online modules fast tracking learners to a university qualification.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT US QUICK NAVIGATION BAR -->
+  <section class="py-3 bg-light border-bottom">
+    <div class="container">
+      <div class="row text-center g-2 justify-content-center">
+        <div class="col-6 col-md-2">
+          <a href="#who-we-are" class="btn btn-sm btn-boa-navy w-100"><i class="bi bi-info-circle me-1"></i> Who We Are</a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="#credentials" class="btn btn-sm btn-boa-navy w-100"><i class="bi bi-shield-check me-1"></i> Credentials</a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="university-progression.html" class="btn btn-sm btn-boa-outline-navy w-100"><i class="bi bi-mortarboard me-1"></i> Top Up Degrees</a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="hubs.html" class="btn btn-sm btn-boa-outline-navy w-100"><i class="bi bi-grid-3x3-gap me-1"></i> Our Hubs</a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="blogs.html" class="btn btn-sm btn-boa-outline-navy w-100"><i class="bi bi-journal-text me-1"></i> Blogs</a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="finance.html" class="btn btn-sm btn-boa-outline-navy w-100"><i class="bi bi-cash-coin me-1"></i> Finance</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT CONTENT SECTION (WHO WE ARE) -->
+  <section class="py-5 bg-white" id="who-we-are">
+    <div class="container py-4">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <span class="eyebrow eyebrow-navy">WHO WE ARE</span>
+          <h2 class="font-serif display-6 mb-3">Why Choose British Online Academy?</h2>
+          <div class="gold-divider"></div>
+          <p class="lead text-dark font-weight-medium">
+            Whether you are looking to enhance your skills, improve your team or pursue a professional education, the British Online Academy’s learning pathways can provide you with all you need.
+          </p>
+          <p>
+            The British Online Academy delivers online university pathway programmes with full Undergraduate and postgraduate diploma awards to learners from all corners of the world. Learners can fast track their way through to a UK university qualification on campus or by distance learning.
+          </p>
+          <p>
+            Our web based modules allow students to learn what they want, when they want and how they want and have been designed to facilitate a much faster, more affordable and engaging way to learn. With a 24/7 student networking platform, personal dashboards, 1-2-1 online tutorials, group webinars and bank of pre-recorded group webcasts, the British Online Academy provides students with all the support that they need to succeed.
+          </p>
+        </div>
+
+        <div class="col-lg-6 ps-lg-5">
+          <div class="intro-image-card">
+            <img src="assets/images/global_learning.jpg" alt="BOA Global Campus" class="img-fluid rounded-4 shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY ABOUT US CORE SERVICES GRID -->
+  <section class="py-5 bg-light">
+    <div class="container py-2">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge badge-boa-gold mb-2">INSTITUTION OVERVIEW</span>
+        <h2 class="font-serif text-boa-navy mb-3">Our Academic Ecosystem</h2>
+        <p class="text-muted">Explore how British Online Academy structures qualifications, student support, educational insights, and financial options for individual learners.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Top Up Degrees -->
+        <div class="col-md-6 col-lg-3">
+          <div class="boa-card h-100 p-4 bg-white border-top-accent text-center d-flex flex-column">
+            <div class="rounded-circle bg-boa-navy text-gold p-3 fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <h3 class="h5 font-serif text-boa-navy mb-2">Top Up Degrees</h3>
+            <p class="text-muted small mb-4">Earn Ofqual credits to enter the final year BA (Hons) or MBA dissertation stage at UK partner universities.</p>
+            <a href="university-progression.html" class="btn btn-outline-boa-navy btn-sm mt-auto">View Top Up Routes</a>
+          </div>
+        </div>
+
+        <!-- Our Hubs -->
+        <div class="col-md-6 col-lg-3">
+          <div class="boa-card h-100 p-4 bg-white border-top-accent text-center d-flex flex-column">
+            <div class="rounded-circle bg-boa-navy text-gold p-3 fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+              <i class="bi bi-grid-3x3-gap-fill"></i>
+            </div>
+            <h3 class="h5 font-serif text-boa-navy mb-2">Our Hubs</h3>
+            <p class="text-muted small mb-4">7 specialized student hubs for wellbeing, CV building, academic skills, and confidence development.</p>
+            <a href="hubs.html" class="btn btn-outline-boa-navy btn-sm mt-auto">Explore 7 Hubs</a>
+          </div>
+        </div>
+
+        <!-- Blogs -->
+        <div class="col-md-6 col-lg-3">
+          <div class="boa-card h-100 p-4 bg-white border-top-accent text-center d-flex flex-column">
+            <div class="rounded-circle bg-boa-navy text-gold p-3 fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+              <i class="bi bi-journal-text"></i>
+            </div>
+            <h3 class="h5 font-serif text-boa-navy mb-2">Educational Blogs</h3>
+            <p class="text-muted small mb-4">Stay informed with expert guides on UK degree pathways, accreditation standards, and study tips.</p>
+            <a href="blogs.html" class="btn btn-outline-boa-navy btn-sm mt-auto">Read Insights</a>
+          </div>
+        </div>
+
+        <!-- Finance -->
+        <div class="col-md-6 col-lg-3">
+          <div class="boa-card h-100 p-4 bg-white border-top-accent text-center d-flex flex-column">
+            <div class="rounded-circle bg-boa-navy text-gold p-3 fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+              <i class="bi bi-cash-coin"></i>
+            </div>
+            <h3 class="h5 font-serif text-boa-navy mb-2">Finance & Plans</h3>
+            <p class="text-muted small mb-4">0% interest monthly instalment options and fee payment perks including free laptop delivery.</p>
+            <a href="finance.html" class="btn btn-outline-boa-navy btn-sm mt-auto">View Finance Options</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR TEAM -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <span class="eyebrow">DEDICATED ADVISER SUPPORT</span>
+        <h2 class="font-serif display-6 mb-3">OUR TEAM</h2>
+        <div class="gold-divider center"></div>
+        <p class="lead text-muted">Nothing is more important to us at BOA than for you to choose a course that’s right for you.</p>
+      </div>
+
+      <div class="p-4 bg-light border rounded-3 shadow-sm max-width-800 mx-auto">
+        <p class="mb-0 text-dark">
+          Every member of our adviser team has extensive knowledge of our courses and will advise you on a course that’s right for your future, goals and career prospects. They will guide you through the enrollment process, from helping you choose a course to finding the right finance options. Each member of the team is friendly and dedicated to ensuring you pick the option best for you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY MONITORING BOARD -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <span class="eyebrow eyebrow-navy">ACADEMIC GOVERNANCE</span>
+        <h2 class="font-serif display-6 mb-3">QUALITY MONITORING BOARD (QMB)</h2>
+        <div class="gold-divider center"></div>
+        <p class="lead text-muted">BOA operates a Quality Monitoring Board to ensure we are always delivering accredited online courses and resources to meet your learning needs. This board meets regularly to assess:</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="why-card text-start h-100 bg-white">
+            <div class="why-icon-box"><i class="bi bi-person-check-fill"></i></div>
+            <h4 class="font-serif h5">Specific Student Issues</h4>
+            <p class="small text-muted mb-0">Reviewing individual learner feedback and operational customer service standards.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="why-card text-start h-100 bg-white">
+            <div class="why-icon-box"><i class="bi bi-building-check"></i></div>
+            <h4 class="font-serif h5">University Partner Quality</h4>
+            <p class="why-card-text small text-muted mb-0">Addressing any quality issues or credit recognition criteria for partner universities.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="why-card text-start h-100 bg-white">
+            <div class="why-icon-box"><i class="bi bi-award-fill"></i></div>
+            <h4 class="font-serif h5">Assessment Standards</h4>
+            <p class="why-card-text small text-muted mb-0">Monitoring marking and assessment standards to preserve award integrity.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="why-card text-start h-100 bg-white">
+            <div class="why-icon-box"><i class="bi bi-journal-check"></i></div>
+            <h4 class="font-serif h5">Learning Outcomes Alignment</h4>
+            <p class="why-card-text small text-muted mb-0">Monitoring material content against applicable qualification learning outcomes.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="why-card text-start h-100 bg-white">
+            <div class="why-icon-box"><i class="bi bi-gear-fill"></i></div>
+            <h4 class="font-serif h5">Operational & Customer Service Quality</h4>
+            <p class="why-card-text small text-muted mb-0">Auditing specific operational processes as they affect overall educational delivery.</p>
+          </div>
+        </div>
+      </div>
+      <p class="small text-muted mt-4 text-center">
+        The Board Members include respected academic and business leaders. Outcomes of reviews are shared online to ensure transparency.
+      </p>
+    </div>
+  </section>
+
+  <!-- RECOGNISED PARTNERSHIPS & OFQUAL (OUR CREDENTIALS) -->
+  <section class="py-5 bg-navy text-white" id="credentials">
+    <div class="container py-4">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <span class="eyebrow text-gold">REGULATED QUALIFICATIONS</span>
+          <h2 class="font-serif text-white display-6 mb-3">RECOGNISED PARTNERSHIPS & OFQUAL</h2>
+          <div class="gold-divider"></div>
+          <p class="text-white-80">
+            All learning materials are designed and written by experienced academic authors, with each module aligned to the relevant learning outcomes and assessment criteria of the applicable qualification.
+          </p>
+          <p class="text-white-70 small">
+            The Office of Qualifications and Examinations Regulation (Ofqual) regulates qualifications, examinations and assessments in England. The awarding organizations we work with are recognized and regulated by Ofqual. BOA is an approved Centre for the delivery of nationally regulated qualifications in the UK.
+          </p>
+        </div>
+        <div class="col-lg-6 ps-lg-5">
+          <div class="contact-info-card bg-boa-navy-dark p-4 rounded-3 border border-secondary">
+            <span class="eyebrow text-gold">OUR CREDENTIALS</span>
+            <h3 class="font-serif text-white mb-3">Corporate Registration</h3>
+            <p class="text-white-80 small mb-2">
+              BOA operates to the highest academic standards with multiple structures ensuring quality education.
+            </p>
+            <p class="text-white-70 small mb-0">
+              <strong>Trading Office:</strong> British Online Academy, Shillingwood House, Westwood Way, CV4 8JZ, United Kingdom.<br>
+              <strong>FCA Regulation:</strong> Authorized and regulated by the Financial Conduct Authority (Firm Reference number 687515).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-boa">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="brand-logo mb-3">
+            <img src="assets/logos/logo.png" alt="British Online Academy Logo" class="brand-logo-footer">
+          </div>
+          <p class="text-white-80 mb-3" style="font-size: 0.95rem; font-weight: 600;">“Learn Today for a Brighter Tomorrow.”</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="qualification-levels.html">Qualifications</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Individual Pathways</h4>
+          <ul class="footer-links">
+            <li><a href="university-progression.html">Top Up Degrees</a></li>
+            <li><a href="hubs.html">Our Hubs</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="finance.html">Finance</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="mb-0">&copy; 2026 British Online Academy Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
