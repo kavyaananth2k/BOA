@@ -114,17 +114,56 @@ img {
   color: var(--boa-navy-primary) !important;
 }
 
-.bg-navy {
+.bg-navy,
+.bg-boa-navy {
   background-color: var(--boa-navy-primary) !important;
 }
 
-.bg-navy-dark {
+.bg-navy-dark,
+.bg-boa-navy-dark {
   background-color: var(--boa-navy-dark) !important;
 }
 
-.bg-light-bg {
-  background-color: var(--boa-light-bg) !important;
+.bg-boa-gold {
+  background-color: var(--boa-gold) !important;
+  color: var(--boa-navy-dark) !important;
 }
+
+.badge-boa-gold {
+  background: var(--boa-gold-gradient) !important;
+  color: var(--boa-navy-dark) !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+  display: inline-block;
+}
+
+.boa-card {
+  background: var(--boa-white);
+  border: 1px solid var(--boa-grey-200);
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.boa-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--boa-gold);
+}
+
+.border-top-accent {
+  border-top: 4px solid var(--boa-gold) !important;
+}
+
+.max-w-350 { max-width: 350px; }
+.max-w-600 { max-width: 600px; }
+.max-w-700 { max-width: 700px; }
+.max-w-800 { max-width: 800px; }
+.max-w-900 { max-width: 900px; }
 
 .eyebrow {
   display: inline-block;
