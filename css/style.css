@@ -8,17 +8,19 @@
 
 /* 2. DESIGN TOKENS / CSS VARIABLES */
 :root {
-  /* Primary Brand Palette */
+  /* Primary Brand Palette (Exact Match to BOA UK Academic Logo) */
   --boa-navy-primary: #071B35;
-  --boa-navy-dark: #041224;
-  --boa-navy-secondary: #123E73;
-  --boa-blue-bright: #185294;
+  --boa-navy-dark: #030D1B;
+  --boa-navy-secondary: #0E2E57;
+  --boa-blue-bright: #154D8A;
   
-  /* Gold Accents & Highlights */
-  --boa-gold: #C9A227;
-  --boa-gold-light: #E5C158;
-  --boa-gold-dark: #A4811B;
-  --boa-gold-glow: rgba(201, 162, 39, 0.22);
+  /* Gold Accents & Metallic Gradients */
+  --boa-gold: #D4AF37;
+  --boa-gold-light: #F5D77F;
+  --boa-gold-dark: #9A7712;
+  --boa-gold-glow: rgba(212, 175, 55, 0.30);
+  --boa-gold-gradient: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #9A7712 100%);
+  --boa-navy-gradient: linear-gradient(135deg, #030D1B 0%, #071B35 60%, #0E2E57 100%);
   
   /* Union Crimson Red Touch */
   --boa-red: #C8102E;
@@ -26,23 +28,23 @@
   
   /* Neutral Palette */
   --boa-white: #FFFFFF;
-  --boa-light-bg: #F5F7FA;
-  --boa-grey-100: #EEF2F6;
+  --boa-light-bg: #F8FAFC;
+  --boa-grey-100: #F1F5F9;
   --boa-grey-200: #E2E8F0;
   --boa-grey-300: #CBD5E1;
   --boa-grey-600: #64748B;
-  --boa-dark-text: #172033;
+  --boa-dark-text: #0F172A;
   --boa-muted-text: #475569;
 
   /* Typography */
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 
-  /* Elevations & Shadows */
-  --shadow-sm: 0 2px 8px rgba(7, 27, 53, 0.04);
-  --shadow-md: 0 8px 24px rgba(7, 27, 53, 0.08);
-  --shadow-lg: 0 16px 40px rgba(7, 27, 53, 0.12);
-  --shadow-gold: 0 8px 25px rgba(201, 162, 39, 0.25);
+  /* Elevations & Glassmorphism Shadows */
+  --shadow-sm: 0 2px 10px rgba(7, 27, 53, 0.05);
+  --shadow-md: 0 8px 24px rgba(7, 27, 53, 0.09);
+  --shadow-lg: 0 16px 40px rgba(7, 27, 53, 0.14);
+  --shadow-gold: 0 8px 25px rgba(212, 175, 55, 0.35);
 
   /* Transitions */
   --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -50,9 +52,9 @@
   --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   /* Border Radii */
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
   --radius-pill: 50px;
 }
 
@@ -281,17 +283,20 @@ img {
 }
 
 .brand-logo-img {
-  height: 46px;
+  height: 48px;
   width: auto;
   background: #ffffff;
-  padding: 4px 10px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: var(--transition-fast);
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25), 0 0 10px rgba(212, 175, 55, 0.15);
+  transition: var(--transition-normal);
 }
 
 .brand-logo-img:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  border-color: var(--boa-gold);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
 }
 
 .brand-logo-footer {
@@ -300,8 +305,15 @@ img {
   background: #ffffff;
   padding: 6px 14px;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
   display: inline-block;
+  transition: var(--transition-normal);
+}
+
+.brand-logo-footer:hover {
+  transform: scale(1.02);
+  border-color: var(--boa-gold);
 }
 
 .navbar-boa .nav-link {
