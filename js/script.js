@@ -203,7 +203,7 @@ function initBackToTop() {
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
-      btn.style.display = 'block';
+      btn.style.display = 'flex';
     } else {
       btn.style.display = 'none';
     }

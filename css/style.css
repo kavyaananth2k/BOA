@@ -8,23 +8,27 @@
 
 /* 2. DESIGN TOKENS / CSS VARIABLES */
 :root {
-  /* Primary Brand Palette (Exact Match to BOA UK Academic Logo) */
+  /* Primary Brand Palette (White, Blue, and Red - Match to BOA UK Academic Logo) */
   --boa-navy-primary: #071B35;
   --boa-navy-dark: #030D1B;
   --boa-navy-secondary: #0E2E57;
-  --boa-blue-bright: #154D8A;
+  --boa-blue-bright: #1D4ED8;
+  --boa-blue-accent: #2563EB;
   
-  /* Gold Accents & Metallic Gradients */
-  --boa-gold: #D4AF37;
-  --boa-gold-light: #F5D77F;
-  --boa-gold-dark: #9A7712;
-  --boa-gold-glow: rgba(212, 175, 55, 0.30);
-  --boa-gold-gradient: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #9A7712 100%);
-  --boa-navy-gradient: linear-gradient(135deg, #030D1B 0%, #071B35 60%, #0E2E57 100%);
-  
-  /* Union Crimson Red Touch */
+  /* Brand Red Accents (White, Blue & Red Union Palette) */
   --boa-red: #C8102E;
   --boa-red-light: #E21B3C;
+  --boa-red-dark: #9B0A21;
+  --boa-red-glow: rgba(200, 16, 46, 0.30);
+  --boa-red-gradient: linear-gradient(135deg, #E21B3C 0%, #C8102E 50%, #9B0A21 100%);
+  
+  /* Primary Accent Highlight (Mapped to Union Crimson Red & Crisp White to replace old yellow/gold) */
+  --boa-gold: #E21B3C;
+  --boa-gold-light: #FF4D6D;
+  --boa-gold-dark: #C8102E;
+  --boa-gold-glow: rgba(226, 27, 60, 0.30);
+  --boa-gold-gradient: linear-gradient(135deg, #FF4D6D 0%, #E21B3C 50%, #C8102E 100%);
+  --boa-navy-gradient: linear-gradient(135deg, #030D1B 0%, #071B35 60%, #0E2E57 100%);
   
   /* Neutral Palette */
   --boa-white: #FFFFFF;
@@ -44,7 +48,7 @@
   --shadow-sm: 0 2px 10px rgba(7, 27, 53, 0.05);
   --shadow-md: 0 8px 24px rgba(7, 27, 53, 0.09);
   --shadow-lg: 0 16px 40px rgba(7, 27, 53, 0.14);
-  --shadow-gold: 0 8px 25px rgba(212, 175, 55, 0.35);
+  --shadow-gold: 0 8px 25px rgba(226, 27, 60, 0.35);
 
   /* Transitions */
   --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -127,7 +131,7 @@ img {
 
 .bg-boa-gold {
   background-color: var(--boa-gold) !important;
-  color: var(--boa-navy-dark) !important;
+  color: var(--boa-white) !important;
 }
 
 .alert-boa-info {
@@ -205,27 +209,28 @@ img {
 }
 
 .gold-divider {
-  width: 60px;
+  width: 48px;
   height: 3px;
-  background: var(--boa-gold);
-  margin: 1.25rem 0;
-  border-radius: 2px;
+  background: linear-gradient(90deg, var(--boa-red) 0%, var(--boa-blue-accent) 100%);
+  margin: 0.75rem 0 1.25rem;
+  border-radius: 99px;
+  opacity: 0.85;
 }
 
 .gold-divider.center {
-  margin: 1.25rem auto;
+  margin: 0.75rem auto 1.25rem;
 }
 
 /* 5. BUTTONS & INTERACTIVE ELEMENTS */
 .btn-boa-gold {
-  background: linear-gradient(135deg, var(--boa-gold) 0%, var(--boa-gold-dark) 100%);
-  color: var(--boa-navy-dark) !important;
+  background: linear-gradient(135deg, var(--boa-red-light) 0%, var(--boa-red) 100%);
+  color: var(--boa-white) !important;
   font-weight: 700;
   font-size: 0.925rem;
   padding: 0.75rem 1.75rem;
   border-radius: var(--radius-sm);
   border: none;
-  box-shadow: 0 4px 15px rgba(201, 162, 39, 0.25);
+  box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
   transition: var(--transition-normal);
   display: inline-flex;
   align-items: center;
@@ -235,10 +240,10 @@ img {
 }
 
 .btn-boa-gold:hover {
-  background: linear-gradient(135deg, var(--boa-gold-light) 0%, var(--boa-gold) 100%);
+  background: linear-gradient(135deg, var(--boa-red) 0%, var(--boa-red-dark) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(201, 162, 39, 0.4);
-  color: var(--boa-navy-dark) !important;
+  box-shadow: 0 8px 25px rgba(200, 16, 46, 0.45);
+  color: var(--boa-white) !important;
 }
 
 .btn-boa-navy {
@@ -259,7 +264,7 @@ img {
 
 .btn-boa-navy:hover {
   background: var(--boa-navy-secondary);
-  border-color: var(--boa-gold);
+  border-color: var(--boa-red);
   color: var(--boa-white) !important;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -267,12 +272,12 @@ img {
 
 .btn-boa-outline-gold {
   background: transparent;
-  color: var(--boa-gold) !important;
+  color: var(--boa-white) !important;
   font-weight: 600;
   font-size: 0.925rem;
   padding: 0.75rem 1.75rem;
   border-radius: var(--radius-sm);
-  border: 2px solid var(--boa-gold);
+  border: 2px solid var(--boa-red-light);
   transition: var(--transition-normal);
   display: inline-flex;
   align-items: center;
@@ -282,10 +287,10 @@ img {
 }
 
 .btn-boa-outline-gold:hover {
-  background: var(--boa-gold);
-  color: var(--boa-navy-dark) !important;
+  background: var(--boa-red);
+  color: var(--boa-white) !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(201, 162, 39, 0.3);
+  box-shadow: 0 6px 20px rgba(200, 16, 46, 0.35);
 }
 
 .btn-boa-outline-navy,
@@ -387,21 +392,35 @@ img {
   padding: 0.5rem 0;
 }
 
+.navbar-boa .navbar-brand,
+.brand-logo {
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  min-width: max-content !important;
+  margin-right: 1.5rem !important;
+  z-index: 1050 !important;
+}
+
 .brand-logo-img {
-  height: 48px;
-  width: auto;
-  background: #ffffff;
-  padding: 5px 12px;
-  border-radius: 8px;
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25), 0 0 10px rgba(212, 175, 55, 0.15);
-  transition: var(--transition-normal);
+  height: 44px !important;
+  width: auto !important;
+  max-width: none !important;
+  background: #ffffff !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(226, 27, 60, 0.4) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25), 0 0 10px rgba(226, 27, 60, 0.2) !important;
+  transition: var(--transition-normal) !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .brand-logo-img:hover {
   transform: scale(1.03);
-  border-color: var(--boa-gold);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+  border-color: var(--boa-red);
+  box-shadow: 0 6px 20px rgba(226, 27, 60, 0.4);
 }
 
 .brand-logo-footer {
@@ -410,7 +429,7 @@ img {
   background: #ffffff;
   padding: 6px 14px;
   border-radius: 8px;
-  border: 1px solid rgba(212, 175, 55, 0.5);
+  border: 1px solid rgba(226, 27, 60, 0.5);
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
   display: inline-block;
   transition: var(--transition-normal);
@@ -418,25 +437,28 @@ img {
 
 .brand-logo-footer:hover {
   transform: scale(1.02);
-  border-color: var(--boa-gold);
+  border-color: var(--boa-red);
 }
 
 .navbar-boa .nav-link {
   color: rgba(255, 255, 255, 0.9) !important;
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.5rem 0.65rem !important;
-  transition: var(--transition-fast);
-  position: relative;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
+  font-size: 0.825rem !important;
+  font-weight: 600 !important;
+  padding: 0.45rem 0.5rem !important;
+  transition: var(--transition-fast) !important;
+  position: relative !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.3px !important;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
 }
 
 .navbar-boa .nav-link:hover,
 .navbar-boa .nav-link.active {
   color: var(--boa-gold) !important;
   font-weight: 600;
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  text-shadow: 0 0 10px rgba(226, 27, 60, 0.4);
 }
 
 .navbar-boa .nav-link::after {
@@ -460,7 +482,7 @@ img {
 /* BOA Dropdown Menu Styling */
 .navbar-boa .dropdown-menu {
   background-color: var(--boa-navy-dark);
-  border: 1px solid rgba(201, 162, 39, 0.3);
+  border: 1px solid rgba(200, 16, 46, 0.35);
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   padding: 0.5rem 0;
@@ -477,12 +499,12 @@ img {
 
 .navbar-boa .dropdown-item:hover,
 .navbar-boa .dropdown-item:focus {
-  background-color: rgba(201, 162, 39, 0.15);
-  color: var(--boa-gold);
+  background-color: rgba(200, 16, 46, 0.18);
+  color: var(--boa-red-light);
 }
 
 .navbar-boa .dropdown-header {
-  color: var(--boa-gold);
+  color: var(--boa-red-light);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -516,7 +538,7 @@ img {
 /* BOA Custom Nav Pills & Category Tabs */
 .nav-pills {
   --bs-nav-pills-link-active-bg: var(--boa-navy-primary);
-  --bs-nav-pills-link-active-color: var(--boa-gold);
+  --bs-nav-pills-link-active-color: var(--boa-white);
 }
 
 .nav-pills .nav-link {
@@ -533,18 +555,18 @@ img {
 
 .nav-pills .nav-link:hover {
   color: var(--boa-navy-dark) !important;
-  border-color: var(--boa-gold) !important;
-  background-color: rgba(212, 175, 55, 0.1) !important;
+  border-color: var(--boa-red) !important;
+  background-color: rgba(200, 16, 46, 0.08) !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.18);
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: var(--boa-gold) !important;
-  background: linear-gradient(135deg, var(--boa-navy-primary) 0%, var(--boa-navy-dark) 100%) !important;
-  border: 2px solid var(--boa-gold) !important;
-  box-shadow: 0 4px 18px rgba(7, 27, 53, 0.35) !important;
+  color: var(--boa-white) !important;
+  background: linear-gradient(135deg, var(--boa-red) 0%, var(--boa-red-dark) 100%) !important;
+  border: 2px solid var(--boa-red) !important;
+  box-shadow: 0 4px 18px rgba(200, 16, 46, 0.35) !important;
   transform: translateY(-2px);
 }
 
@@ -552,7 +574,7 @@ img {
 .offcanvas-boa {
   background-color: var(--boa-navy-dark);
   color: var(--boa-white);
-  border-left: 3px solid var(--boa-gold);
+  border-left: 3px solid var(--boa-red);
 }
 
 /* 7. HERO SECTION */
@@ -571,7 +593,7 @@ img {
   right: -10%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(201, 162, 39, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(200, 16, 46, 0.15) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -610,7 +632,7 @@ img {
 }
 
 .hero-badge i {
-  color: var(--boa-gold);
+  color: var(--boa-red-light);
   font-size: 1rem;
 }
 
@@ -625,7 +647,7 @@ img {
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(201, 162, 39, 0.35);
+  border: 2px solid rgba(200, 16, 46, 0.4);
 }
 
 .floating-card {
@@ -633,7 +655,7 @@ img {
   background: rgba(7, 27, 53, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(201, 162, 39, 0.45);
+  border: 1.5px solid rgba(200, 16, 46, 0.45);
   border-radius: var(--radius-md);
   padding: 0.75rem 1.25rem;
   display: flex;
@@ -652,8 +674,8 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(201, 162, 39, 0.2);
-  color: var(--boa-gold);
+  background: rgba(200, 16, 46, 0.25);
+  color: var(--boa-red-light);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -669,7 +691,7 @@ img {
 
 .floating-text-sub {
   font-size: 0.725rem;
-  color: var(--boa-gold);
+  color: var(--boa-red-light);
   margin: 0;
 }
 
@@ -722,17 +744,6 @@ img {
   position: relative;
 }
 
-.process-step-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 40px;
-  left: 8%;
-  right: 8%;
-  height: 2px;
-  background: var(--boa-grey-300);
-  z-index: 0;
-}
-
 .step-card {
   position: relative;
   z-index: 1;
@@ -740,12 +751,31 @@ img {
   padding: 0 0.5rem;
 }
 
+@media (min-width: 992px) {
+  /* Connecting line strictly between adjacent circles (no orphan lines on left or right ends) */
+  .process-step-wrapper::before {
+    display: none !important;
+  }
+
+  .step-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 37.5px;
+    left: 50%;
+    width: 100%;
+    height: 0;
+    border-top: 2px dashed rgba(7, 27, 53, 0.28);
+    z-index: 0;
+    pointer-events: none;
+  }
+}
+
 .step-number {
   width: 75px;
   height: 75px;
   margin: 0 auto 1.25rem;
   border-radius: 50%;
-  background: var(--boa-white);
+  background: var(--boa-white) !important;
   border: 3px solid var(--boa-navy-primary);
   display: flex;
   align-items: center;
@@ -754,7 +784,9 @@ img {
   font-size: 1.4rem;
   font-weight: 800;
   color: var(--boa-navy-primary);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 15px rgba(7, 27, 53, 0.12);
+  position: relative;
+  z-index: 2;
   transition: var(--transition-bounce);
 }
 
@@ -770,10 +802,10 @@ img {
   background: var(--boa-white);
   border: 1px solid var(--boa-grey-200);
   border-radius: var(--radius-md);
-  padding: 2rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  padding: 1.75rem 1.5rem;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
   transition: var(--transition-normal);
   position: relative;
   overflow: hidden;
@@ -793,11 +825,77 @@ img {
 .programme-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--boa-gold);
+  border-color: var(--boa-red);
 }
 
 .programme-card:hover::before {
-  background: var(--boa-gold);
+  background: var(--boa-red);
+}
+
+.programme-icon-wrap,
+.why-icon-box {
+  width: 52px !important;
+  height: 52px !important;
+  min-width: 52px !important;
+  min-height: 52px !important;
+  border-radius: 50% !important;
+  background: rgba(7, 27, 53, 0.06) !important;
+  border: 1px solid rgba(7, 27, 53, 0.12) !important;
+  color: var(--boa-navy-primary) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.35rem !important;
+  margin: 0 0 1.25rem 0 !important;
+  transition: var(--transition-normal) !important;
+  flex-shrink: 0 !important;
+}
+
+.programme-card:hover .programme-icon-wrap,
+.programme-card:hover .why-icon-box {
+  background: var(--boa-navy-primary) !important;
+  color: var(--boa-white) !important;
+  border-color: var(--boa-navy-primary) !important;
+}
+
+.programme-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--boa-navy-primary);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.2px;
+  min-height: 2.8rem !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+}
+
+.programme-desc {
+  font-size: 0.9rem;
+  color: var(--boa-muted-text);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex: 1 1 auto !important;
+}
+
+.programme-meta {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--boa-navy-secondary);
+  background: var(--boa-light-bg);
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-top: auto !important;
+  margin-bottom: 1rem !important;
+  align-self: flex-start !important;
+}
+
+.programme-card .btn,
+.programme-card a.btn {
+  margin-top: 0 !important;
+  width: 100% !important;
 }
 
 /* 11. QUALIFICATION PATHWAY CARDS */
@@ -945,4 +1043,41 @@ img {
 @media (max-width: 767.98px) {
   .top-bar { display: none; }
   .hero-heading { font-size: 2.1rem; }
+}
+
+/* 16. BACK TO TOP BUTTON STYLING */
+#backToTopBtn {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 85px !important;
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, var(--boa-red-light) 0%, var(--boa-red) 100%) !important;
+  color: var(--boa-white) !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 0 8px 25px rgba(200, 16, 46, 0.45) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 1050 !important;
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  padding: 0 !important;
+  font-size: 1.15rem !important;
+}
+
+#backToTopBtn:hover {
+  transform: translateY(-4px) scale(1.08) !important;
+  background: linear-gradient(135deg, var(--boa-red) 0%, var(--boa-red-dark) 100%) !important;
+  box-shadow: 0 12px 30px rgba(200, 16, 46, 0.65) !important;
+  color: var(--boa-white) !important;
+}
+
+@media (max-width: 767.98px) {
+  #backToTopBtn {
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 42px !important;
+    height: 42px !important;
+  }
 }

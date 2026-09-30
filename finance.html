@@ -3,34 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finance & Payment Options | British Online Academy (BOA)</title>
-  <meta name="description" content="Explore simple, flexible payment options and interest-free instalment plans at British Online Academy. Affordable Ofqual-regulated UK diploma programmes.">
-  <meta name="keywords" content="BOA course fees, interest free payment plans online degree, UK diploma payment options, British Online Academy finance">
+  <meta name="description" content="Study flexible online diploma programmes with British Online Academy and progress towards recognised UK university qualifications through available top-up pathways.">
+  <meta name="keywords" content="British Online Academy, BOA, Ofqual Regulated, UK Top Up Degree, Online MBA, Business Management, Hotel Hospitality, Computing, Law Diploma">
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/logos/logo.png">
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Tuition Fees & Finance Options | British Online Academy">
+  <meta property="og:description" content="Affordable online university pathway programmes with full Undergraduate and Postgraduate diplomas. Learn today for a brighter tomorrow.">
+  <meta property="og:type" content="website">
   
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
-  
-  <!-- Bootstrap 5 CSS & Icons -->
+  <title>Tuition Fees & Finance Options | British Online Academy</title>
+
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  
-  <!-- Custom CSS -->
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom Master Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- TOP ANNOUNCEMENT BAR -->
-  <div class="bg-boa-navy-dark text-white py-2 small border-bottom border-secondary">
+    <!-- TOP INFORMATION BAR -->
+  <div class="top-bar">
     <div class="container d-flex justify-content-between align-items-center">
-      <div>
-        <i class="bi bi-mortarboard-fill text-gold me-2"></i>
-        <span>Admissions Open for 2026/2027 Academic Year</span>
-        <span class="d-none d-md-inline ms-3"><i class="bi bi-patch-check-fill text-gold me-1"></i> Ofqual RQF Regulated Qualifications</span>
+      <div class="d-flex align-items-center gap-4">
+        <span><i class="bi bi-geo-alt text-gold me-1"></i> Coventry & London, United Kingdom</span>
+        <span class="d-none d-md-inline"><i class="bi bi-patch-check-fill text-gold me-1"></i> Ofqual RQF Regulated Qualifications</span>
       </div>
       <div class="d-flex align-items-center gap-3">
         <a href="contact.html"><i class="bi bi-telephone text-gold me-1"></i> +44 (0) 20 7946 0980</a>
@@ -44,7 +40,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark navbar-boa" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand brand-logo" href="index.html">
-        <img src="assets/logos/logo.png" alt="British Online Academy Logo" class="brand-logo-img">
+        <img src="assets/logos/logo.png" onerror="this.onerror=null; this.src='images/logo.png';" alt="British Online Academy Logo" class="brand-logo-img">
       </a>
 
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -53,19 +49,17 @@
 
       <div class="offcanvas offcanvas-end offcanvas-boa" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header border-bottom border-secondary">
-          <img src="assets/logos/logo.png" alt="British Online Academy Logo" style="height: 38px; background: white; padding: 2px 6px; border-radius: 4px;">
+          <img src="assets/logos/logo.png" onerror="this.onerror=null; this.src='images/logo.png';" alt="British Online Academy Logo" style="height: 38px; background: white; padding: 2px 6px; border-radius: 4px;">
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav mx-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            
-            <!-- About Us Direct Link -->
-            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
 
             <!-- Courses Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle " href="courses.html" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Courses
               </a>
               <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
@@ -80,28 +74,27 @@
               </ul>
             </li>
 
-            <!-- Individuals Dropdown -->
+            <li class="nav-item"><a class="nav-link " href="qualification-levels.html">Qualifications</a></li>
+            <li class="nav-item"><a class="nav-link " href="university-progression.html">Progression</a></li>
+
+            <!-- Student Hub Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="individuals.html" id="individualsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Individuals
+              <a class="nav-link dropdown-toggle active" href="how-it-works.html" id="studentHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Student Hub
               </a>
-              <ul class="dropdown-menu" aria-labelledby="individualsDropdown">
-                <li><a class="dropdown-item" href="how-it-works.html"><i class="bi bi-compass me-2 text-gold"></i>How Will You Learn</a></li>
-                <li><a class="dropdown-item" href="university-progression.html"><i class="bi bi-mortarboard me-2 text-gold"></i>Top Up Degrees</a></li>
+              <ul class="dropdown-menu" aria-labelledby="studentHubDropdown">
+                <li><a class="dropdown-item" href="how-it-works.html"><i class="bi bi-compass me-2 text-gold"></i>How It Works</a></li>
+                <li><a class="dropdown-item" href="student-experience.html"><i class="bi bi-stars me-2 text-gold"></i>Student Experience</a></li>
                 <li><a class="dropdown-item" href="hubs.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i>Our Hubs</a></li>
                 <li><a class="dropdown-item" href="blogs.html"><i class="bi bi-journal-text me-2 text-gold"></i>Blogs</a></li>
                 <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
               </ul>
             </li>
 
-            <li class="nav-item"><a class="nav-link" href="qualification-levels.html">Qualifications</a></li>
-            <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
-            <li class="nav-item"><a class="nav-link" href="university-progression.html">Progression</a></li>
-            <li class="nav-item"><a class="nav-link" href="student-experience.html">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
           </ul>
           <div class="d-flex align-items-center mt-3 mt-lg-0">
-            <a href="contact.html#apply" class="btn btn-boa-gold">ENROL NOW <i class="bi bi-arrow-right-short"></i></a>
+            <a href="contact.html#apply" class="btn btn-boa-red btn-sm px-3 fw-bold">ENROL NOW <i class="bi bi-arrow-right-short"></i></a>
           </div>
         </div>
       </div>
@@ -226,54 +219,61 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-boa-navy-dark text-white pt-5 pb-3 border-top border-secondary">
+        <!-- FOOTER -->
+  <footer class="footer-boa">
     <div class="container">
-      <div class="row g-4 mb-4">
-        <div class="col-lg-4">
-          <img src="assets/logos/logo.png" alt="British Online Academy" style="height: 48px; background: white; padding: 4px 8px; border-radius: 4px;" class="mb-3">
-          <p class="text-muted small">British Online Academy provides flexible, Ofqual-regulated higher education diploma pathways, enabling learners worldwide to progress towards recognized UK university degrees.</p>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="brand-logo mb-3">
+            <img src="assets/logos/logo.png" onerror="this.onerror=null; this.src='images/logo.png';" alt="British Online Academy Logo" class="brand-logo-footer">
+          </div>
+          <p class="text-white-80 mb-3" style="font-size: 0.95rem; font-weight: 600;">“Learn Today for a Brighter Tomorrow.”</p>
+          <p class="small text-white-50">Trading Office: British Online Academy, Shillingwood House, Westwood Way, Coventry, CV4 8JZ, UK. Authorized & regulated by FCA (Firm Reference: 687515).</p>
         </div>
-        <div class="col-6 col-lg-2">
-          <h6 class="text-gold font-sans text-uppercase mb-3">Explore</h6>
-          <ul class="list-unstyled small space-y-2">
-            <li><a href="index.html" class="text-muted hover-gold">Home</a></li>
-            <li><a href="about.html" class="text-muted hover-gold">About BOA</a></li>
-            <li><a href="courses.html" class="text-muted hover-gold">Courses</a></li>
-            <li><a href="qualification-levels.html" class="text-muted hover-gold">Qualifications</a></li>
-            <li><a href="how-it-works.html" class="text-muted hover-gold">How It Works</a></li>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="qualification-levels.html">Qualifications</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
           </ul>
         </div>
-        <div class="col-6 col-lg-3">
-          <h6 class="text-gold font-sans text-uppercase mb-3">Student Pathways</h6>
-          <ul class="list-unstyled small space-y-2">
-            <li><a href="university-progression.html" class="text-muted hover-gold">University Progression</a></li>
-            <li><a href="assessment.html" class="text-muted hover-gold">Assessment Process</a></li>
-            <li><a href="entry-requirements.html" class="text-muted hover-gold">Entry Requirements</a></li>
-            <li><a href="student-experience.html" class="text-muted hover-gold">Student Experience</a></li>
-            <li><a href="hubs.html" class="text-muted hover-gold">BOA Hubs</a></li>
-            <li><a href="finance.html" class="text-gold">Finance & Plans</a></li>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Student</h4>
+          <ul class="footer-links">
+            <li><a href="university-progression.html">University Progression</a></li>
+            <li><a href="assessment.html">Assessment</a></li>
+            <li><a href="entry-requirements.html">Entry Requirements</a></li>
+            <li><a href="student-experience.html">Student Experience</a></li>
+            <li><a href="hubs.html">BOA Hubs</a></li>
+            <li><a href="finance.html">Finance Options</a></li>
           </ul>
         </div>
-        <div class="col-lg-3">
-          <h6 class="text-gold font-sans text-uppercase mb-3">Legal & Governance</h6>
-          <ul class="list-unstyled small space-y-2">
-            <li><a href="terms.html" class="text-muted hover-gold">Terms & Conditions</a></li>
-            <li><a href="privacy.html" class="text-muted hover-gold">Privacy Policy</a></li>
-            <li><a href="contact.html" class="text-muted hover-gold">Contact Admissions</a></li>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Legal & Policies</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html#tCol14">Academic Integrity</a></li>
+            <li><a href="terms.html#tCol24">Awarding Body Verification</a></li>
           </ul>
         </div>
       </div>
-      <hr class="border-secondary">
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-muted">
-        <p class="mb-0">&copy; 2026 British Online Academy (BOA). All rights reserved.</p>
-        <p class="mb-0 mt-2 mt-md-0">Ofqual Regulated Qualifications | FCA Firm Ref 687515</p>
+      <div class="footer-bottom text-center">
+        <p class="mb-1">&copy; 2026 British Online Academy Limited. All Rights Reserved.</p>
+        <p class="disclaimer-note">
+          Notice: British Online Academy does not guarantee direct or unconditional progression to any university, degree, Master’s programme or other course of study.
+        </p>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap 5 JS Bundle -->
+  <button id="backToTopBtn" class="btn btn-boa-red rounded-circle position-fixed bottom-0 end-0 m-4 p-3" style="display: none; z-index: 1050;"><i class="bi bi-arrow-up"></i></button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 </html>
