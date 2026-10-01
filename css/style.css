@@ -433,24 +433,27 @@ img {
   border-bottom: 2px solid var(--boa-red);
 }
 
-.top-bar .bi,
-.top-bar .text-gold,
-.top-bar .text-boa-red {
+.top-bar .bi {
   color: var(--boa-red) !important;
+  font-size: 0.9rem !important;
+  margin-right: 0.35rem !important;
+  vertical-align: middle !important;
 }
 
 .top-bar a {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(255, 255, 255, 0.92);
   text-decoration: none;
   transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
 }
 
 .top-bar a:hover {
   color: var(--boa-red) !important;
 }
 
-.top-bar a.text-gold,
-.top-bar a.text-boa-red {
+.top-bar a.text-boa-red,
+.top-bar .text-boa-red {
   color: var(--boa-red) !important;
   font-weight: 700 !important;
 }
