@@ -168,6 +168,7 @@ img {
 .bg-navy,
 .bg-boa-navy {
   background-color: var(--boa-navy-primary) !important;
+  color: #ffffff !important;
 }
 
 .bg-navy-dark,
@@ -178,6 +179,26 @@ img {
 .bg-boa-gold {
   background-color: var(--boa-gold) !important;
   color: var(--boa-white) !important;
+}
+
+.text-navy,
+.text-boa-navy {
+  color: var(--boa-navy-primary) !important;
+}
+
+.text-boa-red {
+  color: var(--boa-red) !important;
+}
+
+.badge.bg-navy,
+.badge.bg-boa-navy {
+  background-color: var(--boa-navy-primary) !important;
+  color: var(--boa-gold) !important;
+  font-weight: 700 !important;
+  padding: 0.5rem 0.85rem !important;
+  border-radius: 50rem !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
 }
 
 .alert-boa-info {
