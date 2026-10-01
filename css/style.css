@@ -1090,13 +1090,15 @@ img {
 }
 
 .contact-info-card {
-  background: var(--boa-navy-dark) !important;
+  background: linear-gradient(180deg, rgba(4, 18, 38, 0.92) 0%, rgba(4, 18, 38, 0.85) 60%, rgba(4, 18, 38, 0.96) 100%), url('../images/contact_bg_building.jpg') center bottom / cover no-repeat !important;
   color: var(--boa-white) !important;
-  padding: 2.5rem 2rem;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--boa-navy-secondary);
-  box-shadow: 0 12px 35px rgba(3, 13, 27, 0.25);
+  padding: 2.75rem 2.25rem;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(3, 13, 27, 0.25);
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .contact-info-card h3,
@@ -1127,14 +1129,15 @@ img {
   min-width: 44px !important;
   min-height: 44px !important;
   border-radius: 50% !important;
-  background: rgba(200, 16, 46, 0.25) !important;
-  border: 1px solid var(--boa-red-light) !important;
-  color: #ff4d6d !important;
+  background: var(--boa-red) !important;
+  border: none !important;
+  color: #ffffff !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-size: 1.2rem !important;
+  font-size: 1.25rem !important;
   flex-shrink: 0 !important;
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.35) !important;
 }
 
 .contact-detail-text h6 {
@@ -1152,10 +1155,10 @@ img {
 
 .form-card {
   background: var(--boa-white);
-  padding: 2.5rem 2rem;
-  border-radius: var(--radius-md);
+  padding: 2.75rem 2.25rem;
+  border-radius: 12px !important;
   border: 1px solid var(--boa-grey-200);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 /* 14. PAGE BANNERS */
