@@ -1309,7 +1309,25 @@ img {
 }
 
 /* 17. PROPORTIONAL IMAGE CARDS & HEIGHT CONSTRAINTS */
-.proportional-img-wrapper,
+.proportional-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  min-height: 420px;
+  width: 100%;
+}
+
+.proportional-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 16px;
+}
+
 .intro-image-card {
   position: relative;
   overflow: hidden;
@@ -1319,7 +1337,6 @@ img {
   width: 100%;
 }
 
-.proportional-img-wrapper img,
 .intro-image-card img {
   width: 100%;
   height: 100%;
