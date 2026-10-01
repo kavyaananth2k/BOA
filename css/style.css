@@ -427,18 +427,32 @@ img {
 /* 6. HEADER & NAVIGATION */
 .top-bar {
   background-color: var(--boa-navy-dark);
-  color: rgba(255, 255, 255, 0.85);
+  color: #ffffff;
   font-size: 0.8125rem;
-  padding: 0.45rem 0;
-  border-bottom: 2px solid var(--boa-gold);
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--boa-red);
+}
+
+.top-bar .bi,
+.top-bar .text-gold,
+.top-bar .text-boa-red {
+  color: var(--boa-red) !important;
 }
 
 .top-bar a {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  transition: var(--transition-fast);
 }
 
 .top-bar a:hover {
-  color: var(--boa-gold);
+  color: var(--boa-red) !important;
+}
+
+.top-bar a.text-gold,
+.top-bar a.text-boa-red {
+  color: var(--boa-red) !important;
+  font-weight: 700 !important;
 }
 
 .navbar-boa {
