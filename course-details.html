@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore course details, modules, entry requirements, progression pathways, and 0% interest payment options at British Online Academy.">
+  <meta name="keywords" content="British Online Academy, Course Details, Ofqual Diploma, UK Top Up Degree, Business Management, IT Computing, Health Social Care, MBA">
+  
+  <title id="pageTitle">Course Details | British Online Academy</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- TOP INFORMATION BAR -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-4">
+        <span><i class="bi bi-geo-alt text-gold me-1"></i> Coventry & London, United Kingdom</span>
+        <span class="d-none d-md-inline"><i class="bi bi-patch-check-fill text-gold me-1"></i> Ofqual RQF Regulated Qualifications</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="tel:07424044851"><i class="bi bi-telephone text-gold me-1"></i> 07424044851 / 07405860115</a>
+        <span class="text-white-50">|</span>
+        <a href="#enquire-form" class="text-gold font-weight-bold">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-boa" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <img src="assets/logos/logo.png" onerror="this.onerror=null; this.src='images/logo.png';" alt="British Online Academy Logo" class="brand-logo-img">
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end offcanvas-boa" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom border-secondary">
+          <img src="assets/logos/logo.png" onerror="this.onerror=null; this.src='images/logo.png';" alt="British Online Academy Logo" style="height: 38px; background: white; padding: 2px 6px; border-radius: 4px;">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="qualification-levels.html">Qualifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="university-progression.html">Progression</a></li>
+            <li class="nav-item"><a class="nav-link" href="how-it-works.html">Student Hub</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex align-items-center mt-3 mt-lg-0">
+            <a href="#enquire-form" class="btn btn-boa-red btn-sm px-3 fw-bold">ENROL NOW <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- COURSE HERO SECTION -->
+  <section class="bg-boa-navy text-white py-5 position-relative overflow-hidden">
+    <div class="container py-3 position-relative z-1">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-boa mb-3">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
+          <li class="breadcrumb-item active text-gold" id="breadcrumbCourseName">Course Details</li>
+        </ol>
+      </nav>
+
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-8">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge badge-boa-gold" id="courseLevelBadge">Ofqual RQF Regulated</span>
+            <span class="badge bg-secondary text-white fw-semibold px-3 py-2" id="courseCategoryBadge">Degree Pathway</span>
+          </div>
+          <h1 class="display-5 font-serif text-white mb-3" id="courseTitle">Loading Course Details...</h1>
+          <p class="lead text-white fw-medium mb-4" id="courseShortDesc">
+            Please wait while course information is retrieved.
+          </p>
+
+          <div class="row g-3 py-3 border-top border-bottom border-secondary mb-4">
+            <div class="col-6 col-md-3">
+              <div class="small text-gold text-uppercase fw-bold"><i class="bi bi-award me-1"></i> Qualification</div>
+              <div class="fw-bold text-white small" id="metaLevel">RQF Level</div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="small text-gold text-uppercase fw-bold"><i class="bi bi-journal-check me-1"></i> Credits</div>
+              <div class="fw-bold text-white small" id="metaCredits">240 Credits</div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="small text-gold text-uppercase fw-bold"><i class="bi bi-clock-history me-1"></i> Duration</div>
+              <div class="fw-bold text-white small" id="metaDuration">12-18 Months</div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="small text-gold text-uppercase fw-bold"><i class="bi bi-laptop me-1"></i> Study Mode</div>
+              <div class="fw-bold text-white small">100% Online</div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#enquire-form" class="btn btn-boa-gold btn-lg"><i class="bi bi-pencil-square me-2"></i> ENROL / ENQUIRE NOW</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="bi bi-telephone me-2"></i> Speak to Adviser</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-center">
+          <div class="rounded-4 overflow-hidden shadow-lg border border-secondary p-2 bg-white">
+            <img id="courseImage" src="images/hero_student_banner.jpg" alt="Course Banner" class="img-fluid rounded-3 w-100" style="max-height: 280px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN COURSE CONTENT & TABS -->
+  <section class="py-5 bg-light">
+    <div class="container py-2">
+      <div class="row gy-5">
+        <!-- Main Content Area -->
+        <div class="col-lg-8">
+          <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border mb-4">
+            
+            <!-- Custom Tabs Navigation -->
+            <ul class="nav nav-pills nav-fill boa-course-tabs mb-4 pb-3 border-bottom" id="courseDetailTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active fw-bold" id="overview-tab" data-bs-toggle="pill" data-bs-target="#tab-overview" type="button" role="tab"><i class="bi bi-info-circle me-1"></i> Overview</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold" id="modules-tab" data-bs-toggle="pill" data-bs-target="#tab-modules" type="button" role="tab"><i class="bi bi-collection me-1"></i> Modules</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold" id="entry-tab" data-bs-toggle="pill" data-bs-target="#tab-entry" type="button" role="tab"><i class="bi bi-shield-check me-1"></i> Entry Requirements</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold" id="progression-tab" data-bs-toggle="pill" data-bs-target="#tab-progression" type="button" role="tab"><i class="bi bi-mortarboard me-1"></i> Progression & Fees</button>
+              </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="courseDetailTabContent">
+              
+              <!-- Tab 1: Overview -->
+              <div class="tab-pane fade show active" id="tab-overview" role="tabpanel">
+                <h3 class="h4 font-serif text-boa-navy mb-3">Course Overview</h3>
+                <div id="overviewText" class="text-dark">
+                  Loading detailed course overview...
+                </div>
+
+                <div class="mt-4 p-4 bg-light rounded-3 border">
+                  <h4 class="h5 font-serif text-boa-navy mb-3"><i class="bi bi-stars text-gold me-2"></i>Key Programme Highlights</h4>
+                  <ul class="list-unstyled mb-0 d-grid gap-2">
+                    <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-gold mt-1"></i> <span><strong>Ofqual RQF Regulated:</strong> Awarded by an officially recognized UK awarding organization.</span></li>
+                    <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-gold mt-1"></i> <span><strong>100% Online Study:</strong> Complete modules at your own pace from anywhere in the world.</span></li>
+                    <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-gold mt-1"></i> <span><strong>24/7 Student Portal Access:</strong> Includes study guides, webinars, and online library resources.</span></li>
+                    <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-gold mt-1"></i> <span><strong>University Top-Up Eligible:</strong> Direct progression into UK University final year BA (Hons), BSc, or MBA.</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Tab 2: Modules -->
+              <div class="tab-pane fade" id="tab-modules" role="tabpanel">
+                <h3 class="h4 font-serif text-boa-navy mb-3">Core Modules & Structure</h3>
+                <p class="text-muted mb-4">To achieve this qualification, learners must successfully complete all core modules listed below. Each module carries specified higher education credit value.</p>
+                
+                <div class="accordion accordion-boa mb-4" id="modulesAccordion">
+                  <!-- Modules injected via JS -->
+                </div>
+              </div>
+
+              <!-- Tab 3: Entry Requirements -->
+              <div class="tab-pane fade" id="tab-entry" role="tabpanel">
+                <h3 class="h4 font-serif text-boa-navy mb-3">Entry & Admission Requirements</h3>
+                <div id="entryText" class="text-dark">
+                  Loading entry requirements...
+                </div>
+
+                <div class="mt-4 p-4 bg-light rounded-3 border">
+                  <h4 class="h5 font-serif text-boa-navy mb-2"><i class="bi bi-translate text-gold me-2"></i>English Language Requirement</h4>
+                  <p class="small text-muted mb-0">Learners whose first language is not English should possess basic proficiency (IELTS 5.5 equivalent or evidence of prior study in English). Free English support modules are provided.</p>
+                </div>
+              </div>
+
+              <!-- Tab 4: Progression & Fees -->
+              <div class="tab-pane fade" id="tab-progression" role="tabpanel">
+                <h3 class="h4 font-serif text-boa-navy mb-3">University Progression & Tuition Fees</h3>
+                
+                <div class="row g-4 mb-4">
+                  <div class="col-md-6">
+                    <div class="p-4 bg-light rounded-3 border h-100">
+                      <h4 class="h5 font-serif text-boa-navy mb-2"><i class="bi bi-mortarboard-fill text-gold me-2"></i>University Progression</h4>
+                      <p class="small text-dark mb-0" id="progressionText">Loading progression options...</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-4 bg-light rounded-3 border h-100">
+                      <h4 class="h5 font-serif text-boa-navy mb-2"><i class="bi bi-credit-card-2-front-fill text-gold me-2"></i>Tuition & 0% Finance</h4>
+                      <p class="small text-dark mb-0" id="feesText">Loading fee information...</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="alert alert-boa-info border-0 shadow-sm d-flex align-items-center gap-3">
+                  <i class="bi bi-shield-check text-gold fs-2"></i>
+                  <div>
+                    <strong class="d-block text-boa-navy">FCA Regulated Finance Options</strong>
+                    <span class="small text-muted">British Online Academy offers 0% interest payment plans with zero hidden charges (FCA Firm Ref: 687515).</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Enquiry Form -->
+        <div class="col-lg-4" id="enquire-form">
+          <div class="bg-boa-navy text-white p-4 p-md-4 rounded-4 shadow-lg sticky-lg-top" style="top: 90px;">
+            <span class="eyebrow text-gold">ENROLMENT & ADMISSIONS</span>
+            <h3 class="font-serif text-white mb-2" style="font-size: 1.4rem;">Enquire About This Course</h3>
+            <p class="small text-white fw-medium mb-3">Fill in your details to receive full syllabus information, payment plans, and start dates.</p>
+
+            <form class="needs-validation" novalidate>
+              <div class="mb-2">
+                <label for="courseFormName" class="form-label small text-white fw-medium">Course Selected</label>
+                <input type="text" class="form-control form-control-sm bg-white text-dark fw-bold" id="courseFormName" readonly>
+              </div>
+
+              <div class="mb-2">
+                <label for="enquiryFullName" class="form-label small text-white fw-medium">Full Name *</label>
+                <input type="text" class="form-control form-control-sm" id="enquiryFullName" placeholder="e.g. Arthur Pendelton" required>
+              </div>
+
+              <div class="mb-2">
+                <label for="enquiryEmail" class="form-label small text-white fw-medium">Email Address *</label>
+                <input type="email" class="form-control form-control-sm" id="enquiryEmail" placeholder="name@example.com" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="enquiryPhone" class="form-label small text-white fw-medium">Phone / WhatsApp *</label>
+                <input type="tel" class="form-control form-control-sm" id="enquiryPhone" placeholder="e.g. +44 7424 044851" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="enquiryMessage" class="form-label small text-white fw-medium">Question / Notes (Optional)</label>
+                <textarea class="form-control form-control-sm" id="enquiryMessage" rows="2" placeholder="Ask about start dates or monthly plans..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-boa-gold w-100 fw-bold justify-content-center">SUBMIT ENQUIRY <i class="bi bi-send-fill ms-1"></i></button>
+            </form>
+
+            <div class="mt-4 pt-3 border-top border-secondary text-center">
+              <span class="small text-white fw-medium d-block mb-1">Direct Telephone Admissions</span>
+              <a href="tel:07424044851" class="text-gold fw-bold text-decoration-none small"><i class="bi bi-telephone-fill me-1"></i> 07424044851 / 07405860115</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-boa">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="brand-logo mb-3">
+            <img src="assets/logos/logo.png" onerror="this.onerror=null; this.src='images/logo.png';" alt="British Online Academy Logo" class="brand-logo-footer">
+          </div>
+          <p class="text-white fw-medium mb-1" style="font-size: 0.95rem; font-weight: 600;">“Learn Today for a Brighter Tomorrow.”</p>
+          <p class="small text-gold fst-italic mb-2">“Study Anywhere. Graduate Anywhere.”</p>
+          <div class="footer-contact-details small text-white mb-3">
+            <div class="mb-1"><i class="bi bi-telephone-fill text-gold me-2"></i><a href="tel:07424044851" class="text-white text-decoration-none fw-semibold">07424044851</a> / <a href="tel:07405860115" class="text-white text-decoration-none fw-semibold">07405860115</a></div>
+            <div class="mb-1"><i class="bi bi-envelope-fill text-gold me-2"></i><a href="mailto:admin@thebritishonlineacademy.com" class="text-white text-decoration-none fw-semibold">admin@thebritishonlineacademy.com</a></div>
+            <div class="mb-1"><i class="bi bi-globe text-gold me-2"></i><a href="https://www.thebritishonlineacademy.com" target="_blank" class="text-white text-decoration-none fw-semibold">www.thebritishonlineacademy.com</a></div>
+          </div>
+          <p class="small text-white-50">Trading Office: British Online Academy, Shillingwood House, Westwood Way, Coventry, CV4 8JZ, UK. Authorized & regulated by FCA (Firm Reference: 687515).</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="qualification-levels.html">Qualifications</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Student</h4>
+          <ul class="footer-links">
+            <li><a href="university-progression.html">University Progression</a></li>
+            <li><a href="assessment.html">Assessment</a></li>
+            <li><a href="entry-requirements.html">Entry Requirements</a></li>
+            <li><a href="student-experience.html">Student Experience</a></li>
+            <li><a href="hubs.html">BOA Hubs</a></li>
+            <li><a href="finance.html">Finance Options</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Legal & Policies</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html#tCol14">Academic Integrity</a></li>
+            <li><a href="terms.html#tCol24">Awarding Body Verification</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="mb-1">&copy; 2026 British Online Academy Limited. All Rights Reserved.</p>
+        <p class="disclaimer-note">
+          Notice: British Online Academy does not guarantee direct or unconditional progression to any university, degree, Master’s programme or other course of study.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTopBtn" class="btn btn-boa-red rounded-circle position-fixed bottom-0 end-0 m-4 p-3" style="display: none; z-index: 1050;"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCourseDetailData();
+    });
+
+    function loadCourseDetailData() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const courseId = urlParams.get('id') || 'level45-business';
+      const course = (typeof COURSES_DATA !== 'undefined' && COURSES_DATA[courseId]) ? COURSES_DATA[courseId] : (COURSES_DATA ? COURSES_DATA['level45-business'] : null);
+
+      if (!course) return;
+
+      document.title = course.title + " | British Online Academy";
+      document.getElementById('breadcrumbCourseName').innerText = course.title;
+      document.getElementById('courseTitle').innerText = course.title;
+      document.getElementById('courseShortDesc').innerText = course.description;
+      document.getElementById('courseLevelBadge').innerText = course.level;
+      document.getElementById('courseCategoryBadge').innerText = course.category + " Pathway";
+      document.getElementById('metaLevel').innerText = course.level;
+      document.getElementById('metaCredits').innerText = course.credits;
+      document.getElementById('metaDuration').innerText = course.duration;
+      document.getElementById('courseImage').src = course.image;
+      document.getElementById('courseFormName').value = course.title;
+
+      document.getElementById('overviewText').innerHTML = `<p class="lead text-dark">${course.description}</p><p class="text-muted">This programme is delivered 100% online through British Online Academy's modern learning platform. Students benefit from structured module learning, self-paced study options, 24/7 access to digital resources, and dedicated academic adviser support throughout their enrolment.</p>`;
+
+      // Modules
+      const modulesAccordion = document.getElementById('modulesAccordion');
+      if (course.modules && course.modules.length > 0) {
+        modulesAccordion.innerHTML = course.modules.map((mod, idx) => `
+          <div class="accordion-item mb-2 border rounded">
+            <h2 class="accordion-header" id="modHead${idx}">
+              <button class="accordion-button ${idx !== 0 ? 'collapsed' : ''} fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#modCol${idx}">
+                <i class="bi bi-journal-text text-gold me-2"></i> ${mod}
+              </button>
+            </h2>
+            <div id="modCol${idx}" class="accordion-collapse collapse ${idx === 0 ? 'show' : ''}" data-bs-parent="#modulesAccordion">
+              <div class="accordion-body text-muted small">
+                Covers core theoretical frameworks, practical case studies, online self-assessment exercises, and preparation for final module evaluations.
+              </div>
+            </div>
+          </div>
+        `).join('');
+      } else {
+        modulesAccordion.innerHTML = '<p class="text-muted">Module list will be provided upon enquiry.</p>';
+      }
+
+      document.getElementById('entryText').innerHTML = `<p class="text-dark">${course.entryRequirements}</p>`;
+      document.getElementById('progressionText').innerText = course.progression;
+      document.getElementById('feesText').innerText = course.fees;
+    }
+  </script>
+
+</body>
+</html>

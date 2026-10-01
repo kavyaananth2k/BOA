@@ -109,9 +109,55 @@ img {
   height: auto;
 }
 
-/* 4. UTILITY CLASSES */
-.text-gold {
-  color: var(--boa-gold) !important;
+/* 4. UTILITY CLASSES & DARK SECTION OVERRIDES */
+.text-white,
+.text-white-90,
+.text-white-80,
+.text-white-70,
+.text-white-50 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Force crisp white text inside all dark containers */
+.page-banner,
+.page-banner p,
+.page-banner .lead,
+.page-banner span:not(.eyebrow),
+.hero-section,
+.hero-section p,
+.hero-section .hero-subtext,
+.hero-section .lead,
+.bg-navy,
+.bg-navy p,
+.bg-navy .lead,
+.bg-navy span:not(.text-warning):not(.text-red):not(.eyebrow),
+.bg-boa-navy,
+.bg-boa-navy p,
+.bg-boa-navy .lead,
+.bg-boa-navy span:not(.text-warning):not(.text-red):not(.eyebrow),
+.bg-navy-dark,
+.bg-navy-dark p,
+.bg-navy-dark .lead,
+.bg-navy-dark span:not(.text-warning):not(.text-red):not(.eyebrow),
+.bg-boa-navy-dark,
+.bg-boa-navy-dark p,
+.bg-boa-navy-dark .lead,
+.bg-boa-navy-dark span:not(.text-warning):not(.text-red):not(.eyebrow),
+.contact-info-card,
+.contact-info-card p,
+.contact-info-card span,
+.footer-boa,
+.footer-boa p,
+.footer-boa span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.text-gold,
+.eyebrow {
+  color: #FF4D6D !important;
+  font-weight: 700;
 }
 
 .text-navy,
@@ -961,7 +1007,81 @@ img {
   border-bottom: 1px solid var(--boa-grey-200);
 }
 
-/* 13. PAGE BANNERS */
+/* 13. CONTACT SECTION & CARDS */
+.contact-section {
+  background-color: var(--boa-light-bg);
+}
+
+.contact-info-card {
+  background: var(--boa-navy-dark) !important;
+  color: var(--boa-white) !important;
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--boa-navy-secondary);
+  box-shadow: 0 12px 35px rgba(3, 13, 27, 0.25);
+  height: 100%;
+}
+
+.contact-info-card h3,
+.contact-info-card h6 {
+  color: var(--boa-white) !important;
+}
+
+.contact-info-card p,
+.contact-info-card a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  transition: var(--transition-fast);
+}
+
+.contact-info-card a:hover {
+  color: var(--boa-gold-light) !important;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-detail-icon {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  border-radius: 50% !important;
+  background: rgba(200, 16, 46, 0.25) !important;
+  border: 1px solid var(--boa-red-light) !important;
+  color: #ff4d6d !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.2rem !important;
+  flex-shrink: 0 !important;
+}
+
+.contact-detail-text h6 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: var(--boa-white) !important;
+}
+
+.contact-detail-text p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.form-card {
+  background: var(--boa-white);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--boa-grey-200);
+  box-shadow: var(--shadow-md);
+}
+
+/* 14. PAGE BANNERS */
 .page-banner {
   background: linear-gradient(135deg, var(--boa-navy-dark) 0%, var(--boa-navy-primary) 100%);
   color: var(--boa-white);
@@ -976,13 +1096,39 @@ img {
   margin-bottom: 0.5rem;
 }
 
-/* 14. FOOTER */
+/* 15. FOOTER */
 .footer-boa {
   background-color: var(--boa-navy-dark);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   padding-top: 4.5rem;
   padding-bottom: 2rem;
   border-top: 4px solid var(--boa-gold);
+}
+
+.footer-contact-details {
+  color: #ffffff !important;
+  font-size: 0.9rem;
+}
+
+.footer-contact-details div {
+  color: #ffffff !important;
+}
+
+.footer-contact-details a,
+.footer-contact-details a.text-white-70,
+.footer-contact-details a.text-white-80 {
+  color: #ffffff !important;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.footer-contact-details a:hover {
+  color: #ff4d6d !important;
+  text-decoration: underline !important;
+}
+
+.footer-contact-details i {
+  color: #ff4d6d !important;
 }
 
 .footer-heading {
