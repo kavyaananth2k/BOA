@@ -171,13 +171,18 @@
   <!-- COURSE HERO SECTION -->
   <section class="bg-boa-navy text-white py-5 position-relative overflow-hidden">
     <div class="container py-3 position-relative z-1">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-boa mb-3">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
-          <li class="breadcrumb-item active text-gold" id="breadcrumbCourseName">Course Details</li>
-        </ol>
-      </nav>
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb-boa mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
+            <li class="breadcrumb-item active text-gold" id="breadcrumbCourseName">Course Details</li>
+          </ol>
+        </nav>
+        <a href="courses.html" class="btn btn-outline-light btn-sm rounded-pill px-3 fw-bold shadow-sm">
+          <i class="bi bi-arrow-left me-1"></i> Back to Courses
+        </a>
+      </div>
 
       <div class="row align-items-center gy-4">
         <div class="col-lg-8">
@@ -238,6 +243,9 @@
                 <button class="nav-link active fw-bold" id="overview-tab" data-bs-toggle="pill" data-bs-target="#tab-overview" type="button" role="tab"><i class="bi bi-info-circle me-1"></i> Overview</button>
               </li>
               <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold" id="how-it-works-tab" data-bs-toggle="pill" data-bs-target="#tab-how-it-works" type="button" role="tab"><i class="bi bi-compass me-1"></i> How It Works & Assessment</button>
+              </li>
+              <li class="nav-item" role="presentation">
                 <button class="nav-link fw-bold" id="modules-tab" data-bs-toggle="pill" data-bs-target="#tab-modules" type="button" role="tab"><i class="bi bi-collection me-1"></i> Modules</button>
               </li>
               <li class="nav-item" role="presentation">
@@ -265,6 +273,36 @@
                     <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-gold mt-1"></i> <span><strong>100% Online Study:</strong> Complete modules at your own pace from anywhere in the world.</span></li>
                     <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-gold mt-1"></i> <span><strong>24/7 Student Portal Access:</strong> Includes study guides, webinars, and online library resources.</span></li>
                     <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-gold mt-1"></i> <span><strong>University Top-Up Eligible:</strong> Direct progression into UK University final year BA (Hons), BSc, or MBA.</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Tab 2: How It Works & Assessment -->
+              <div class="tab-pane fade" id="tab-how-it-works" role="tabpanel">
+                <h3 class="h4 font-serif text-boa-navy mb-3">How Online Learning Works</h3>
+                <p class="text-dark">British Online Academy offers 100% online study with maximum flexibility. You can balance your studies alongside your personal and professional commitments.</p>
+
+                <div class="row g-3 my-4">
+                  <div class="col-md-6">
+                    <div class="p-3 bg-light rounded-3 border h-100">
+                      <h5 class="h6 font-serif text-boa-navy mb-2"><i class="bi bi-laptop text-gold me-2"></i>24/7 Digital Learning Hub</h5>
+                      <p class="small text-muted mb-0">Access all reading materials, lecture slides, video tutorials, and study guides anytime through our intuitive portal.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-3 bg-light rounded-3 border h-100">
+                      <h5 class="h6 font-serif text-boa-navy mb-2"><i class="bi bi-person-workspace text-gold me-2"></i>Dedicated 1-to-1 Tutor Support</h5>
+                      <p class="small text-muted mb-0">Receive personal feedback, assignment guidance, and academic direction from assigned UK tutors.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <h4 class="h5 font-serif text-boa-navy mb-3">Assessment Methodology</h4>
+                <div class="p-4 bg-light rounded-3 border mb-3">
+                  <ul class="list-unstyled mb-0 d-grid gap-2 text-dark">
+                    <li><i class="bi bi-check2-circle text-gold me-2"></i><strong>100% Written Assignments:</strong> No traditional unseen written exams.</li>
+                    <li><i class="bi bi-check2-circle text-gold me-2"></i><strong>Self-Paced Submissions:</strong> Submit module assignments online as you complete them.</li>
+                    <li><i class="bi bi-check2-circle text-gold me-2"></i><strong>Constructive Tutor Feedback:</strong> If an assignment requires revision, your tutor provides detailed guidance for resubmission.</li>
                   </ul>
                 </div>
               </div>
@@ -401,7 +439,90 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  
+  <!-- COURSE FAQS SECTION -->
+  <section class="py-5 bg-white border-top">
+    <div class="container py-2">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <span class="badge badge-boa-gold mb-2">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 class="font-serif text-boa-navy mb-2">Course FAQs</h2>
+        <p class="text-muted small">Got questions about this programme? Find quick answers below.</p>
+      </div>
+
+      <div class="accordion accordion-boa max-w-900 mx-auto" id="courseFaqAccordion">
+        <div class="accordion-item mb-2 border rounded">
+          <h2 class="accordion-header" id="faqHead1">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCol1">
+              <i class="bi bi-question-circle text-gold me-2"></i> Is this course officially recognized by UK Universities?
+            </button>
+          </h2>
+          <div id="faqCol1" class="accordion-collapse collapse show" data-bs-parent="#courseFaqAccordion">
+            <div class="accordion-body text-muted small">
+              Yes. All BOA diploma qualifications are Ofqual RQF regulated and awarded by recognized UK awarding bodies. They carry UK Higher Education credit points that enable direct progression onto UK university final year top-up degrees (BA Hons, BSc, or MBA).
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mb-2 border rounded">
+          <h2 class="accordion-header" id="faqHead2">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCol2">
+              <i class="bi bi-question-circle text-gold me-2"></i> How long do I have to complete the course?
+            </button>
+          </h2>
+          <div id="faqCol2" class="accordion-collapse collapse" data-bs-parent="#courseFaqAccordion">
+            <div class="accordion-body text-muted small">
+              You have full flexible access for up to 5 years to complete your course at your own pace, though most students complete within 6 to 18 months.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mb-2 border rounded">
+          <h2 class="accordion-header" id="faqHead3">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCol3">
+              <i class="bi bi-question-circle text-gold me-2"></i> What payment options are available?
+            </button>
+          </h2>
+          <div id="faqCol3" class="accordion-collapse collapse" data-bs-parent="#courseFaqAccordion">
+            <div class="accordion-body text-muted small">
+              We offer full annual payment discounts as well as 0% interest monthly instalment options starting from £80 to £180 per month with no hidden fees.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border rounded">
+          <h2 class="accordion-header" id="faqHead4">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCol4">
+              <i class="bi bi-question-circle text-gold me-2"></i> How are the assignments assessed?
+            </button>
+          </h2>
+          <div id="faqCol4" class="accordion-collapse collapse" data-bs-parent="#courseFaqAccordion">
+            <div class="accordion-body text-muted small">
+              Courses are assessed 100% through online written assignments and practical case studies. There are no traditional written exam halls.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED COURSES SECTION -->
+  <section class="py-5 bg-light border-top">
+    <div class="container py-2">
+      <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+        <div>
+          <span class="badge badge-boa-gold mb-1">EXPLORE FURTHER</span>
+          <h2 class="h3 font-serif text-boa-navy mb-0">Related Programmes & Pathways</h2>
+        </div>
+        <a href="courses.html" class="btn btn-outline-boa-navy btn-sm fw-bold">View Full Catalogue <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="row g-4" id="relatedCoursesGrid">
+        <!-- Dynamically populated via loadCourseDetailData JS -->
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER -->
   <footer class="footer-boa">
     <div class="container">
       <div class="row g-4">
@@ -511,8 +632,59 @@
         <p class="text-muted">This programme is delivered 100% online through British Online Academy's modern learning platform. Students benefit from structured module learning, self-paced study options, 24/7 access to digital resources, and dedicated academic adviser support throughout their enrolment.</p>
       `;
 
+      // Related Courses Grid Rendering
+      const relatedGrid = document.getElementById('relatedCoursesGrid');
+      if (relatedGrid && course.related && course.related.length > 0) {
+        relatedGrid.innerHTML = course.related.map(relId => {
+          const rel = COURSES_DATA[relId];
+          if (!rel) return '';
+          return `
+            <div class="col-md-4">
+              <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <span class="badge bg-boa-navy text-gold small px-2 py-1">${rel.level}</span>
+                  <span class="badge bg-light text-dark border small fw-bold">${rel.credits}</span>
+                </div>
+                <h3 class="h5 font-serif text-boa-navy mb-2">${rel.title}</h3>
+                <p class="text-muted small mb-3 flex-grow-1">${rel.description.substring(0, 100)}...</p>
+                <div class="mt-auto">
+                  <a href="course-details.html?id=${rel.id}" class="btn btn-boa-navy btn-sm w-100 justify-content-center">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      } else if (relatedGrid) {
+        // Fallback default related
+        relatedGrid.innerHTML = `
+          <div class="col-md-4">
+            <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+              <span class="badge bg-boa-navy text-gold small px-2 py-1 mb-2 align-self-start">Ofqual Level 4 & 5</span>
+              <h3 class="h5 font-serif text-boa-navy mb-2">Level 4 & 5 Diploma in Business Management</h3>
+              <p class="text-muted small mb-3 flex-grow-1">Undergraduate Year 1 & 2 equivalent diploma preparing learners for direct entry into UK University final year.</p>
+              <a href="course-details.html?id=level45-business" class="btn btn-boa-navy btn-sm w-100 justify-content-center mt-auto">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+              <span class="badge bg-boa-navy text-gold small px-2 py-1 mb-2 align-self-start">Ofqual Level 4 & 5</span>
+              <h3 class="h5 font-serif text-boa-navy mb-2">Level 4 & 5 Diploma in IT & Computing</h3>
+              <p class="text-muted small mb-3 flex-grow-1">Advanced computing pathway covering systems architecture, web engineering, networking and databases.</p>
+              <a href="course-details.html?id=level45-it" class="btn btn-boa-navy btn-sm w-100 justify-content-center mt-auto">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="boa-card h-100 p-4 border-top-accent bg-white d-flex flex-column">
+              <span class="badge bg-boa-navy text-gold small px-2 py-1 mb-2 align-self-start">Ofqual Level 7</span>
+              <h3 class="h5 font-serif text-boa-navy mb-2">Level 7 Diploma in Strategic Management</h3>
+              <p class="text-muted small mb-3 flex-grow-1">Postgraduate executive diploma providing strategic decision-making and direct MBA dissertation pathway.</p>
+              <a href="course-details.html?id=level7-strategic" class="btn btn-boa-navy btn-sm w-100 justify-content-center mt-auto">VIEW COURSE <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        `;
+      }
+
       // Modules
-      const modulesAccordion = document.getElementById('modulesAccordion');
       if (course.modules && course.modules.length > 0) {
         modulesAccordion.innerHTML = course.modules.map((mod, idx) => `
           <div class="accordion-item mb-2 border rounded">
