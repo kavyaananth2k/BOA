@@ -156,7 +156,7 @@ img {
 
 .text-gold,
 .eyebrow {
-  color: #FF4D6D !important;
+  color: var(--boa-red) !important;
   font-weight: 700;
 }
 
