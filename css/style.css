@@ -595,6 +595,64 @@ img {
   margin-top: 0.25rem;
 }
 
+/* 5-Column Courses Mega Dropdown Menu (Online Business School Style) */
+@media (min-width: 992px) {
+  .dropdown-mega {
+    position: static !important;
+  }
+  .dropdown-mega .mega-menu {
+    width: 96% !important;
+    max-width: 1280px !important;
+    left: 2% !important;
+    right: 2% !important;
+    transform: none !important;
+    top: 100% !important;
+    background: #081d39 !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45) !important;
+    padding: 1.5rem !important;
+  }
+  .col-lg-2-4 {
+    flex: 0 0 auto !important;
+    width: 20% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .col-lg-2-4 {
+    width: 100% !important;
+  }
+}
+
+.mega-title {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--boa-red);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mega-item-link {
+  display: block;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.85) !important;
+  padding: 0.25rem 0;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  line-height: 1.35;
+}
+
+.mega-item-link:hover {
+  color: #ffffff !important;
+  transform: translateX(3px);
+  text-decoration: underline;
+}
+
 .navbar-boa .dropdown-item {
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.85rem;
