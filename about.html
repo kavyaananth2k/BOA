@@ -26,7 +26,7 @@
   <div class="top-bar">
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
       <div class="d-flex align-items-center gap-3">
-        <span><i class="bi bi-geo-alt-fill text-boa-red"></i> Coventry & London, UK</span>
+        <span><i class="bi bi-geo-alt-fill text-boa-red"></i> Romford & London, UK</span>
         <span class="text-white-50 d-none d-md-inline">|</span>
         <span class="d-none d-md-inline"><i class="bi bi-patch-check-fill text-boa-red"></i> Ofqual RQF Regulated</span>
       </div>
@@ -41,7 +41,7 @@
   </div>
 
   <!-- NAVIGATION -->
-      <!-- HEADER / NAVIGATION -->
+                    <!-- HEADER / NAVIGATION -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-boa" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand brand-logo" href="index.html">
@@ -54,7 +54,7 @@
 
       <div class="offcanvas offcanvas-end offcanvas-boa" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header border-bottom border-secondary">
-          <img src="assets/logos/logo.png" alt="British Online Academy Logo" style="height: 38px; background: white; padding: 2px 6px; border-radius: 4px;">
+          <img src="assets/logos/logo.png" onerror="this.onerror=null; this.src='images/logo.png';" alt="British Online Academy Logo" style="height: 38px; background: white; padding: 2px 6px; border-radius: 4px;">
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
@@ -62,30 +62,99 @@
             <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
 
-            <!-- Courses Dropdown -->
-            <li class="nav-item dropdown">
+            <!-- Courses Mega Dropdown (Full 5-Column Course Categories as shown in Online Business School) -->
+            <li class="nav-item dropdown dropdown-mega">
               <a class="nav-link dropdown-toggle " href="courses.html" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Courses
               </a>
-              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-                <li><h6 class="dropdown-header">Popular Courses</h6></li>
-                <li><a class="dropdown-item" href="courses.html#level3-business"><i class="bi bi-briefcase me-2 text-gold"></i>Level 3 – Business Management</a></li>
-                <li><a class="dropdown-item" href="courses.html#level45-business"><i class="bi bi-diagram-3 me-2 text-gold"></i>Level 4/5 – Business Management</a></li>
-                <li><a class="dropdown-item" href="courses.html#level45-health"><i class="bi bi-heart-pulse me-2 text-gold"></i>Level 4/5 – Health & Social Care</a></li>
-                <li><a class="dropdown-item" href="courses.html#level45-it"><i class="bi bi-laptop me-2 text-gold"></i>Level 4/5 – IT and Computing</a></li>
-                <li><a class="dropdown-item" href="courses.html#level7-strategic"><i class="bi bi-award me-2 text-gold"></i>Level 7 – Strategic Management</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="courses.html"><i class="bi bi-collection me-2 text-gold"></i>View All Courses</a></li>
-              </ul>
+              <div class="dropdown-menu mega-menu p-4" aria-labelledby="coursesDropdown">
+                <div class="row g-3">
+                  <!-- Col 1: IGCSE and short courses -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-journal-bookmark me-1 text-gold"></i> IGCSE & Short Courses</div>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Biology</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Business Studies</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Chemistry</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Computer Science</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE English First Language</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Environmental Management</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Geography</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE History</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Mathematics</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Physics</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Travel and Tourism</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link text-gold fw-bold mt-1"><i class="bi bi-star-fill me-1 small"></i> IELTS - English Training</a>
+                  </div>
+
+                  <!-- Col 2: Level 3 (A level) -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-bookmark-star me-1 text-gold"></i> Level 3 (A Level)</div>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Accountancy (60 Credits)</a>
+                    <a href="courses.html#level3-business" class="mega-item-link">Business Management (120 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Business Studies (60 Credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Employability & Workplace Skills</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Engineering (60 Credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Fashion & Textiles (120 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Health & Social Care (60 Credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Information Technology (60 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Law (60 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">People & Organisations (60 Credits)</a>
+                  </div>
+
+                  <!-- Col 3: Level 4 & 5 -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-laptop me-1 text-gold"></i> Level 4 & 5 (Degree Y1/Y2)</div>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Accounting and Business</a>
+                    <a href="courses.html#level45-business" class="mega-item-link">Business Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Cyber Security</a>
+                    <a href="courses.html#level45-health" class="mega-item-link">Health & Social Care Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Human Resource Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Law</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Logistics & Supply Chain Management</a>
+                    <a href="courses.html#level45-it" class="mega-item-link">IT and Computing</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Psychology</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Project Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Teaching</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Tourism & Hospitality Management</a>
+                  </div>
+
+                  <!-- Col 4: Level 6, 7 & 8 -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-mortarboard me-1 text-gold"></i> Level 6, 7 & 8 (MBA Entry)</div>
+                    <a href="courses.html#tab-level67" class="mega-item-link text-gold fw-bold">Level 6 Diplomas</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Business Management</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Professional Sales Management</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link text-gold fw-bold mt-1">Level 7 Postgraduate</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Artificial Intelligence</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Human Resource Management</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Organisational Psychology</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Project Management</a>
+                    <a href="courses.html#level7-strategic" class="mega-item-link">Strategic Management & Leadership</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Strategic Sales Management</a>
+                    <a href="courses.html#tab-level8" class="mega-item-link text-gold fw-bold mt-1">Level 8 Doctoral</a>
+                    <a href="courses.html#tab-level8" class="mega-item-link">Strategic Management Practice</a>
+                  </div>
+
+                  <!-- Col 5: Professional Body Memberships -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-patch-check me-1 text-gold"></i> Memberships</div>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Management Institute</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Institute of Directors</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Institute of Marketing</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">The Institute of Leadership</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Institute of Hospitality</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Institute of Procurement & Supply</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Institute of Personnel & Dev</a>
+                  </div>
+                </div>
+              </div>
             </li>
 
             <li class="nav-item"><a class="nav-link " href="qualification-levels.html">Qualifications</a></li>
-            <li class="nav-item"><a class="nav-link " href="university-progression.html">Progression</a></li>
-
-            <!-- Student Hub Dropdown -->
+            <li class="nav-item"><a class="nav-link " href="university-progression.html">University Pathways</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle " href="how-it-works.html" id="studentHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Student Hub
+                For Students
               </a>
               <ul class="dropdown-menu" aria-labelledby="studentHubDropdown">
                 <li><a class="dropdown-item" href="how-it-works.html"><i class="bi bi-compass me-2 text-gold"></i>How It Works</a></li>
@@ -95,11 +164,10 @@
                 <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
               </ul>
             </li>
-
             <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
           </ul>
-          <div class="d-flex align-items-center mt-3 mt-lg-0">
-            <a href="contact.html#apply" class="btn btn-boa-red btn-sm px-3 fw-bold">ENROL NOW <i class="bi bi-arrow-right-short"></i></a>
+          <div class="d-flex align-items-center mt-3 mt-lg-0 ms-lg-3 flex-shrink-0">
+            <a href="contact.html#apply" class="btn btn-boa-gold rounded-pill px-4 text-white text-uppercase fw-bold shadow-sm text-nowrap">Enrol Now &rarr;</a>
           </div>
         </div>
       </div>
@@ -111,7 +179,7 @@
     <div class="container">
       <span class="eyebrow text-gold">ABOUT US</span>
       <h1 class="page-title font-serif">ABOUT BRITISH ONLINE ACADEMY</h1>
-      <p class="lead text-white max-width fw-medium-700 mx-auto fs-5 fw-medium">British Online Academy (BOA) provides flexible, Ofqual-regulated online diploma programmes fast-tracking learners to recognised UK university degrees.</p>
+      <p class="lead text-white max-width fw-medium-700 mx-auto fs-5 fw-medium">Affordable study programmes with exclusive online modules fast tracking learners to a university qualification.</p>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-boa justify-content-center mb-0 mt-3">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -122,7 +190,7 @@
   </section>
 
   <!-- QUICK ANCHOR NAVIGATION BAR -->
-  <section class="py-3 bg-light border-bottom sticky-top" style="z-index: 1020;">
+  <!-- <section class="py-3 bg-light border-bottom sticky-top" style="z-index: 1020;">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-center gap-2">
         <a href="#who-we-are" class="btn btn-sm btn-boa-navy"><i class="bi bi-info-circle me-1"></i> Who We Are</a>
@@ -133,7 +201,7 @@
         <a href="#about-explore" class="btn btn-sm btn-boa-gold"><i class="bi bi-compass me-1"></i> Explore Pathways</a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- 1. WHO WE ARE & WHY CHOOSE BOA -->
   <section class="py-5 bg-white" id="who-we-are">
@@ -161,11 +229,11 @@
         <div class="col-lg-6 ps-lg-5">
           <div class="proportional-img-wrapper">
             <img src="images/about/about_graduation_caps.jpg?v=2" alt="British Online Academy Graduation Celebration" class="img-fluid">
-            <div class="position-absolute bottom-0 start-0 m-4 p-3 bg-boa-navy text-white rounded-3 shadow-lg border-start border-4 border-danger max-w-350">
+            <!-- <div class="position-absolute bottom-0 start-0 m-4 p-3 bg-boa-navy text-white rounded-3 shadow-lg border-start border-4 border-danger max-w-350">
               <i class="bi bi-quote text-danger fs-2 d-block mb-1"></i>
               <p class="small mb-1 text-white font-serif fw-bold" style="font-size: 0.95rem;">“Learn Today for a Brighter Tomorrow.”</p>
               <span class="small text-gold fst-italic d-block">“Study Anywhere. Graduate Anywhere.”</span>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -191,7 +259,76 @@
             <p class="text-muted lead fs-6 mb-4">
               Every member of our adviser team has extensive knowledge of our courses and will advise you on a course that’s right for your future, goals and career prospects. They will guide you through the enrollment process, from helping you choose a course to finding the right finance options. Each member of the team is friendly and dedicated to ensuring you pick the option best for you.
             </p>
-            <a href="contact.html" class="btn btn-boa-gold"><i class="bi bi-telephone-fill me-2"></i> Speak with an Adviser</a>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <button type="button" class="btn btn-boa-gold px-4 py-3 shadow-sm text-uppercase fw-bold" data-bs-toggle="collapse" data-bs-target="#adviserInlineForm" aria-expanded="false" aria-controls="adviserInlineForm">
+                <i class="bi bi-telephone-fill me-2"></i> Speak with an Adviser
+              </button>
+              <button type="button" class="btn btn-boa-navy px-4 py-3 shadow-sm text-uppercase fw-bold text-white" data-bs-toggle="modal" data-bs-target="#adviserModal">
+                <i class="bi bi-window-stack me-2"></i> Open Adviser Modal
+              </button>
+            </div>
+
+            <!-- COLLAPSIBLE INLINE ADVISER FORM -->
+            <div class="collapse mt-4" id="adviserInlineForm">
+              <div class="card card-body p-4 p-md-5 bg-light border text-start rounded-4 shadow-lg border-start border-boa-gold border-4">
+                <div class="d-flex align-items-center gap-3 mb-4 border-bottom pb-3">
+                  <div class="rounded-circle bg-boa-navy text-gold p-2 fs-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px;">
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <div>
+                    <h4 class="h5 font-serif text-boa-navy mb-0">Adviser Consultation & Enrolment Enquiry</h4>
+                    <p class="small text-muted mb-0">Fill in your contact details below. Our academic advisers will review your background and guide your course selection.</p>
+                  </div>
+                </div>
+
+                <form class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold text-boa-navy small">Full Name *</label>
+                      <input type="text" class="form-control" placeholder="e.g. Arthur Pendelton" required>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold text-boa-navy small">Email Address *</label>
+                      <input type="email" class="form-control" placeholder="e.g. arthur@example.com" required>
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold text-boa-navy small">Phone / WhatsApp Number *</label>
+                      <input type="tel" class="form-control" placeholder="+44 7000 000000" required>
+                      <div class="invalid-feedback">Please enter your phone number.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold text-boa-navy small">Course / Qualification Level</label>
+                      <select class="form-select">
+                        <option value="" selected>Select qualification level...</option>
+                        <option value="level3">Level 3 Diplomas (A-Level Equivalent)</option>
+                        <option value="level45">Level 4 & 5 Diplomas (Degree Y1/Y2)</option>
+                        <option value="level67">Level 6 & 7 Postgraduate / MBA</option>
+                        <option value="level8">Level 8 Doctoral / Strategic Leadership</option>
+                        <option value="igcse">IGCSE / Short Courses / IELTS</option>
+                        <option value="general">General Guidance / Advice</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12">
+                      <label class="form-label fw-bold text-boa-navy small">Your Message / Enquiry</label>
+                      <textarea class="form-control" rows="3" placeholder="Tell us about your educational background, career goals, or any questions..."></textarea>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <button type="submit" class="btn btn-boa-gold w-100 py-3 text-uppercase fw-bold shadow-sm">
+                        <i class="bi bi-send-fill me-2"></i> Submit Advisory Request
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -317,106 +454,206 @@
       <div class="text-center max-w-700 mx-auto mb-5">
         <span class="badge badge-boa-gold mb-2">ACADEMIC STANDARDS</span>
         <h2 class="font-serif text-white mb-3">Our Credentials & Registration</h2>
-        <p class="text-white fw-medium">Below is a list of corporate bodies we belong to and structures ensuring BOA operates to the highest academic standards.</p>
+        <p class="text-white fw-medium">Below is a list of corporate bodies we belong to and associations we are a part of.
+          BOA operates to the highest academic standards and has multiple structures in place that ensure the standard of education provided to its students is of the highest quality.
+        </p>
       </div>
 
-      <div class="row g-4">
+     <!-- <div class="row g-4"> -->
         <!-- Credential 1: Trading Office -->
-        <div class="col-md-6 col-lg-3">
+        <!-- <div class="col-md-6 col-lg-3">
           <div class="p-4 bg-boa-navy-dark rounded-4 border border-secondary text-center h-100">
             <i class="bi bi-geo-alt-fill text-gold fs-2 mb-3"></i>
             <h4 class="h6 font-serif text-white mb-2">Trading Office</h4>
-            <p class="small text-white fw-medium mb-0">Shillingwood House, Westwood Way, Coventry, CV4 8JZ, UK.</p>
+            <p class="small text-white fw-medium mb-0">17, Somerville Road, Romford, RM6 5BD, UK.</p>
           </div>
-        </div>
+        </div> -->
 
         <!-- Credential 2: FCA Regulation -->
-        <div class="col-md-6 col-lg-3">
+        <!-- <div class="col-md-6 col-lg-3">
           <div class="p-4 bg-boa-navy-dark rounded-4 border border-secondary text-center h-100">
             <i class="bi bi-shield-check text-gold fs-2 mb-3"></i>
             <h4 class="h6 font-serif text-white mb-2">FCA Authorization</h4>
             <p class="small text-white fw-medium mb-0">Authorized and regulated by the Financial Conduct Authority (Firm Ref: 687515).</p>
           </div>
-        </div>
+        </div> -->
 
         <!-- Credential 3: Company Registration -->
-        <div class="col-md-6 col-lg-3">
+        <!-- <div class="col-md-6 col-lg-3">
           <div class="p-4 bg-boa-navy-dark rounded-4 border border-secondary text-center h-100">
             <i class="bi bi-building-check text-gold fs-2 mb-3"></i>
             <h4 class="h6 font-serif text-white mb-2">Company Reg</h4>
             <p class="small text-white fw-medium mb-0">Registered in England and Wales (Company No: 07750588 | VAT: 140 196 044).</p>
           </div>
-        </div>
+        </div> -->
 
         <!-- Credential 4: Ofqual Approved Centre -->
-        <div class="col-md-6 col-lg-3">
+        <!-- <div class="col-md-6 col-lg-3">
           <div class="p-4 bg-boa-navy-dark rounded-4 border border-secondary text-center h-100">
             <i class="bi bi-patch-check-fill text-gold fs-2 mb-3"></i>
             <h4 class="h6 font-serif text-white mb-2">Ofqual Regulated</h4>
             <p class="small text-white fw-medium mb-0">Approved Centre delivering RQF credit-recognized higher education diplomas.</p>
           </div>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div>  -->
     </div>
   </section>
 
-  <!-- 6. EXPLORE ABOUT US NETWORK & INDIVIDUAL PATHWAYS -->
-  <section class="py-5 bg-white" id="about-explore">
-    <div class="container py-3">
-      <div class="text-center max-w-700 mx-auto mb-5">
-        <span class="badge badge-boa-gold mb-2">EXPLORE ABOUT US</span>
-        <h2 class="font-serif text-boa-navy mb-3">Explore Our Educational Network</h2>
-        <p class="text-muted">Select an area below to view top-up degree routes, dedicated support hubs, educational blogs, or flexible finance plans.</p>
-      </div>
+  <!-- 6. KEY FEATURES, GLOBAL REACH & PROFESSIONAL RECOGNITION -->
+  <section class="py-5 bg-light" id="features-recognition">
+    <div class="container py-4">
+      <div class="row gy-5 gx-lg-5">
 
-      <div class="row g-4">
-        <!-- Top Up Degrees -->
-        <div class="col-md-6 col-lg-3">
-          <div class="boa-card h-100 p-4 bg-white border-top-accent text-center d-flex flex-column">
-            <div class="rounded-circle bg-boa-navy text-gold p-3 fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-              <i class="bi bi-mortarboard-fill"></i>
+        <!-- LEFT COLUMN: Key Features & Benefits + Global Reach -->
+        <div class="col-lg-6">
+          
+          <!-- Key Features & Benefits -->
+          <div class="mb-5">
+            <span class="eyebrow text-gold">KEY FEATURES & BENEFITS</span>
+            <h2 class="font-serif text-boa-navy mb-4">Why Study With Us</h2>
+
+            <div class="d-flex flex-column gap-3">
+              <div class="p-3 bg-white rounded-3 shadow-sm border-start border-danger border-3 d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-boa-navy text-gold p-2 fs-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <div>
+                  <h3 class="h6 font-serif text-boa-navy mb-1">University Progression</h3>
+                  <p class="small text-muted mb-0">83% of BOA Students have graduated from a UK University</p>
+                </div>
+              </div>
+
+              <div class="p-3 bg-white rounded-3 shadow-sm border-start border-danger border-3 d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-boa-navy text-gold p-2 fs-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <div>
+                  <h3 class="h6 font-serif text-boa-navy mb-1">24/7 Support</h3>
+                  <p class="small text-muted mb-0">Around the clock personalized support to help achieve your goals.</p>
+                </div>
+              </div>
+
+              <div class="p-3 bg-white rounded-3 shadow-sm border-start border-danger border-3 d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-boa-navy text-gold p-2 fs-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                  <i class="bi bi-cash-coin"></i>
+                </div>
+                <div>
+                  <h3 class="h6 font-serif text-boa-navy mb-1">Interest Free Payment Plans</h3>
+                  <p class="small text-muted mb-0">Affordable monthly payments at no extra cost.</p>
+                </div>
+              </div>
+
+              <div class="p-3 bg-white rounded-3 shadow-sm border-start border-danger border-3 d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-boa-navy text-gold p-2 fs-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                  <i class="bi bi-grid-3x3-gap-fill"></i>
+                </div>
+                <div>
+                  <h3 class="h6 font-serif text-boa-navy mb-1">Discover Our Free Hubs</h3>
+                  <p class="small text-muted mb-0">A range of specialist and focused resources to support and develop you alongside your learning.</p>
+                </div>
+              </div>
+
+              <div class="p-3 bg-white rounded-3 shadow-sm border-start border-danger border-3 d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-boa-navy text-gold p-2 fs-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <div>
+                  <h3 class="h6 font-serif text-boa-navy mb-1">Free Professional Body Membership</h3>
+                  <p class="small text-muted mb-0">Enjoy free professional body membership with valuable benefits for your career growth.</p>
+                </div>
+              </div>
             </div>
-            <h3 class="h5 font-serif text-boa-navy mb-2">Top Up Degrees</h3>
-            <p class="text-muted small mb-4">Fast-track your diploma into a final year BA (Hons) or MBA top-up degree with accepting UK universities.</p>
-            <a href="university-progression.html" class="btn btn-outline-boa-navy btn-sm mt-auto">Top Up Degrees <i class="bi bi-arrow-right"></i></a>
           </div>
+
+          <!-- Global Reach & Study Benefits -->
+          <div>
+            <span class="eyebrow text-gold">OUR GLOBAL REACH</span>
+            <h2 class="font-serif text-boa-navy mb-4">Global Reach & Study Benefits</h2>
+
+            <div class="d-flex flex-column gap-3">
+              <div class="p-3 bg-white rounded-3 shadow-sm border-start border-danger border-3 d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-boa-navy text-gold p-2 fs-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <div>
+                  <h3 class="h6 font-serif text-boa-navy mb-1">20,000 Students</h3>
+                  <p class="small text-muted mb-0">Join a community of over 20,000 students who have excelled through our online degree programmes.</p>
+                </div>
+              </div>
+
+              <div class="p-3 bg-white rounded-3 shadow-sm border-start border-danger border-3 d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-boa-navy text-gold p-2 fs-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                  <i class="bi bi-globe-europe-africa"></i>
+                </div>
+                <div>
+                  <h3 class="h6 font-serif text-boa-navy mb-1">150+ Countries</h3>
+                  <p class="small text-muted mb-0">Connect with a global network of students, alumni and experts across more than 150 countries.</p>
+                </div>
+              </div>
+
+              <div class="p-3 bg-white rounded-3 shadow-sm border-start border-danger border-3 d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-boa-navy text-gold p-2 fs-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <div>
+                  <h3 class="h6 font-serif text-boa-navy mb-1">Study Your Way</h3>
+                  <p class="small text-muted mb-0">Get 5 years of access to all your course materials, giving you plenty of time to study, revisit content, and submit assignments on your terms.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <!-- Our Hubs -->
-        <div class="col-md-6 col-lg-3">
-          <div class="boa-card h-100 p-4 bg-white border-top-accent text-center d-flex flex-column">
-            <div class="rounded-circle bg-boa-navy text-gold p-3 fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-              <i class="bi bi-grid-3x3-gap-fill"></i>
-            </div>
-            <h3 class="h5 font-serif text-boa-navy mb-2">Our Hubs</h3>
-            <p class="text-muted small mb-4">Access 7 dedicated student hubs supporting personal growth, mental wellbeing, CV building, and academic skills.</p>
-            <a href="hubs.html" class="btn btn-outline-boa-navy btn-sm mt-auto">Our Hubs <i class="bi bi-arrow-right"></i></a>
+        <!-- RIGHT COLUMN: Recognition, Support & Pathway -->
+        <div class="col-lg-6 d-flex flex-column gap-4">
+
+          <!-- 1. Professional Recognition Included -->
+          <div class="p-4 bg-white rounded-4 shadow-sm border border-top-accent">
+            <h3 class="h4 font-serif text-boa-navy mb-3">Professional Recognition Included</h3>
+            <p class="text-danger fw-medium mb-3">
+              When you study with British Online Academy, your diploma comes with free professional body membership at no extra cost, helping you build credibility, confidence and career-ready recognition while you study.
+            </p>
+            <h4 class="h6 font-serif text-boa-navy mb-2">Why this matters:</h4>
+            <ul class="list-unstyled mb-3 text-muted small">
+              <li class="mb-1"><i class="bi bi-check-circle-fill text-gold me-2"></i>Strengthens your CV</li>
+              <li class="mb-1"><i class="bi bi-check-circle-fill text-gold me-2"></i>Shows industry recognition</li>
+              <li class="mb-1"><i class="bi bi-check-circle-fill text-gold me-2"></i>Supports your professional development</li>
+            </ul>
+            <p class="small text-muted fst-italic mb-0 border-top pt-2">Professional body memberships vary by course.</p>
           </div>
+
+          <!-- 2. Support Beyond Your Learning -->
+          <div class="p-4 bg-white rounded-4 shadow-sm border border-top-accent">
+            <h3 class="h4 font-serif text-boa-navy mb-3">Support Beyond Your Learning</h3>
+            <p class="text-danger fw-medium mb-2">
+              Access 7 dedicated hubs designed to support your personal growth, well-being, and career development.
+            </p>
+            <p class="text-muted small mb-3">
+              From mental health and self-care to job skills and confidence building – get the tools and guidance you need to thrive.
+            </p>
+            <p class="fw-bold text-boa-navy mb-3">Invest in yourself. Unlock your potential.</p>
+            <a href="hubs.html" class="btn btn-boa-navy btn-sm px-4">View Our Hubs <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- 3. Your Online Pathway to a UK Degree -->
+          <div class="p-4 bg-white rounded-4 shadow-sm border border-top-accent">
+            <h3 class="h4 font-serif text-boa-navy mb-3">Your Online Pathway to a UK Degree</h3>
+            <p class="text-danger fw-medium mb-3">
+              Study 100% online with flexible, affordable diploma courses that lead to top-up degrees or MBAs from respected UK universities.
+            </p>
+            <ul class="list-unstyled mb-4 text-muted small">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-gold me-2"></i>Recognised by Professional Bodies</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-gold me-2"></i>Free Career & Development Resources</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-gold me-2"></i>Learn Anytime, Anywhere, on Any Device</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-gold me-2"></i>Ongoing Tutor & Mentor Support</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-gold me-2"></i>Flexible Payment Plans</li>
+            </ul>
+            <a href="university-progression.html" class="btn btn-boa-navy btn-sm px-4">View Top Up Degrees <i class="bi bi-arrow-right"></i></a>
+          </div>
+
         </div>
 
-        <!-- Blogs -->
-        <div class="col-md-6 col-lg-3">
-          <div class="boa-card h-100 p-4 bg-white border-top-accent text-center d-flex flex-column">
-            <div class="rounded-circle bg-boa-navy text-gold p-3 fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-              <i class="bi bi-journal-text"></i>
-            </div>
-            <h3 class="h5 font-serif text-boa-navy mb-2">Blogs & Insights</h3>
-            <p class="text-muted small mb-4">Read expert articles on distance learning, Ofqual qualifications, career acceleration, and study tips.</p>
-            <a href="blogs.html" class="btn btn-outline-boa-navy btn-sm mt-auto">Blogs <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- Finance -->
-        <div class="col-md-6 col-lg-3">
-          <div class="boa-card h-100 p-4 bg-white border-top-accent text-center d-flex flex-column">
-            <div class="rounded-circle bg-boa-navy text-gold p-3 fs-3 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-              <i class="bi bi-cash-coin"></i>
-            </div>
-            <h3 class="h5 font-serif text-boa-navy mb-2">Finance & Plans</h3>
-            <p class="text-muted small mb-4">Discover 0% interest monthly instalment options and fee payment benefits including free laptop delivery.</p>
-            <a href="finance.html" class="btn btn-outline-boa-navy btn-sm mt-auto">Finance <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -448,7 +685,6 @@
             <div class="mb-1"><i class="bi bi-envelope-fill text-gold me-2"></i><a href="mailto:admin@thebritishonlineacademy.com" class="text-white text-decoration-none fw-semibold">admin@thebritishonlineacademy.com</a></div>
             <div class="mb-1"><i class="bi bi-globe text-gold me-2"></i><a href="https://www.thebritishonlineacademy.com" target="_blank" class="text-white text-decoration-none fw-semibold">www.thebritishonlineacademy.com</a></div>
           </div>
-          <p class="small text-white-50">Trading Office: British Online Academy, Shillingwood House, Westwood Way, Coventry, CV4 8JZ, UK. Authorized & regulated by FCA (Firm Reference: 687515).</p>
         </div>
         <div class="col-lg-2 col-md-6">
           <h4 class="footer-heading">Explore</h4>
@@ -489,6 +725,72 @@
       </div>
     </div>
   </footer>
+
+  <!-- ADVISER ENQUIRY FORM MODAL -->
+  <div class="modal fade" id="adviserModal" tabindex="-1" aria-labelledby="adviserModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header text-white py-3 px-4 position-relative" style="background: var(--boa-navy-gradient);">
+          <div>
+            <span class="badge badge-boa-gold mb-1" style="font-size: 0.75rem;"><i class="bi bi-headset me-1"></i> FREE ADVISORY SERVICE</span>
+            <h4 class="modal-title font-serif text-white mb-0" id="adviserModalTitle">Speak with an Academic Adviser</h4>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 p-md-5 bg-light">
+          <p class="text-muted small mb-4">
+            Complete the form below and one of our expert course advisers will contact you within 24 hours to answer your questions, discuss course options, and guide your enrolment.
+          </p>
+
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="modalFullName" class="form-label fw-bold text-boa-navy small">Full Name *</label>
+                <input type="text" class="form-control" id="modalFullName" placeholder="e.g. John Smith" required>
+                <div class="invalid-feedback">Please enter your full name.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="modalEmail" class="form-label fw-bold text-boa-navy small">Email Address *</label>
+                <input type="email" class="form-control" id="modalEmail" placeholder="e.g. john@example.com" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="modalPhone" class="form-label fw-bold text-boa-navy small">Phone / WhatsApp Number *</label>
+                <input type="tel" class="form-control" id="modalPhone" placeholder="+44 7000 000000" required>
+                <div class="invalid-feedback">Please enter your phone number.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="modalCourse" class="form-label fw-bold text-boa-navy small">Course of Interest</label>
+                <select class="form-select" id="modalCourse">
+                  <option value="" selected>Select qualification level...</option>
+                  <option value="level3">Level 3 Diplomas (A-Level Equivalent)</option>
+                  <option value="level45">Level 4 & 5 Diplomas (Undergraduate Y1/Y2)</option>
+                  <option value="level67">Level 6 & 7 Postgraduate / MBA Pathway</option>
+                  <option value="level8">Level 8 Doctoral / Strategic Leadership</option>
+                  <option value="igcse">IGCSE / Short Courses / IELTS</option>
+                  <option value="other">General Guidance / Not Sure Yet</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label for="modalMessage" class="form-label fw-bold text-boa-navy small">How can our adviser help you?</label>
+                <textarea class="form-control" id="modalMessage" rows="3" placeholder="Tell us about your educational background or questions..."></textarea>
+              </div>
+
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-boa-gold w-100 py-3 text-uppercase fw-bold shadow-sm">
+                  <i class="bi bi-send-fill me-2"></i> Request Adviser Callback
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <button id="backToTopBtn" class="btn btn-boa-red rounded-circle position-fixed bottom-0 end-0 m-4 p-3" style="display: none; z-index: 1050;"><i class="bi bi-arrow-up"></i></button>
 

@@ -25,7 +25,7 @@
   <div class="top-bar">
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
       <div class="d-flex align-items-center gap-3">
-        <span><i class="bi bi-geo-alt-fill text-boa-red"></i> Coventry & London, UK</span>
+        <span><i class="bi bi-geo-alt-fill text-boa-red"></i> Romford & London, UK</span>
         <span class="text-white-50 d-none d-md-inline">|</span>
         <span class="d-none d-md-inline"><i class="bi bi-patch-check-fill text-boa-red"></i> Ofqual RQF Regulated</span>
       </div>
@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <!-- HEADER / NAVIGATION -->
+                <!-- HEADER / NAVIGATION -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-boa" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand brand-logo" href="index.html">
@@ -60,30 +60,99 @@
             <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
 
-            <!-- Courses Dropdown -->
-            <li class="nav-item dropdown">
+            <!-- Courses Mega Dropdown (Full 5-Column Course Categories as shown in Online Business School) -->
+            <li class="nav-item dropdown dropdown-mega">
               <a class="nav-link dropdown-toggle " href="courses.html" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Courses
               </a>
-              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-                <li><h6 class="dropdown-header">Popular Courses</h6></li>
-                <li><a class="dropdown-item" href="courses.html#level3-business"><i class="bi bi-briefcase me-2 text-gold"></i>Level 3 – Business Management</a></li>
-                <li><a class="dropdown-item" href="courses.html#level45-business"><i class="bi bi-diagram-3 me-2 text-gold"></i>Level 4/5 – Business Management</a></li>
-                <li><a class="dropdown-item" href="courses.html#level45-health"><i class="bi bi-heart-pulse me-2 text-gold"></i>Level 4/5 – Health & Social Care</a></li>
-                <li><a class="dropdown-item" href="courses.html#level45-it"><i class="bi bi-laptop me-2 text-gold"></i>Level 4/5 – IT and Computing</a></li>
-                <li><a class="dropdown-item" href="courses.html#level7-strategic"><i class="bi bi-award me-2 text-gold"></i>Level 7 – Strategic Management</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="courses.html"><i class="bi bi-collection me-2 text-gold"></i>View All Courses</a></li>
-              </ul>
+              <div class="dropdown-menu mega-menu p-4" aria-labelledby="coursesDropdown">
+                <div class="row g-3">
+                  <!-- Col 1: IGCSE and short courses -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-journal-bookmark me-1 text-gold"></i> IGCSE & Short Courses</div>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Biology</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Business Studies</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Chemistry</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Computer Science</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE English First Language</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Environmental Management</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Geography</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE History</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Mathematics</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Physics</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Travel and Tourism</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link text-gold fw-bold mt-1"><i class="bi bi-star-fill me-1 small"></i> IELTS - English Training</a>
+                  </div>
+
+                  <!-- Col 2: Level 3 (A level) -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-bookmark-star me-1 text-gold"></i> Level 3 (A Level)</div>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Accountancy (60 Credits)</a>
+                    <a href="courses.html#level3-business" class="mega-item-link">Business Management (120 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Business Studies (60 Credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Employability & Workplace Skills</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Engineering (60 Credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Fashion & Textiles (120 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Health & Social Care (60 Credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Information Technology (60 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Law (60 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">People & Organisations (60 Credits)</a>
+                  </div>
+
+                  <!-- Col 3: Level 4 & 5 -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-laptop me-1 text-gold"></i> Level 4 & 5 (Degree Y1/Y2)</div>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Accounting and Business</a>
+                    <a href="courses.html#level45-business" class="mega-item-link">Business Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Cyber Security</a>
+                    <a href="courses.html#level45-health" class="mega-item-link">Health & Social Care Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Human Resource Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Law</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Logistics & Supply Chain Management</a>
+                    <a href="courses.html#level45-it" class="mega-item-link">IT and Computing</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Psychology</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Project Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Teaching</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Tourism & Hospitality Management</a>
+                  </div>
+
+                  <!-- Col 4: Level 6, 7 & 8 -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-mortarboard me-1 text-gold"></i> Level 6, 7 & 8 (MBA Entry)</div>
+                    <a href="courses.html#tab-level67" class="mega-item-link text-gold fw-bold">Level 6 Diplomas</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Business Management</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Professional Sales Management</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link text-gold fw-bold mt-1">Level 7 Postgraduate</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Artificial Intelligence</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Human Resource Management</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Organisational Psychology</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Project Management</a>
+                    <a href="courses.html#level7-strategic" class="mega-item-link">Strategic Management & Leadership</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Strategic Sales Management</a>
+                    <a href="courses.html#tab-level8" class="mega-item-link text-gold fw-bold mt-1">Level 8 Doctoral</a>
+                    <a href="courses.html#tab-level8" class="mega-item-link">Strategic Management Practice</a>
+                  </div>
+
+                  <!-- Col 5: Professional Body Memberships -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-patch-check me-1 text-gold"></i> Memberships</div>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Management Institute</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Institute of Directors</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Institute of Marketing</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">The Institute of Leadership</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Institute of Hospitality</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Institute of Procurement & Supply</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Institute of Personnel & Dev</a>
+                  </div>
+                </div>
+              </div>
             </li>
 
-            <li class="nav-item"><a class="nav-link " href="qualification-levels.html">Qualifications</a></li>
-            <li class="nav-item"><a class="nav-link " href="university-progression.html">Progression</a></li>
-
-            <!-- Student Hub Dropdown -->
+            <li class="nav-item"><a class="nav-link active" href="qualification-levels.html">Qualifications</a></li>
+            <li class="nav-item"><a class="nav-link " href="university-progression.html">University Pathways</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle " href="how-it-works.html" id="studentHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Student Hub
+                For Students
               </a>
               <ul class="dropdown-menu" aria-labelledby="studentHubDropdown">
                 <li><a class="dropdown-item" href="how-it-works.html"><i class="bi bi-compass me-2 text-gold"></i>How It Works</a></li>
@@ -93,11 +162,10 @@
                 <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
               </ul>
             </li>
-
             <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
           </ul>
-          <div class="d-flex align-items-center mt-3 mt-lg-0">
-            <a href="contact.html#apply" class="btn btn-boa-red btn-sm px-3 fw-bold">ENROL NOW <i class="bi bi-arrow-right-short"></i></a>
+          <div class="d-flex align-items-center mt-3 mt-lg-0 ms-lg-3 flex-shrink-0">
+            <a href="contact.html#apply" class="btn btn-boa-gold rounded-pill px-4 text-white text-uppercase fw-bold shadow-sm text-nowrap">Enrol Now &rarr;</a>
           </div>
         </div>
       </div>
@@ -340,7 +408,6 @@
             <div class="mb-1"><i class="bi bi-envelope-fill text-gold me-2"></i><a href="mailto:admin@thebritishonlineacademy.com" class="text-white text-decoration-none fw-semibold">admin@thebritishonlineacademy.com</a></div>
             <div class="mb-1"><i class="bi bi-globe text-gold me-2"></i><a href="https://www.thebritishonlineacademy.com" target="_blank" class="text-white text-decoration-none fw-semibold">www.thebritishonlineacademy.com</a></div>
           </div>
-          <p class="small text-white-50">Trading Office: British Online Academy, Shillingwood House, Westwood Way, Coventry, CV4 8JZ, UK. Authorized & regulated by FCA (Firm Reference: 687515).</p>
         </div>
         <div class="col-lg-2 col-md-6">
           <h4 class="footer-heading">Explore</h4>

@@ -50,8 +50,14 @@ class SmartBOAHandler(http.server.SimpleHTTPRequestHandler):
         else:
             self.wfile.write(b"<html><body><h1>404 Not Found</h1></body></html>")
 
+class ThreadingBOAServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
+    allow_reuse_address = True
+    daemon_threads = True
+
 if __name__ == '__main__':
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("", PORT), SmartBOAHandler) as httpd:
-        print(f"Smart BOA Server running at http://localhost:{PORT}")
-        httpd.serve_forever()
+    with ThreadingBOAServer(("", PORT), SmartBOAHandler) as httpd:
+        print(f"Smart BOA Server running at http://localhost:{PORT}", flush=True)
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            pass

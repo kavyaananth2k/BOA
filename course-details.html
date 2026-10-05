@@ -21,7 +21,7 @@
   <div class="top-bar">
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
       <div class="d-flex align-items-center gap-3">
-        <span><i class="bi bi-geo-alt-fill text-boa-red"></i> Coventry & London, UK</span>
+        <span><i class="bi bi-geo-alt-fill text-boa-red"></i> Romford & London, UK</span>
         <span class="text-white-50 d-none d-md-inline">|</span>
         <span class="d-none d-md-inline"><i class="bi bi-patch-check-fill text-boa-red"></i> Ofqual RQF Regulated</span>
       </div>
@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <!-- HEADER / NAVIGATION -->
+                <!-- HEADER / NAVIGATION -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-boa" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand brand-logo" href="index.html">
@@ -53,16 +53,115 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav mx-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
-            <li class="nav-item"><a class="nav-link" href="qualification-levels.html">Qualifications</a></li>
-            <li class="nav-item"><a class="nav-link" href="university-progression.html">Progression</a></li>
-            <li class="nav-item"><a class="nav-link" href="how-it-works.html">Student Hub</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+
+            <!-- Courses Mega Dropdown (Full 5-Column Course Categories as shown in Online Business School) -->
+            <li class="nav-item dropdown dropdown-mega">
+              <a class="nav-link dropdown-toggle active" href="courses.html" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <div class="dropdown-menu mega-menu p-4" aria-labelledby="coursesDropdown">
+                <div class="row g-3">
+                  <!-- Col 1: IGCSE and short courses -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-journal-bookmark me-1 text-gold"></i> IGCSE & Short Courses</div>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Biology</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Business Studies</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Chemistry</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Computer Science</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE English First Language</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Environmental Management</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Geography</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE History</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Mathematics</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Physics</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link">IGCSE Travel and Tourism</a>
+                    <a href="courses.html#tab-igcse" class="mega-item-link text-gold fw-bold mt-1"><i class="bi bi-star-fill me-1 small"></i> IELTS - English Training</a>
+                  </div>
+
+                  <!-- Col 2: Level 3 (A level) -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-bookmark-star me-1 text-gold"></i> Level 3 (A Level)</div>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Accountancy (60 Credits)</a>
+                    <a href="courses.html#level3-business" class="mega-item-link">Business Management (120 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Business Studies (60 Credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Employability & Workplace Skills</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Engineering (60 Credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Fashion & Textiles (120 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Health & Social Care (60 Credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Information Technology (60 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">Law (60 credits)</a>
+                    <a href="courses.html#tab-level3" class="mega-item-link">People & Organisations (60 Credits)</a>
+                  </div>
+
+                  <!-- Col 3: Level 4 & 5 -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-laptop me-1 text-gold"></i> Level 4 & 5 (Degree Y1/Y2)</div>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Accounting and Business</a>
+                    <a href="courses.html#level45-business" class="mega-item-link">Business Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Cyber Security</a>
+                    <a href="courses.html#level45-health" class="mega-item-link">Health & Social Care Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Human Resource Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Law</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Logistics & Supply Chain Management</a>
+                    <a href="courses.html#level45-it" class="mega-item-link">IT and Computing</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Psychology</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Project Management</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Teaching</a>
+                    <a href="courses.html#tab-level45" class="mega-item-link">Tourism & Hospitality Management</a>
+                  </div>
+
+                  <!-- Col 4: Level 6, 7 & 8 -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-mortarboard me-1 text-gold"></i> Level 6, 7 & 8 (MBA Entry)</div>
+                    <a href="courses.html#tab-level67" class="mega-item-link text-gold fw-bold">Level 6 Diplomas</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Business Management</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Professional Sales Management</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link text-gold fw-bold mt-1">Level 7 Postgraduate</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Artificial Intelligence</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Human Resource Management</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Organisational Psychology</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Project Management</a>
+                    <a href="courses.html#level7-strategic" class="mega-item-link">Strategic Management & Leadership</a>
+                    <a href="courses.html#tab-level67" class="mega-item-link">Strategic Sales Management</a>
+                    <a href="courses.html#tab-level8" class="mega-item-link text-gold fw-bold mt-1">Level 8 Doctoral</a>
+                    <a href="courses.html#tab-level8" class="mega-item-link">Strategic Management Practice</a>
+                  </div>
+
+                  <!-- Col 5: Professional Body Memberships -->
+                  <div class="col-lg-2-4 col-md-4">
+                    <div class="mega-title"><i class="bi bi-patch-check me-1 text-gold"></i> Memberships</div>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Management Institute</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Institute of Directors</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Institute of Marketing</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">The Institute of Leadership</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Institute of Hospitality</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Institute of Procurement & Supply</a>
+                    <a href="courses.html#tab-affiliations" class="mega-item-link">Chartered Institute of Personnel & Dev</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link " href="qualification-levels.html">Qualifications</a></li>
+            <li class="nav-item"><a class="nav-link " href="university-progression.html">University Pathways</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="how-it-works.html" id="studentHubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                For Students
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="studentHubDropdown">
+                <li><a class="dropdown-item" href="how-it-works.html"><i class="bi bi-compass me-2 text-gold"></i>How It Works</a></li>
+                <li><a class="dropdown-item" href="student-experience.html"><i class="bi bi-stars me-2 text-gold"></i>Student Experience</a></li>
+                <li><a class="dropdown-item" href="hubs.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i>Our Hubs</a></li>
+                <li><a class="dropdown-item" href="blogs.html"><i class="bi bi-journal-text me-2 text-gold"></i>Blogs</a></li>
+                <li><a class="dropdown-item" href="finance.html"><i class="bi bi-cash-coin me-2 text-gold"></i>Finance</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
           </ul>
-          <div class="d-flex align-items-center mt-3 mt-lg-0">
-            <a href="#enquire-form" class="btn btn-boa-red btn-sm px-3 fw-bold">ENROL NOW <i class="bi bi-arrow-right-short"></i></a>
+          <div class="d-flex align-items-center mt-3 mt-lg-0 ms-lg-3 flex-shrink-0">
+            <a href="contact.html#apply" class="btn btn-boa-gold rounded-pill px-4 text-white text-uppercase fw-bold shadow-sm text-nowrap">Enrol Now &rarr;</a>
           </div>
         </div>
       </div>
@@ -225,45 +324,76 @@
           </div>
         </div>
 
-        <!-- Sidebar Enquiry Form -->
+        <!-- Sidebar Enquiry & Enrolment Form -->
         <div class="col-lg-4" id="enquire-form">
-          <div class="bg-boa-navy text-white p-4 p-md-4 rounded-4 shadow-lg sticky-lg-top" style="top: 90px;">
-            <span class="eyebrow text-gold">ENROLMENT & ADMISSIONS</span>
-            <h3 class="font-serif text-white mb-2" style="font-size: 1.4rem;">Enquire About This Course</h3>
-            <p class="small text-white fw-medium mb-3">Fill in your details to receive full syllabus information, payment plans, and start dates.</p>
+          <div class="text-white p-4 p-md-4 rounded-4 shadow-lg sticky-lg-top" style="top: 90px; background-color: #1e5ac8;">
+            <h3 class="font-serif text-white fw-bold mb-4" style="font-size: 1.6rem; letter-spacing: -0.02em;">Start your journey today</h3>
 
             <form class="needs-validation" novalidate>
-              <div class="mb-2">
-                <label for="courseFormName" class="form-label small text-white fw-medium">Course Selected</label>
-                <input type="text" class="form-control form-control-sm bg-white text-dark fw-bold" id="courseFormName" readonly>
-              </div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label text-white fw-bold small mb-1">First Name</label>
+                  <input type="text" class="form-control bg-white bg-opacity-10 text-white border-white border-opacity-50 py-2 shadow-none" id="firstName" placeholder="" required style="border-color: rgba(255,255,255,0.4) !important;">
+                  <div class="invalid-feedback text-warning small">Please enter your first name.</div>
+                </div>
 
-              <div class="mb-2">
-                <label for="enquiryFullName" class="form-label small text-white fw-medium">Full Name *</label>
-                <input type="text" class="form-control form-control-sm" id="enquiryFullName" placeholder="e.g. Arthur Pendelton" required>
-              </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label text-white fw-bold small mb-1">Last Name</label>
+                  <input type="text" class="form-control bg-white bg-opacity-10 text-white border-white border-opacity-50 py-2 shadow-none" id="lastName" placeholder="" required style="border-color: rgba(255,255,255,0.4) !important;">
+                  <div class="invalid-feedback text-warning small">Please enter your last name.</div>
+                </div>
 
-              <div class="mb-2">
-                <label for="enquiryEmail" class="form-label small text-white fw-medium">Email Address *</label>
-                <input type="email" class="form-control form-control-sm" id="enquiryEmail" placeholder="name@example.com" required>
-              </div>
+                <div class="col-12">
+                  <label for="userEmail" class="form-label text-white fw-bold small mb-1">Your Email (required)</label>
+                  <input type="email" class="form-control bg-white bg-opacity-10 text-white border-white border-opacity-50 py-2 shadow-none" id="userEmail" placeholder="" required style="border-color: rgba(255,255,255,0.4) !important;">
+                  <div class="invalid-feedback text-warning small">Please enter a valid email address.</div>
+                </div>
 
-              <div class="mb-3">
-                <label for="enquiryPhone" class="form-label small text-white fw-medium">Phone / WhatsApp *</label>
-                <input type="tel" class="form-control form-control-sm" id="enquiryPhone" placeholder="e.g. +44 7424 044851" required>
-              </div>
+                <div class="col-12">
+                  <label for="userPhone" class="form-label text-white fw-bold small mb-1">Phone</label>
+                  <input type="tel" class="form-control bg-white bg-opacity-10 text-white border-white border-opacity-50 py-2 shadow-none" id="userPhone" placeholder="" required style="border-color: rgba(255,255,255,0.4) !important;">
+                  <div class="invalid-feedback text-warning small">Please enter your phone number.</div>
+                </div>
 
-              <div class="mb-3">
-                <label for="enquiryMessage" class="form-label small text-white fw-medium">Question / Notes (Optional)</label>
-                <textarea class="form-control form-control-sm" id="enquiryMessage" rows="2" placeholder="Ask about start dates or monthly plans..."></textarea>
-              </div>
+                <div class="col-12">
+                  <label for="courseFormName" class="form-label text-white fw-bold small mb-1">course</label>
+                  <input type="text" class="form-control bg-white text-dark fw-bold py-2 shadow-none" id="courseFormName" readonly style="border-color: rgba(255,255,255,0.4) !important;">
+                </div>
 
-              <button type="submit" class="btn btn-boa-gold w-100 fw-bold justify-content-center">SUBMIT ENQUIRY <i class="bi bi-send-fill ms-1"></i></button>
+                <div class="col-12">
+                  <label class="form-label text-white fw-bold small mb-2">Payment options</label>
+                  <div class="d-flex flex-column gap-2 text-white small">
+                    <div class="form-check">
+                      <input class="form-check-input border-white" type="radio" name="paymentOption" id="payAnnual" value="annual" checked style="background-color: transparent;">
+                      <label class="form-check-label text-white fw-semibold ms-1" for="payAnnual" id="lblAnnualPay">
+                        Annual payment (£2,400)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input border-white" type="radio" name="paymentOption" id="payMonthly" value="monthly" style="background-color: transparent;">
+                      <label class="form-check-label text-white fw-semibold ms-1" for="payMonthly" id="lblMonthlyPay">
+                        Monthly payment (£150.00 per month)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <div class="d-flex flex-wrap gap-2">
+                    <button type="submit" class="btn text-white fw-bold rounded-pill px-4 py-2 flex-fill shadow-sm" style="background-color: #d97706; border-color: #d97706;">
+                      Enrol now
+                    </button>
+                    <button type="button" class="btn text-white fw-bold rounded-pill px-4 py-2 flex-fill shadow-sm" data-bs-toggle="modal" data-bs-target="#adviserModal" style="background-color: #d97706; border-color: #d97706;">
+                      Talk to our team
+                    </button>
+                  </div>
+                </div>
+              </div>
             </form>
 
-            <div class="mt-4 pt-3 border-top border-secondary text-center">
+            <div class="mt-4 pt-3 border-top border-white border-opacity-25 text-center">
               <span class="small text-white fw-medium d-block mb-1">Direct Telephone Admissions</span>
-              <a href="tel:07424044851" class="text-gold fw-bold text-decoration-none small"><i class="bi bi-telephone-fill me-1"></i> 07424044851 / 07405860115</a>
+              <a href="tel:07424044851" class="text-warning fw-bold text-decoration-none small"><i class="bi bi-telephone-fill me-1"></i> 07424044851 / 07405860115</a>
             </div>
           </div>
         </div>
@@ -286,7 +416,6 @@
             <div class="mb-1"><i class="bi bi-envelope-fill text-gold me-2"></i><a href="mailto:admin@thebritishonlineacademy.com" class="text-white text-decoration-none fw-semibold">admin@thebritishonlineacademy.com</a></div>
             <div class="mb-1"><i class="bi bi-globe text-gold me-2"></i><a href="https://www.thebritishonlineacademy.com" target="_blank" class="text-white text-decoration-none fw-semibold">www.thebritishonlineacademy.com</a></div>
           </div>
-          <p class="small text-white-50">Trading Office: British Online Academy, Shillingwood House, Westwood Way, Coventry, CV4 8JZ, UK. Authorized & regulated by FCA (Firm Reference: 687515).</p>
         </div>
         <div class="col-lg-2 col-md-6">
           <h4 class="footer-heading">Explore</h4>
@@ -357,7 +486,30 @@
       document.getElementById('courseImage').src = course.image;
       document.getElementById('courseFormName').value = course.title;
 
-      document.getElementById('overviewText').innerHTML = `<p class="lead text-dark">${course.description}</p><p class="text-muted">This programme is delivered 100% online through British Online Academy's modern learning platform. Students benefit from structured module learning, self-paced study options, 24/7 access to digital resources, and dedicated academic adviser support throughout their enrolment.</p>`;
+      const startDate = course.startDate || 'Anytime';
+      const location = course.location || 'Online';
+      const studyPace = course.studyPace || 'Flexible, you have up to 5 years to complete this course';
+      const qualifications = course.qualifications || (course.title + ' (' + course.credits + ')');
+      const assessment = course.assessment || 'Online written assignments';
+      const includes = course.includes || '1-2-1 tutor support, FREE laptop*, all course materials and more';
+      const ofqualLink = course.ofqualLink || (course.title + ' – Regulated Ofqual RQF Qualification');
+
+      document.getElementById('overviewText').innerHTML = `
+        <div class="p-4 bg-light rounded-4 border shadow-sm mb-4 border-start border-boa-gold border-4">
+          <h4 class="h5 font-serif text-boa-navy mb-3"><i class="bi bi-list-check text-gold me-2"></i>Key Course Specifications</h4>
+          <ul class="list-unstyled mb-0 d-grid gap-2 fs-6 text-dark">
+            <li><i class="bi bi-calendar-event text-gold me-2"></i><strong>Start date:</strong> ${startDate}</li>
+            <li><i class="bi bi-geo-alt text-gold me-2"></i><strong>Location:</strong> ${location}</li>
+            <li><i class="bi bi-clock-history text-gold me-2"></i><strong>Study pace:</strong> ${studyPace}</li>
+            <li><i class="bi bi-award text-gold me-2"></i><strong>Qualifications:</strong> ${qualifications}</li>
+            <li><i class="bi bi-file-earmark-text text-gold me-2"></i><strong>Assessment:</strong> ${assessment}</li>
+            <li><i class="bi bi-box-seam text-gold me-2"></i><strong>Includes:</strong> ${includes}</li>
+            <li><i class="bi bi-patch-check-fill text-gold me-2"></i><strong>Ofqual Link:</strong> <span class="text-boa-navy fw-semibold">${ofqualLink}</span></li>
+          </ul>
+        </div>
+        <p class="lead text-dark mb-3">${course.description}</p>
+        <p class="text-muted">This programme is delivered 100% online through British Online Academy's modern learning platform. Students benefit from structured module learning, self-paced study options, 24/7 access to digital resources, and dedicated academic adviser support throughout their enrolment.</p>
+      `;
 
       // Modules
       const modulesAccordion = document.getElementById('modulesAccordion');
@@ -383,6 +535,19 @@
       document.getElementById('entryText').innerHTML = `<p class="text-dark">${course.entryRequirements}</p>`;
       document.getElementById('progressionText').innerText = course.progression;
       document.getElementById('feesText').innerText = course.fees;
+
+      if (document.getElementById('lblAnnualPay') && document.getElementById('lblMonthlyPay')) {
+        let feeVal = course.fees || '£2,400';
+        let totalMatches = feeVal.match(/£[0-9,]+/g);
+        if (totalMatches && totalMatches.length > 0) {
+          document.getElementById('lblAnnualPay').innerText = `Annual payment (${totalMatches[0]})`;
+          if (totalMatches.length > 1) {
+            document.getElementById('lblMonthlyPay').innerText = `Monthly payment (${totalMatches[1]} per month)`;
+          } else {
+            document.getElementById('lblMonthlyPay').innerText = `Monthly payment (0% interest instalments)`;
+          }
+        }
+      }
     }
   </script>
 
