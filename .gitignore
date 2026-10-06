@@ -1,0 +1,5 @@
+# Runtime logs and submission data
+*.log
+enrolments.json
+__pycache__/
+.DS_Store

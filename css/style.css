@@ -832,6 +832,62 @@ img {
   line-height: 1.7;
 }
 
+/* ==========================================================================
+   HIGH-CONTRAST HERO COURSE SEARCH WIDGET
+   ========================================================================== */
+.hero-course-widget {
+  background: #ffffff !important;
+  color: var(--boa-navy-primary) !important;
+  border: 1px solid rgba(226, 27, 60, 0.25) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45) !important;
+  border-radius: 18px !important;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-course-widget p,
+.hero-course-widget span:not(.badge),
+.hero-course-widget label,
+.hero-course-widget div:not(.badge) {
+  color: #071B35 !important;
+  opacity: 1 !important;
+}
+
+.hero-widget-select {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+  border: 1.5px solid #CBD5E1 !important;
+  border-radius: 10px !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  height: 48px !important;
+  transition: var(--transition-fast) !important;
+}
+
+.hero-widget-select:hover,
+.hero-widget-select:focus {
+  border-color: var(--boa-red) !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.2) !important;
+  outline: none !important;
+}
+
+.tag-hover {
+  transition: var(--transition-fast) !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  color: var(--boa-navy-primary) !important;
+  background-color: var(--boa-grey-100) !important;
+  border: 1px solid var(--boa-grey-300) !important;
+}
+
+.tag-hover:hover {
+  background-color: var(--boa-red) !important;
+  color: #ffffff !important;
+  border-color: var(--boa-red) !important;
+  transform: translateY(-1px);
+}
+
 .hero-highlights {
   display: flex;
   flex-wrap: wrap;
