@@ -8,27 +8,27 @@
 
 /* 2. DESIGN TOKENS / CSS VARIABLES */
 :root {
-  /* Primary Brand Palette (White, Blue, and Red - Match to BOA UK Academic Logo) */
-  --boa-navy-primary: #071B35;
-  --boa-navy-dark: #030D1B;
-  --boa-navy-secondary: #0E2E57;
-  --boa-blue-bright: #1D4ED8;
-  --boa-blue-accent: #2563EB;
+  /* Primary Oxford Royal Navy Palette */
+  --boa-navy-primary: #0F172A;
+  --boa-navy-dark: #0B192C;
+  --boa-navy-secondary: #1E3A8A;
+  --boa-blue-bright: #2563EB;
+  --boa-blue-accent: #3B82F6;
   
-  /* Brand Red Accents (White, Blue & Red Union Palette) */
-  --boa-red: #C8102E;
-  --boa-red-light: #E21B3C;
-  --boa-red-dark: #9B0A21;
-  --boa-red-glow: rgba(200, 16, 46, 0.30);
-  --boa-red-gradient: linear-gradient(135deg, #E21B3C 0%, #C8102E 50%, #9B0A21 100%);
+  /* Warm Academic Gold & Amber Accents */
+  --boa-gold: #D4AF37;
+  --boa-gold-light: #F59E0B;
+  --boa-gold-dark: #B45309;
+  --boa-gold-glow: rgba(245, 158, 11, 0.35);
+  --boa-gold-gradient: linear-gradient(135deg, #FBBF24 0%, #D4AF37 50%, #B45309 100%);
+  --boa-navy-gradient: linear-gradient(135deg, #071220 0%, #0B192C 60%, #1E3A8A 100%);
   
-  /* Primary Accent Highlight (Mapped to Union Crimson Red & Crisp White to replace old yellow/gold) */
-  --boa-gold: #E21B3C;
-  --boa-gold-light: #FF4D6D;
-  --boa-gold-dark: #C8102E;
-  --boa-gold-glow: rgba(226, 27, 60, 0.30);
-  --boa-gold-gradient: linear-gradient(135deg, #FF4D6D 0%, #E21B3C 50%, #C8102E 100%);
-  --boa-navy-gradient: linear-gradient(135deg, #030D1B 0%, #071B35 60%, #0E2E57 100%);
+  /* Brand Red Accents (Used for critical badges & alerts) */
+  --boa-red: #DC2626;
+  --boa-red-light: #EF4444;
+  --boa-red-dark: #991B1B;
+  --boa-red-glow: rgba(220, 38, 38, 0.30);
+  --boa-red-gradient: linear-gradient(135deg, #EF4444 0%, #DC2626 50%, #991B1B 100%);
   
   /* Neutral Palette */
   --boa-white: #FFFFFF;
@@ -45,10 +45,10 @@
   --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 
   /* Elevations & Glassmorphism Shadows */
-  --shadow-sm: 0 2px 10px rgba(7, 27, 53, 0.05);
-  --shadow-md: 0 8px 24px rgba(7, 27, 53, 0.09);
-  --shadow-lg: 0 16px 40px rgba(7, 27, 53, 0.14);
-  --shadow-gold: 0 8px 25px rgba(226, 27, 60, 0.35);
+  --shadow-sm: 0 2px 10px rgba(11, 25, 44, 0.05);
+  --shadow-md: 0 8px 24px rgba(11, 25, 44, 0.09);
+  --shadow-lg: 0 16px 40px rgba(11, 25, 44, 0.14);
+  --shadow-gold: 0 8px 25px rgba(245, 158, 11, 0.35);
 
   /* Transitions */
   --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -154,36 +154,30 @@ img {
   opacity: 1 !important;
 }
 
-.text-gold,
-.eyebrow {
-  color: var(--boa-red) !important;
+.text-gold {
+  color: var(--boa-gold-light) !important;
   font-weight: 700;
 }
 
 .text-navy,
 .text-boa-navy {
-  color: var(--boa-navy-primary) !important;
+  color: var(--boa-navy-dark) !important;
 }
 
 .bg-navy,
 .bg-boa-navy {
-  background-color: var(--boa-navy-primary) !important;
+  background-color: var(--boa-navy-dark) !important;
   color: #ffffff !important;
 }
 
 .bg-navy-dark,
 .bg-boa-navy-dark {
-  background-color: var(--boa-navy-dark) !important;
+  background-color: #071220 !important;
 }
 
 .bg-boa-gold {
-  background-color: var(--boa-gold) !important;
-  color: var(--boa-white) !important;
-}
-
-.text-navy,
-.text-boa-navy {
-  color: var(--boa-navy-primary) !important;
+  background-color: var(--boa-gold-light) !important;
+  color: var(--boa-navy-dark) !important;
 }
 
 .text-boa-red {
@@ -192,18 +186,18 @@ img {
 
 .badge.bg-navy,
 .badge.bg-boa-navy {
-  background-color: var(--boa-navy-primary) !important;
-  color: var(--boa-gold) !important;
+  background-color: var(--boa-navy-dark) !important;
+  color: var(--boa-gold-light) !important;
   font-weight: 700 !important;
   padding: 0.5rem 0.85rem !important;
   border-radius: 50rem !important;
-  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
 }
 
 .alert-boa-info {
-  background-color: rgba(7, 27, 53, 0.05);
-  border-left: 4px solid var(--boa-gold);
+  background-color: rgba(11, 25, 44, 0.05);
+  border-left: 4px solid var(--boa-gold-light);
   color: var(--boa-navy-dark);
   padding: 1rem 1.25rem;
   border-radius: var(--radius-sm);
@@ -216,7 +210,7 @@ img {
 }
 
 .breadcrumb-boa .breadcrumb-item a {
-  color: var(--boa-gold);
+  color: var(--boa-gold-light);
   text-decoration: none;
 }
 
@@ -227,11 +221,11 @@ img {
 .badge-boa-gold {
   background: var(--boa-gold-gradient) !important;
   color: var(--boa-navy-dark) !important;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
   padding: 0.45rem 1rem;
   border-radius: var(--radius-pill);
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
   display: inline-block;
 }
 
@@ -247,11 +241,11 @@ img {
 .boa-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--boa-gold);
+  border-color: var(--boa-gold-light);
 }
 
 .border-top-accent {
-  border-top: 4px solid var(--boa-gold) !important;
+  border-top: 4px solid var(--boa-gold-light) !important;
 }
 
 .max-w-350 { max-width: 350px; }
@@ -267,7 +261,7 @@ img {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--boa-gold);
+  color: var(--boa-gold-light) !important;
   margin-bottom: 0.75rem;
 }
 
@@ -278,7 +272,7 @@ img {
 .gold-divider {
   width: 48px;
   height: 3px;
-  background: linear-gradient(90deg, var(--boa-red) 0%, var(--boa-blue-accent) 100%);
+  background: linear-gradient(90deg, var(--boa-gold-light) 0%, var(--boa-blue-bright) 100%);
   margin: 0.75rem 0 1.25rem;
   border-radius: 99px;
   opacity: 0.85;
@@ -290,14 +284,14 @@ img {
 
 /* 5. BUTTONS & INTERACTIVE ELEMENTS */
 .btn-boa-gold {
-  background: linear-gradient(135deg, var(--boa-red-light) 0%, var(--boa-red) 100%);
-  color: var(--boa-white) !important;
-  font-weight: 700;
+  background: linear-gradient(135deg, #F59E0B 0%, #D4AF37 60%, #B45309 100%);
+  color: #0F172A !important;
+  font-weight: 800;
   font-size: 0.875rem;
   padding: 0.65rem 1.6rem;
   border-radius: var(--radius-pill);
   border: none;
-  box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.35);
   transition: var(--transition-normal);
   display: inline-flex;
   align-items: center;
@@ -310,19 +304,19 @@ img {
 }
 
 .btn-boa-gold:hover {
-  background: linear-gradient(135deg, var(--boa-red) 0%, var(--boa-red-dark) 100%);
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 60%, #D4AF37 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(200, 16, 46, 0.45);
-  color: var(--boa-white) !important;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+  color: #0F172A !important;
 }
 
 .btn-boa-navy {
-  background: var(--boa-navy-primary);
+  background: var(--boa-navy-dark);
   color: var(--boa-white) !important;
   font-weight: 600;
   font-size: 0.925rem;
   padding: 0.75rem 1.75rem;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-pill);
   border: 1px solid var(--boa-navy-secondary);
   transition: var(--transition-normal);
   display: inline-flex;
@@ -334,7 +328,7 @@ img {
 
 .btn-boa-navy:hover {
   background: var(--boa-navy-secondary);
-  border-color: var(--boa-red);
+  border-color: var(--boa-gold-light);
   color: var(--boa-white) !important;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -342,12 +336,27 @@ img {
 
 .btn-boa-outline-gold {
   background: transparent;
-  color: var(--boa-white) !important;
-  font-weight: 600;
+  color: var(--boa-gold-light) !important;
+  font-weight: 700;
   font-size: 0.925rem;
   padding: 0.75rem 1.75rem;
-  border-radius: var(--radius-sm);
-  border: 2px solid var(--boa-red-light);
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--boa-gold-light);
+  transition: var(--transition-normal);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-boa-outline-gold:hover {
+  background: var(--boa-gold-gradient);
+  color: #0F172A !important;
+  border-color: var(--boa-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
+}
   transition: var(--transition-normal);
   display: inline-flex;
   align-items: center;
@@ -429,11 +438,11 @@ img {
 
 /* 6. HEADER & NAVIGATION */
 .top-bar {
-  background-color: var(--boa-navy-dark);
+  background-color: #071220;
   color: #ffffff;
   font-size: 0.8125rem;
   padding: 0.45rem 0;
-  border-bottom: 2px solid var(--boa-red);
+  border-bottom: 2px solid var(--boa-gold-light);
   line-height: 1.4;
 }
 
@@ -450,7 +459,7 @@ img {
 }
 
 .top-bar .bi {
-  color: var(--boa-red) !important;
+  color: var(--boa-gold-light) !important;
   font-size: 0.925rem !important;
   margin-right: 0.35rem !important;
   display: inline-flex !important;
@@ -469,7 +478,7 @@ img {
 
 .top-bar a.text-boa-red,
 .top-bar .text-boa-red {
-  color: var(--boa-red) !important;
+  color: var(--boa-gold-light) !important;
   font-weight: 700 !important;
 }
 
@@ -481,20 +490,20 @@ img {
 }
 
 .navbar-boa {
-  background-color: rgba(7, 27, 53, 0.96);
+  background-color: rgba(11, 25, 44, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   padding: 0.75rem 0;
   transition: var(--transition-normal);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
   position: sticky;
   top: 0;
   z-index: 1040;
 }
 
 .navbar-boa.scrolled {
-  background-color: rgba(4, 18, 36, 0.98);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background-color: rgba(7, 18, 32, 0.98);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   padding: 0.5rem 0;
 }
 
@@ -515,8 +524,8 @@ img {
   background: #ffffff !important;
   padding: 4px 10px !important;
   border-radius: 8px !important;
-  border: 1px solid rgba(226, 27, 60, 0.4) !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25), 0 0 10px rgba(226, 27, 60, 0.2) !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25), 0 0 10px rgba(245, 158, 11, 0.2) !important;
   transition: var(--transition-normal) !important;
   display: block !important;
   visibility: visible !important;
@@ -525,8 +534,8 @@ img {
 
 .brand-logo-img:hover {
   transform: scale(1.03);
-  border-color: var(--boa-red);
-  box-shadow: 0 6px 20px rgba(226, 27, 60, 0.4);
+  border-color: var(--boa-gold);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
 }
 
 .brand-logo-footer {
@@ -838,7 +847,7 @@ img {
 .hero-course-widget {
   background: #ffffff !important;
   color: var(--boa-navy-primary) !important;
-  border: 1px solid rgba(226, 27, 60, 0.25) !important;
+  border: 1.5px solid rgba(245, 158, 11, 0.35) !important;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45) !important;
   border-radius: 18px !important;
   position: relative;
@@ -849,7 +858,7 @@ img {
 .hero-course-widget span:not(.badge),
 .hero-course-widget label,
 .hero-course-widget div:not(.badge) {
-  color: #071B35 !important;
+  color: #0F172A !important;
   opacity: 1 !important;
 }
 
@@ -866,9 +875,9 @@ img {
 
 .hero-widget-select:hover,
 .hero-widget-select:focus {
-  border-color: var(--boa-red) !important;
+  border-color: var(--boa-gold-light) !important;
   background-color: #ffffff !important;
-  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.2) !important;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25) !important;
   outline: none !important;
 }
 
@@ -882,9 +891,9 @@ img {
 }
 
 .tag-hover:hover {
-  background-color: var(--boa-red) !important;
-  color: #ffffff !important;
-  border-color: var(--boa-red) !important;
+  background-color: var(--boa-navy-dark) !important;
+  color: var(--boa-gold-light) !important;
+  border-color: var(--boa-gold-light) !important;
   transform: translateY(-1px);
 }
 
@@ -907,7 +916,7 @@ img {
 }
 
 .hero-badge i {
-  color: var(--boa-red-light);
+  color: var(--boa-gold-light);
   font-size: 1rem;
 }
 
@@ -922,15 +931,15 @@ img {
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(200, 16, 46, 0.4);
+  border: 2px solid rgba(245, 158, 11, 0.4);
 }
 
 .floating-card {
   position: absolute;
-  background: rgba(7, 27, 53, 0.92);
+  background: rgba(11, 25, 44, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(200, 16, 46, 0.45);
+  border: 1.5px solid rgba(245, 158, 11, 0.45);
   border-radius: var(--radius-md);
   padding: 0.75rem 1.25rem;
   display: flex;
@@ -948,6 +957,14 @@ img {
 .floating-icon {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--boa-gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
   border-radius: 50%;
   background: rgba(200, 16, 46, 0.25);
   color: var(--boa-red-light);
