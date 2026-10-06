@@ -804,6 +804,83 @@
 
       </div>
     </div>
+  </section>
+
+  <!-- COURSES ENROLMENT & ENQUIRY FORM SECTION -->
+  <section class="py-5 bg-boa-navy text-white" id="course-enquiry">
+    <div class="container py-3">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <span class="badge badge-boa-gold mb-3">START YOUR UK QUALIFICATION</span>
+          <h2 class="display-6 font-serif text-white mb-3">Enrol or Request Course Information</h2>
+          <p class="text-light lead mb-4">Have questions about specific diploma modules, entry requirements, or course fees? Submit your details below to speak with an Academic Admissions Advisor.</p>
+          
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3 bg-boa-navy-dark p-3 rounded border border-secondary">
+              <i class="bi bi-shield-check text-gold fs-3"></i>
+              <div>
+                <h6 class="text-white font-serif mb-0">Ofqual RQF Regulated Qualifications</h6>
+                <small class="text-light">Nationally recognized UK credits accepted by UK universities.</small>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3 bg-boa-navy-dark p-3 rounded border border-secondary">
+              <i class="bi bi-envelope-at-fill text-gold fs-3"></i>
+              <div>
+                <h6 class="text-white font-serif mb-0">Direct Response & Transmissions</h6>
+                <small class="text-light">All enquiries are processed directly by <span class="text-gold">admin@thebritishonlineacademy.com</span></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 ps-lg-5">
+          <div class="bg-white text-dark p-4 p-md-5 rounded-4 shadow-lg">
+            <h3 class="h4 font-serif text-boa-navy mb-2"><i class="bi bi-pencil-square text-gold me-2"></i>Course Enquiry Form</h3>
+            <p class="text-muted small mb-4">Fill out the form below to receive detailed syllabus brochures and course fee options.</p>
+
+            <form action="/api/enrol" method="POST" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-semibold text-boa-navy small">Full Name *</label>
+                <input type="text" name="full_name" class="form-control" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold text-boa-navy small">Email Address *</label>
+                  <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold text-boa-navy small">Phone Number *</label>
+                  <input type="tel" name="phone" class="form-control" placeholder="+44 7000 000000" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold text-boa-navy small">Select Qualification Level / Course *</label>
+                <select name="course" class="form-select" required>
+                  <option value="" selected disabled>Choose a Qualification Level...</option>
+                  <option value="Level 3 Diploma">Level 3 Diploma (A-Level Equivalent)</option>
+                  <option value="Level 4 & 5 Diploma">Level 4 & 5 Diploma (Bachelor's Y1 & Y2)</option>
+                  <option value="Level 6 Diploma">Level 6 Diploma (Graduate Level)</option>
+                  <option value="Level 7 Postgraduate MBA">Level 7 Diploma (Postgraduate / MBA)</option>
+                  <option value="IGCSE Courses">IGCSE / Short Courses</option>
+                  <option value="General Course Enquiry">General Course Enquiry</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold text-boa-navy small">Your Message / Questions</label>
+                <textarea name="message" class="form-control" rows="3" placeholder="Tell us about your background or target career goals..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-boa-gold w-100 py-3 fw-bold justify-content-center">
+                Submit Course Enquiry <i class="bi bi-send-fill ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>  <!-- FOOTER -->
   <footer class="footer-boa">
     <div class="container">

@@ -346,6 +346,78 @@
     </div>
   </section>
 
+  <!-- QUALIFICATION ENQUIRY & APPLICATION FORM SECTION -->
+  <section class="py-5 bg-boa-navy text-white" id="qualification-enquiry">
+    <div class="container py-3">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <span class="badge badge-boa-gold mb-3">QUALIFICATION ADMISSIONS</span>
+          <h2 class="display-6 font-serif text-white mb-3">Need Guidance on Your Qualification Level?</h2>
+          <p class="text-light lead mb-4">Not sure which level (Level 3, Level 4/5, or Level 7) matches your prior experience or academic qualifications? Request a free entry evaluation.</p>
+          
+          <div class="p-4 bg-boa-navy-dark rounded-3 border border-secondary mb-4">
+            <h5 class="text-gold font-serif h6 mb-2"><i class="bi bi-mortarboard-fill me-2"></i>Ofqual RQF Credit Transfer</h5>
+            <p class="small text-light mb-0">Our qualifications carry recognized UK RQF credits that enable direct top-up degree entry to UK partner universities online or on campus.</p>
+          </div>
+          
+          <div class="d-flex align-items-center gap-3 bg-boa-navy-dark p-3 rounded border border-secondary">
+            <i class="bi bi-envelope-check-fill text-gold fs-3"></i>
+            <div>
+              <h6 class="text-white font-serif mb-0">Direct Academic Transmission</h6>
+              <small class="text-light">Submissions are sent directly to <span class="text-gold">admin@thebritishonlineacademy.com</span></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 ps-lg-5">
+          <div class="bg-white text-dark p-4 p-md-5 rounded-4 shadow-lg">
+            <h3 class="h4 font-serif text-boa-navy mb-2"><i class="bi bi-file-earmark-check text-gold me-2"></i>Qualification Entry Form</h3>
+            <p class="text-muted small mb-4">Submit your details below to receive a personalized qualification pathway guide.</p>
+
+            <form action="/api/submit-form" method="POST" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-semibold text-boa-navy small">Full Name *</label>
+                <input type="text" name="full_name" class="form-control" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold text-boa-navy small">Email Address *</label>
+                  <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold text-boa-navy small">Phone Number *</label>
+                  <input type="tel" name="phone" class="form-control" placeholder="+44 7000 000000" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold text-boa-navy small">Target Qualification Level *</label>
+                <select name="qualification_level" class="form-select" required>
+                  <option value="" selected disabled>Select Qualification Level...</option>
+                  <option value="Level 3 Diploma">Level 3 (2 A-Levels Equivalent)</option>
+                  <option value="Level 4 Diploma">Level 4 (Bachelor's Year 1)</option>
+                  <option value="Level 5 Diploma">Level 5 (Bachelor's Year 2 / HND)</option>
+                  <option value="Level 6 Diploma">Level 6 (Graduate Level)</option>
+                  <option value="Level 7 Diploma">Level 7 (Postgraduate / MBA)</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold text-boa-navy small">Prior Qualifications / Experience</label>
+                <textarea name="message" class="form-control" rows="3" placeholder="Briefly describe your current qualifications or work experience..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-boa-gold w-100 py-3 fw-bold justify-content-center">
+                Submit Qualification Enquiry <i class="bi bi-send-fill ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
         <!-- FOOTER -->
   <footer class="footer-boa">
     <div class="container">
