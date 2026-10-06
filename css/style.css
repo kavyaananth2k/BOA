@@ -1419,6 +1419,22 @@ img {
   color: #ffffff !important;
 }
 
+.footer-contact-details .d-flex {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.footer-contact-details .d-flex i {
+  color: #ff4d6d !important;
+  flex-shrink: 0 !important;
+  margin-top: 0.2rem !important;
+}
+
+.footer-contact-details .d-flex span {
+  flex: 1 1 auto;
+  line-height: 1.4;
+}
+
 .footer-contact-details a,
 .footer-contact-details a.text-white-70,
 .footer-contact-details a.text-white-80 {
