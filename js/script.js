@@ -51,7 +51,7 @@ const COURSES_DATA = {
     assessment: 'Online written assignments',
     includes: '1-2-1 tutor support, digital course materials',
     ofqualLink: 'Regulated Ofqual RQF Qualification – 60 Credits',
-    image: 'images/finance_hero_bg.jpg',
+    image: 'images/online_learning_hub.jpg',
     description: 'Introduces core financial accounting practices, bookkeeping principles, payroll calculations, and introductory management accounting for modern business environments.',
     modules: [
       'Introduction to Financial Accounting (15 Credits)',
@@ -105,7 +105,7 @@ const COURSES_DATA = {
     assessment: 'Online written assignments',
     includes: '1-2-1 tutor support, career advice',
     ofqualLink: 'Regulated Ofqual RQF Qualification – 60 Credits',
-    image: 'images/student_experience.jpg',
+    image: 'images/hero_student_banner.jpg',
     description: 'Focuses on critical workplace competencies, leadership potential, digital literacy, problem solving, and effective professional communication.',
     modules: [
       'Professional Communication & Writing (15 Credits)',
@@ -188,7 +188,7 @@ const COURSES_DATA = {
     assessment: 'Online written assignments',
     includes: '1-2-1 tutor support, digital study portal',
     ofqualLink: 'Regulated Ofqual RQF Qualification – 60 Credits',
-    image: 'images/student_experience.jpg',
+    image: 'images/hero_student_banner.jpg',
     description: 'Prepares individuals for foundation roles in healthcare, covering person-centered care, safeguarding principles, health promotion, and communication.',
     modules: [
       'Principles of Person-Centered Care (15 Credits)',
@@ -333,7 +333,7 @@ const COURSES_DATA = {
     assessment: 'Online written assignments',
     includes: '1-2-1 tutor support, FREE laptop*, all course materials',
     ofqualLink: 'OTHM Level 4 & 5 Diploma in Accounting and Business – 603/3328/1',
-    image: 'images/finance_hero_bg.jpg',
+    image: 'images/online_learning_hub.jpg',
     description: 'Rigorous accounting & finance diploma equivalent to Years 1 & 2 of a UK Accounting Degree. Covers financial reporting, auditing, management accounting, corporate taxation, and business law.',
     modules: [
       'Financial Accounting Principles (20 Credits)',
@@ -403,7 +403,7 @@ const COURSES_DATA = {
     assessment: 'Online written assignments',
     includes: '1-2-1 tutor support, FREE laptop*, all course materials',
     ofqualLink: 'OTHM Level 4 & 5 Diploma in Health and Social Care Management – 603/4862/4',
-    image: 'images/student_experience.jpg',
+    image: 'images/hero_student_banner.jpg',
     description: 'Specialized leadership qualification designed for care workers, supervisors, and healthcare managers to master health policy, safeguarding, care delivery quality, and team leadership.',
     modules: [
       'Equality, Diversity & Inclusion in Healthcare (20 Credits)',
@@ -578,7 +578,7 @@ const COURSES_DATA = {
     assessment: 'Online written assignments',
     includes: '1-2-1 tutor support, FREE laptop*, course materials',
     ofqualLink: 'OTHM Level 4 & 5 Diploma in Psychology – 603/6128/5',
-    image: 'images/student_experience.jpg',
+    image: 'images/hero_student_banner.jpg',
     description: 'Undergraduate psychology diploma covering cognitive psychology, developmental stages, social psychology, research methods, and biological foundations of behavior.',
     modules: [
       'Foundations of Psychology (20 Credits)',
@@ -648,7 +648,7 @@ const COURSES_DATA = {
     assessment: 'Online written assignments & teaching practice logs',
     includes: '1-2-1 tutor support, teaching practice guidance',
     ofqualLink: 'OTHM Level 4 & 5 Diploma in Education and Training – 603/4863/6',
-    image: 'images/student_experience.jpg',
+    image: 'images/hero_student_banner.jpg',
     description: 'Designed for aspiring teachers, trainers, and educators to master pedagogy, curriculum design, assessment techniques, and educational psychology.',
     modules: [
       'Understanding Roles & Responsibilities in Education (20 Credits)',
@@ -838,7 +838,7 @@ const COURSES_DATA = {
     assessment: 'Online written assignments',
     includes: '1-2-1 tutor support, FREE laptop*, course materials',
     ofqualLink: 'OTHM Level 7 Diploma in Health and Social Care Management – 603/5247/0',
-    image: 'images/student_experience.jpg',
+    image: 'images/hero_student_banner.jpg',
     description: 'Advanced postgraduate qualification for clinical directors, health service executives, and senior healthcare policy administrators.',
     modules: [
       'Strategic Health Service Management (20 Credits)',
@@ -896,7 +896,7 @@ const COURSES_DATA = {
     assessment: 'Online written assignments',
     includes: '1-2-1 tutor support, course materials',
     ofqualLink: 'OTHM Level 7 Diploma in Organisational Psychology – 603/6129/7',
-    image: 'images/student_experience.jpg',
+    image: 'images/hero_student_banner.jpg',
     description: 'Postgraduate diploma exploring psychological dynamics in corporate environments, executive coaching, workplace wellbeing, consumer behavior, and change leadership.',
     modules: [
       'Psychological Assessment in Organizations (20 Credits)',
@@ -1128,7 +1128,7 @@ const COURSES_DATA = {
     assessment: 'Online coursework & writing tasks',
     includes: '1-2-1 tutor support, essay grading',
     ofqualLink: 'Edexcel / Cambridge IGCSE Equivalent',
-    image: 'images/student_experience.jpg',
+    image: 'images/hero_student_banner.jpg',
     description: 'Develops critical reading comprehension, analytical writing, persuasive speech, summary skills, and grammatical accuracy.',
     modules: [
       'Reading Comprehension & Analysis',
@@ -1324,7 +1324,7 @@ const COURSES_DATA = {
     assessment: 'Mock IELTS Speaking, Listening, Reading & Writing tests',
     includes: '1-2-1 live tutor practice, writing corrections',
     ofqualLink: 'Official IELTS Academic & General Training Prep',
-    image: 'images/student_experience.jpg',
+    image: 'images/hero_student_banner.jpg',
     description: 'Comprehensive preparation course designed to help international students achieve Band 6.0 - 8.0+ in IELTS Academic or General examinations.',
     modules: [
       'IELTS Academic Reading Strategies & Speed Training',
