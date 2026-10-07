@@ -1351,6 +1351,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCourseModal();
   initHashNavigation();
   handleUrlCourseFilters();
+  initMobileNavbarClose();
 });
 
 /**
@@ -1409,6 +1410,24 @@ function initNavbarScroll() {
 
   window.addEventListener('scroll', handleScroll);
   handleScroll();
+}
+
+/**
+ * Auto-close Offcanvas Mobile Menu on Link Click
+ */
+function initMobileNavbarClose() {
+  const offcanvasEl = document.getElementById('offcanvasNavbar');
+  if (!offcanvasEl) return;
+
+  const navLinks = offcanvasEl.querySelectorAll('a:not(.dropdown-toggle)');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+      if (bsOffcanvas) {
+        bsOffcanvas.hide();
+      }
+    });
+  });
 }
 
 /**

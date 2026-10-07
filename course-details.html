@@ -20,14 +20,13 @@
       <!-- TOP INFORMATION BAR -->
   <div class="top-bar">
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <div class="d-flex align-items-center gap-2">
-        <span class="d-none d-md-inline-flex align-items-center"><i class="bi bi-geo-alt-fill text-boa-red me-1"></i> 17, Somerville Road, Romford, RM6 5BD</span>
-      </div>
-      <div class="d-flex align-items-center gap-3 ms-auto">
-        <a href="mailto:admin@thebritishonlineacademy.com" class="d-none d-lg-inline-flex"><i class="bi bi-envelope-fill text-boa-red"></i> admin@thebritishonlineacademy.com</a>
-        <span class="text-white-50 d-none d-lg-inline">|</span>
-        <a href="tel:07424044851"><i class="bi bi-telephone-fill text-boa-red"></i> 07424044851 / 07405860115</a>
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <a href="mailto:admin@thebritishonlineacademy.com"><i class="bi bi-envelope-fill text-boa-red"></i> admin@thebritishonlineacademy.com</a>
         <span class="text-white-50">|</span>
+        <a href="tel:07424044851"><i class="bi bi-telephone-fill text-boa-red"></i> 07424044851 / 07405860115</a>
+      </div>
+      <div class="d-flex align-items-center ms-auto">
+        <span class="text-white-50 me-3 d-none d-sm-inline">|</span>
         <a href="contact.html#apply" class="text-boa-red fw-bold">Enquire Now</a>
       </div>
     </div>
@@ -168,14 +167,7 @@
   <!-- COURSE HERO SECTION -->
   <section class="bg-boa-navy text-white py-5 position-relative overflow-hidden">
     <div class="container py-3 position-relative z-1">
-      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb breadcrumb-boa mb-0">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
-            <li class="breadcrumb-item active text-gold" id="breadcrumbCourseName">Course Details</li>
-          </ol>
-        </nav>
+      <div class="d-flex justify-content-end align-items-center flex-wrap gap-2 mb-3">
         <a href="courses.html" class="btn btn-outline-light btn-sm rounded-pill px-3 fw-bold shadow-sm">
           <i class="bi bi-arrow-left me-1"></i> Back to Courses
         </a>
@@ -481,7 +473,7 @@
           </h2>
           <div id="faqCol3" class="accordion-collapse collapse" data-bs-parent="#courseFaqAccordion">
             <div class="accordion-body text-muted small">
-              We offer full annual payment discounts as well as 0% interest monthly instalment options starting from £80 to £180 per month with no hidden fees.
+               Offer full annual payment discounts as well as 0% interest monthly instalment options starting from £80 to £180 per month with no hidden fees.
             </div>
           </div>
         </div>
@@ -594,7 +586,8 @@
       if (!course) return;
 
       document.title = course.title + " | British Online Academy";
-      document.getElementById('breadcrumbCourseName').innerText = course.title;
+      const breadcrumbEl = document.getElementById('breadcrumbCourseName');
+      if (breadcrumbEl) breadcrumbEl.innerText = course.title;
       document.getElementById('courseTitle').innerText = course.title;
       document.getElementById('courseShortDesc').innerText = course.description;
       document.getElementById('courseLevelBadge').innerText = course.level;
@@ -627,7 +620,7 @@
           </ul>
         </div>
         <p class="lead text-dark mb-3">${course.description}</p>
-        <p class="text-muted">This programme is delivered 100% online through British Online Academy's modern learning platform. Students benefit from structured module learning, self-paced study options, 24/7 access to digital resources, and dedicated academic adviser support throughout their enrolment.</p>
+        <p class="text-muted">This programme is delivered 100% online through modern learning platform. Students benefit from structured module learning, self-paced study options, 24/7 access to digital resources, and dedicated academic adviser support throughout their enrolment.</p>
       `;
 
       // Related Courses Grid Rendering

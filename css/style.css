@@ -67,6 +67,12 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -79,7 +85,6 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, .font-serif {
@@ -87,6 +92,13 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   color: var(--boa-navy-primary);
   font-weight: 700;
   line-height: 1.25;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+p, span, a, li, td, th, div, label {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 p {
@@ -104,10 +116,18 @@ a:hover {
   color: var(--boa-gold);
 }
 
-img {
+img, svg, video, iframe, embed, object {
   max-width: 100%;
   height: auto;
 }
+
+.badge {
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+  word-break: break-word;
+}
+
 
 /* 4. UTILITY CLASSES & DARK SECTION OVERRIDES */
 .text-white,
@@ -127,6 +147,26 @@ img {
 .hero-section,
 .hero-section p,
 .hero-section .hero-subtext,
+.bg-navy,
+.bg-boa-navy {
+  background-color: var(--boa-navy-primary) !important;
+  color: #ffffff !important;
+}
+
+.bg-navy-dark,
+.bg-boa-navy-dark {
+  background-color: #071220 !important;
+  color: #ffffff !important;
+}
+
+.course-icon-box,
+.course-icon-navy {
+  background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%) !important;
+  color: var(--boa-gold-light) !important;
+  border: 1px solid rgba(30, 58, 138, 0.4) !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15) !important;
+}
+
 .hero-section .lead,
 .bg-navy,
 .bg-navy p,
@@ -316,8 +356,8 @@ img {
   gap: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  white-space: nowrap !important;
-  flex-shrink: 0 !important;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .btn-boa-gold:hover {
@@ -507,20 +547,20 @@ img {
 }
 
 .navbar-boa {
-  background-color: rgba(11, 25, 44, 0.96);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: #0F172A !important;
+  background: #0F172A !important;
   padding: 0.75rem 0;
   transition: var(--transition-normal);
-  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
   position: sticky;
   top: 0;
   z-index: 1040;
 }
 
 .navbar-boa.scrolled {
-  background-color: rgba(7, 18, 32, 0.98);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  background-color: #0B192C !important;
+  background: #0B192C !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
   padding: 0.5rem 0;
 }
 
@@ -531,7 +571,7 @@ img {
   flex-shrink: 0 !important;
   min-width: max-content !important;
   margin-right: 1.5rem !important;
-  z-index: 1050 !important;
+  z-index: 10 !important;
 }
 
 .brand-logo-img {
@@ -540,9 +580,9 @@ img {
   max-width: none !important;
   background: #ffffff !important;
   padding: 4px 10px !important;
-  border-radius: 8px !important;
-  border: 1px solid rgba(245, 158, 11, 0.4) !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25), 0 0 10px rgba(245, 158, 11, 0.2) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
   transition: var(--transition-normal) !important;
   display: block !important;
   visibility: visible !important;
@@ -573,34 +613,35 @@ img {
 }
 
 .navbar-boa .nav-link {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
   font-size: 0.825rem !important;
-  font-weight: 600 !important;
-  padding: 0.45rem 0.5rem !important;
+  font-weight: 700 !important;
+  padding: 0.45rem 0.65rem !important;
   transition: var(--transition-fast) !important;
   position: relative !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.3px !important;
+  letter-spacing: 0.4px !important;
   white-space: nowrap !important;
   display: inline-flex !important;
   align-items: center !important;
+  background: transparent !important;
 }
 
 .navbar-boa .nav-link:hover,
 .navbar-boa .nav-link.active {
   color: var(--boa-gold) !important;
-  font-weight: 600;
-  text-shadow: 0 0 10px rgba(226, 27, 60, 0.4);
+  font-weight: 700 !important;
+  text-shadow: none !important;
 }
 
 .navbar-boa .nav-link::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   left: 50%;
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--boa-gold) 0%, var(--boa-gold-light) 100%);
+  background: var(--boa-gold) !important;
   border-radius: 2px;
   transition: var(--transition-normal);
   transform: translateX(-50%);
@@ -608,7 +649,24 @@ img {
 
 .navbar-boa .nav-link:hover::after,
 .navbar-boa .nav-link.active::after {
-  width: 70%;
+  width: 80% !important;
+}
+
+.navbar-boa .dropdown-toggle::after {
+  display: inline-block !important;
+  margin-left: 0.35rem !important;
+  vertical-align: 0.2em !important;
+  content: "" !important;
+  border-top: 0.3em solid #ffffff !important;
+  border-right: 0.3em solid transparent !important;
+  border-bottom: 0 !important;
+  border-left: 0.3em solid transparent !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.navbar-boa .dropdown-toggle:hover::after,
+.navbar-boa .dropdown-toggle.active::after {
+  border-top-color: var(--boa-gold) !important;
 }
 
 /* BOA Dropdown Menu Styling */
@@ -708,6 +766,35 @@ img {
 
 /* Hover dropdown on desktop */
 @media (min-width: 992px) {
+  .navbar-boa .offcanvas,
+  .navbar-boa .offcanvas-boa,
+  .navbar-boa .offcanvas-end,
+  .navbar-boa .offcanvas-header,
+  .navbar-boa .offcanvas-body,
+  .navbar-boa .navbar-nav,
+  .navbar-boa .navbar-collapse {
+    --bs-offcanvas-bg: transparent !important;
+    --bs-offcanvas-color: inherit !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+  }
+  .navbar-boa .nav-link {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+  .navbar-boa .dropdown-menu {
+    top: 100% !important;
+    margin-top: 1rem !important;
+  }
   .navbar-boa .nav-item.dropdown:hover .dropdown-menu {
     display: block;
     animation: fadeInDown 0.2s ease-out forwards;
@@ -720,9 +807,11 @@ img {
     max-width: 1240px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
+    top: 100% !important;
+    margin-top: 1rem !important;
     padding: 1.5rem !important;
     background-color: var(--boa-navy-dark) !important;
-    border: 1px solid rgba(200, 16, 46, 0.4) !important;
+    border: 1px solid rgba(245, 158, 11, 0.3) !important;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5) !important;
   }
   .col-lg-2-4,
@@ -772,7 +861,7 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -816,10 +905,22 @@ img {
 }
 
 /* Offcanvas Customization */
-.offcanvas-boa {
-  background-color: var(--boa-navy-dark);
-  color: var(--boa-white);
-  border-left: 3px solid var(--boa-red);
+.offcanvas,
+.offcanvas-boa,
+#offcanvasNavbar,
+.offcanvas-header,
+.offcanvas-body {
+  --bs-offcanvas-bg: #071220 !important;
+  --bs-offcanvas-color: #ffffff !important;
+  background-color: #071220 !important;
+  background: #071220 !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.offcanvas-backdrop {
+  background-color: #040c18 !important;
+  opacity: 0.85 !important;
 }
 
 /* 7. HERO SECTION */
@@ -1107,6 +1208,20 @@ img {
 }
 
 /* 10. COURSES SECTION */
+.boa-card {
+  background: var(--boa-white);
+  border: 1px solid var(--boa-grey-200);
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+}
+
+.boa-card p,
+.programme-desc,
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .programme-card {
   background: var(--boa-white);
   border: 1px solid var(--boa-grey-200);
@@ -1587,3 +1702,476 @@ img {
   display: block;
   border-radius: 16px;
 }
+
+/* ==========================================================================
+   18. MASTER RESPONSIVE & MOBILE DESIGN SYSTEM (320px, 375px, 390px, 430px, Tablet & Desktop)
+   ========================================================================== */
+
+/* ==========================================================================
+   18. MASTER RESPONSIVE & MOBILE DESIGN SYSTEM (320px, 375px, 390px, 430px, Tablet & Desktop)
+   ========================================================================== */
+
+/* --- TABLETS & PHONES (max-width: 991.98px) --- */
+@media (max-width: 991.98px) {
+  /* Offcanvas Drawer Base */
+  .offcanvas-boa {
+    --bs-offcanvas-bg: #071220 !important;
+    --bs-offcanvas-color: #ffffff !important;
+    width: 100vw !important;
+    max-width: 100% !important;
+    background-color: #071220 !important;
+    background: #071220 !important;
+    color: #ffffff !important;
+    border-left: none !important;
+    z-index: 1060 !important;
+  }
+  
+  .offcanvas-boa .offcanvas-header {
+    background-color: #040c18 !important;
+    padding: 1rem 1.25rem !important;
+    border-bottom: 1.5px solid rgba(245, 158, 11, 0.3) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .offcanvas-boa .offcanvas-header .brand-logo-img {
+    height: 40px !important;
+    width: auto !important;
+    background: #ffffff !important;
+    padding: 4px 10px !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(245, 158, 11, 0.4) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .offcanvas-boa .btn-close-white {
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    padding: 0.65rem !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(245, 158, 11, 0.3) !important;
+    transition: var(--transition-fast) !important;
+  }
+
+  .offcanvas-boa .btn-close-white:hover {
+    background-color: var(--boa-red) !important;
+    border-color: var(--boa-red) !important;
+  }
+
+  .offcanvas-boa .offcanvas-body {
+    flex: 1 1 auto !important;
+    flex-grow: 1 !important;
+    min-height: calc(100vh - 75px) !important;
+    background-color: #071220 !important;
+    background: #071220 !important;
+    padding: 1.5rem 1.25rem 3rem !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Offcanvas Navigation Links */
+  .offcanvas-boa .navbar-nav {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .offcanvas-boa .nav-item {
+    width: 100% !important;
+  }
+
+  .offcanvas-boa .nav-link {
+    width: 100% !important;
+    font-family: var(--font-sans) !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    padding: 0.85rem 1.25rem !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-left: 4px solid transparent !important;
+    transition: var(--transition-fast) !important;
+  }
+
+  .offcanvas-boa .nav-link::after {
+    display: none !important;
+  }
+
+  .offcanvas-boa .nav-link:hover,
+  .offcanvas-boa .nav-link.active {
+    color: var(--boa-gold-light) !important;
+    background: rgba(245, 158, 11, 0.15) !important;
+    border-color: rgba(245, 158, 11, 0.3) !important;
+    border-left: 4px solid var(--boa-gold-light) !important;
+  }
+
+  /* Mobile Dropdown & Mega Menu */
+  .offcanvas-boa .dropdown-menu,
+  .offcanvas-boa .mega-menu {
+    position: static !important;
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    box-shadow: none !important;
+    background: #040c18 !important;
+    border: 1px solid rgba(245, 158, 11, 0.3) !important;
+    border-radius: 14px !important;
+    padding: 1.25rem 1rem !important;
+    margin: 0.5rem 0 1rem 0 !important;
+  }
+
+  .offcanvas-boa .mega-menu .row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+    margin: 0 !important;
+  }
+
+  .offcanvas-boa .col-lg-2-4,
+  .offcanvas-boa .col-md-4 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 0 !important;
+  }
+
+  .offcanvas-boa .mega-title {
+    color: var(--boa-gold-light) !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    padding-bottom: 0.4rem !important;
+    margin-bottom: 0.65rem !important;
+    border-bottom: 2px solid var(--boa-gold-light) !important;
+  }
+
+  .offcanvas-boa .mega-item-link {
+    color: rgba(255, 255, 255, 0.88) !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    padding: 0.45rem 0.65rem !important;
+    display: block !important;
+    border-radius: 6px !important;
+    transition: var(--transition-fast) !important;
+    line-height: 1.35 !important;
+    text-decoration: none !important;
+  }
+
+  .offcanvas-boa .mega-item-link:hover {
+    color: #ffffff !important;
+    background: rgba(245, 158, 11, 0.18) !important;
+    padding-left: 0.85rem !important;
+  }
+
+  .offcanvas-boa .dropdown-item {
+    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.9rem !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+  }
+
+  .offcanvas-boa .dropdown-item:hover {
+    color: var(--boa-gold-light) !important;
+    background: rgba(245, 158, 11, 0.18) !important;
+  }
+
+  /* Offcanvas Bottom Enrol CTA */
+  .offcanvas-boa .btn-boa-gold {
+    width: 100% !important;
+    margin-top: 1.5rem !important;
+    padding: 0.85rem 1.5rem !important;
+    font-size: 0.95rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50rem !important;
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4) !important;
+  }
+
+  /* Section Padding */
+  .hero-section {
+    padding: 3.5rem 0 4rem !important;
+  }
+  .page-banner {
+    padding: 3rem 0 3.5rem !important;
+  }
+  .hero-subtext {
+    font-size: 1.05rem !important;
+    max-width: 100% !important;
+  }
+  .hero-course-widget {
+    padding: 1.5rem 1.25rem !important;
+  }
+  
+  /* Footer Layout */
+  .footer-boa {
+    padding-top: 3.5rem;
+  }
+}
+
+/* --- SMALL TABLETS & PHONES (max-width: 767.98px) --- */
+@media (max-width: 767.98px) {
+  /* Navbar Toggler */
+  .navbar-toggler {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3) !important;
+    outline: none;
+  }
+
+  /* Hero Section */
+  .hero-heading {
+    font-size: clamp(1.8rem, 5.5vw, 2.5rem) !important;
+  }
+  .page-title {
+    font-size: clamp(1.75rem, 5vw, 2.4rem) !important;
+  }
+
+  /* Category Filter Pills (Scrollable Row) */
+  .nav-pills {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-bottom: 0.75rem !important;
+    gap: 0.5rem !important;
+  }
+  .nav-pills::-webkit-scrollbar {
+    height: 4px;
+  }
+  .nav-pills::-webkit-scrollbar-thumb {
+    background: var(--boa-gold-light);
+    border-radius: 4px;
+  }
+  .nav-pills .nav-link {
+    white-space: nowrap !important;
+    padding: 0.55rem 1rem !important;
+    font-size: 0.85rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Touch Form Controls */
+  .form-control, .form-select {
+    font-size: 16px !important;
+    min-height: 48px !important;
+    padding: 0.65rem 0.85rem !important;
+  }
+  
+  /* Images Height Constraints */
+  .proportional-img-wrapper, .intro-image-card {
+    min-height: 220px !important;
+    max-height: 360px !important;
+  }
+}
+
+/* --- MOBILE PHONES & XS DEVICES (max-width: 575.98px) --- */
+@media (max-width: 575.98px) {
+  /* Logo Sizing */
+  .brand-logo-img {
+    height: 36px !important;
+    padding: 3px 8px !important;
+  }
+  .navbar-boa .brand-logo {
+    margin-right: 0.5rem !important;
+  }
+
+  /* Section Padding */
+  .hero-section {
+    padding: 2.25rem 0 2.75rem !important;
+  }
+  .page-banner {
+    padding: 2.25rem 0 2.5rem !important;
+  }
+  .py-5 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  /* Card Padding & Layout */
+  .boa-card, .programme-card, .why-card, .stat-box-card {
+    padding: 1.25rem 1rem !important;
+    border-radius: var(--radius-sm) !important;
+  }
+  .programme-title, .boa-card h3 {
+    min-height: auto !important;
+    font-size: 1.1rem !important;
+  }
+
+  /* Contact Info Card & Forms */
+  .contact-info-card, .form-card {
+    padding: 1.35rem 1rem !important;
+    border-radius: 12px !important;
+  }
+  .contact-detail-item {
+    gap: 0.75rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .contact-detail-text {
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+  .contact-detail-text a {
+    word-break: break-all !important;
+  }
+  .contact-detail-icon {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    font-size: 1.1rem !important;
+  }
+
+  /* Button Wrappings & Touch Height */
+  .btn-boa-gold,
+  .btn-boa-navy,
+  .btn-boa-outline-gold,
+  .btn-boa-outline-navy,
+  .btn-boa-red,
+  .btn-boa-outline-red {
+    white-space: normal !important;
+    word-break: break-word !important;
+    padding: 0.65rem 1.15rem !important;
+    font-size: 0.825rem !important;
+    letter-spacing: 0.3px !important;
+    max-width: 100% !important;
+    min-height: 44px !important;
+  }
+
+  .programme-card .btn,
+  .boa-card .btn,
+  .why-card .btn,
+  .form-card .btn {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  /* Modal Mobile Responsiveness */
+  .modal-dialog {
+    margin: 0.5rem !important;
+    max-width: calc(100% - 1rem) !important;
+  }
+  .modal-body {
+    padding: 1.25rem 1rem !important;
+  }
+
+  /* Table Mobile Cell Padding */
+  .table th, .table td {
+    padding: 0.5rem 0.65rem !important;
+    font-size: 0.825rem !important;
+    white-space: normal !important;
+  }
+}
+
+/* --- EXTRA NARROW MOBILE (320px - 360px) --- */
+@media (max-width: 360px) {
+  .container, .container-fluid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .hero-course-widget {
+    padding: 0.85rem 0.65rem !important;
+  }
+  .stat-number-val {
+    font-size: 1.65rem !important;
+  }
+  .stat-label-text {
+    font-size: 0.75rem !important;
+  }
+  .badge {
+    font-size: 0.7rem !important;
+    padding: 0.35rem 0.65rem !important;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP NAVBAR SEAMLESS TRANSPARENCY OVERRIDE (HIGH SPECIFICITY AT END OF FILE)
+   Fixes dark rectangular background box behind menu items on desktop
+   ========================================================================== */
+@media (min-width: 992px) {
+  #mainNavbar .offcanvas,
+  #mainNavbar .offcanvas-boa,
+  #mainNavbar .offcanvas-end,
+  #mainNavbar .offcanvas-header,
+  #mainNavbar .offcanvas-body,
+  #mainNavbar .navbar-nav,
+  #mainNavbar .navbar-collapse,
+  .navbar-boa .offcanvas,
+  .navbar-boa .offcanvas-boa,
+  .navbar-boa .offcanvas-end,
+  .navbar-boa .offcanvas-header,
+  .navbar-boa .offcanvas-body,
+  .navbar-boa .navbar-nav,
+  .navbar-boa .navbar-collapse,
+  .navbar-boa .nav-item {
+    --bs-offcanvas-bg: transparent !important;
+    --bs-offcanvas-color: inherit !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar-boa .offcanvas-body {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex: 1 1 auto !important;
+    width: 100% !important;
+  }
+
+  .navbar-boa .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    gap: 0.25rem !important;
+  }
+
+  .navbar-boa .nav-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .navbar-boa .nav-link {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+}
+
