@@ -1660,25 +1660,30 @@ img, svg, video, iframe, embed, object {
 
 /* FORM TRANSPARENCY NOTICE */
 .form-transparency-notice {
-  background-color: #faf6ef;
-  border: 1px solid #e5d8c5;
+  background-color: rgba(10, 25, 47, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-left: 3px solid var(--boa-gold);
   border-radius: 6px;
-  padding: 0.75rem 0.9rem;
+  padding: 0.85rem 1rem;
   margin-top: 1rem;
   margin-bottom: 1.25rem;
-  font-size: 0.8125rem;
-  line-height: 1.45;
-  color: #334155;
+  font-size: 0.825rem;
+  line-height: 1.5;
+  color: #ffffff !important;
   text-align: left;
+}
+
+.form-transparency-notice p {
+  color: #ffffff !important;
+  margin-bottom: 0;
 }
 
 .form-transparency-notice-title {
   font-family: var(--font-serif);
   font-weight: 700;
-  color: var(--boa-navy);
-  font-size: 0.85rem;
-  margin-bottom: 0.25rem;
+  color: var(--boa-gold) !important;
+  font-size: 0.875rem;
+  margin-bottom: 0.35rem;
   display: flex;
   align-items: center;
   gap: 0.35rem;
