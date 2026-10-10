@@ -1662,33 +1662,33 @@ img, svg, video, iframe, embed, object {
   font-weight: 500;
 }
 
-/* FORM TRANSPARENCY NOTICE - LIGHT FORM CARDS DEFAULT */
+/* FORM TRANSPARENCY NOTICE (ENQUIRY / CONTACT FORMS) */
 .form-transparency-notice {
-  background-color: #F8FAFC !important;
-  border: 1px solid #E2E8F0 !important;
-  border-left: 3.5px solid var(--boa-gold) !important;
+  background-color: #0b192c !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-left: 4px solid var(--boa-gold) !important;
   border-radius: 8px;
   padding: 0.85rem 1.1rem;
   margin-top: 1rem;
   margin-bottom: 1.25rem;
   font-size: 0.835rem;
   line-height: 1.55;
-  color: #334155 !important;
+  color: #ffffff !important;
   text-align: left;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .form-transparency-notice p {
-  color: #334155 !important;
+  color: rgba(255, 255, 255, 0.92) !important;
   margin-bottom: 0;
   font-size: 0.835rem;
   line-height: 1.55;
 }
 
 .form-transparency-notice-title {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-weight: 700;
-  color: var(--boa-navy-primary) !important;
+  color: var(--boa-gold) !important;
   font-size: 0.875rem;
   margin-bottom: 0.35rem;
   display: flex;
@@ -1697,39 +1697,6 @@ img, svg, video, iframe, embed, object {
 }
 
 .form-transparency-notice-title i {
-  color: var(--boa-gold-dark) !important;
-}
-
-/* DARK FORM TRANSPARENCY NOTICE OVERRIDE */
-.bg-boa-navy .form-transparency-notice,
-.bg-dark .form-transparency-notice,
-.form-card-dark .form-transparency-notice,
-.form-transparency-notice-dark {
-  background-color: rgba(15, 23, 42, 0.65) !important;
-  border: 1px solid rgba(255, 255, 255, 0.18) !important;
-  border-left: 3.5px solid var(--boa-gold) !important;
-  color: rgba(255, 255, 255, 0.92) !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
-}
-
-.bg-boa-navy .form-transparency-notice p,
-.bg-dark .form-transparency-notice p,
-.form-card-dark .form-transparency-notice p,
-.form-transparency-notice-dark p {
-  color: rgba(255, 255, 255, 0.88) !important;
-}
-
-.bg-boa-navy .form-transparency-notice .form-transparency-notice-title,
-.bg-dark .form-transparency-notice .form-transparency-notice-title,
-.form-card-dark .form-transparency-notice .form-transparency-notice-title,
-.form-transparency-notice-dark .form-transparency-notice-title {
-  color: var(--boa-gold) !important;
-}
-
-.bg-boa-navy .form-transparency-notice .form-transparency-notice-title i,
-.bg-dark .form-transparency-notice .form-transparency-notice-title i,
-.form-card-dark .form-transparency-notice .form-transparency-notice-title i,
-.form-transparency-notice-dark .form-transparency-notice-title i {
   color: var(--boa-gold) !important;
 }
 
